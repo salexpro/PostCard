@@ -3841,6 +3841,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/jquery-select7.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/jquery-select7-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/fonts\/GTWalsheim\/GTWalsheim.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -3874,6 +3884,62 @@
 		"oA": 2,
 		"oAP": "\/fonts\/GTWalsheim\/GTWalsheim.woff2",
 		"oF": 0
+		},
+	"\/img\/bg.png": {
+		"ft": 32768,
+		"iS": 725791,
+		"oA": 0,
+		"oAP": "\/img\/bg.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/logo.png": {
+		"ft": 32768,
+		"iS": 2505,
+		"oA": 0,
+		"oAP": "\/img\/logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/play_button.png": {
+		"ft": 32768,
+		"iS": 9277,
+		"oA": 0,
+		"oAP": "\/img\/play_button.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/social\/fb.png": {
+		"ft": 32768,
+		"iS": 521,
+		"oA": 0,
+		"oAP": "\/img\/social\/fb.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/social\/inst.png": {
+		"ft": 32768,
+		"iS": 615,
+		"oA": 0,
+		"oAP": "\/img\/social\/inst.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/social\/vk.png": {
+		"ft": 32768,
+		"iS": 634,
+		"oA": 0,
+		"oAP": "\/img\/social\/vk.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/social\/yt.png": {
+		"ft": 32768,
+		"iS": 525,
+		"oA": 0,
+		"oAP": "\/img\/social\/yt.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
@@ -3931,6 +3997,27 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/jquery-select7.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery-select7.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/place_video.mp4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/place_video.mp4",
+		"oF": 0
+		},
+	"\/place_video.webm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/place_video.webm",
+		"oF": 0
+		},
 	"\/scss\/_settings.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3969,6 +4056,19 @@
 		"oF": 0,
 		"oS": 2,
 		"uL": 1
+		},
+	"\/styl\/jquery-select7.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/jquery-select7.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
 		}
 	},
 "hooks": [

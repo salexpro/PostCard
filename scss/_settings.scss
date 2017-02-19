@@ -45,12 +45,12 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: 16px;
 $global-width: rem-calc(1200);
-$global-lineheight: 1.5;
+$global-lineheight: 1.2;
 $foundation-palette: (
-  primary: #2199e8,
-  secondary: #777,
+  primary: #f297aa,
+  secondary: #7a7a7a,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
@@ -70,7 +70,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-$global-flexbox: false;
+$global-flexbox: true;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
@@ -233,18 +233,18 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
+$button-padding: .72em 1em;
+$button-margin: 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background: $black;
+$button-background-hover: #c5858a;
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 14px,
   large: 1.25rem,
 );
 $button-opacity-disabled: 0.25;

@@ -4,6 +4,25 @@ html(lang="ru")
     body
         main.wrap
             include includes/_header
-            section.main
-                
+            section.content.main
+                .main_header
+                    .header
+                        | We actually add
+                        .header_accent
+                            | you
+                        | to a postcard
+                        .header_small and ship it to your loved ones.
+                    a.button(href="#")
+                        | CREATE A CARD NOW
+                .main_content
+                    .main_video_container
+                        video.main_video
+                            source(src="./place_video.mp4" type="video/mp4")
+                            source(src="./place_video.webm" type="video/webm")
+                            | Your browser does not support the video tag.
+                            a(href="./place_video.mp4") Download video
+                        button.main_video_button
+                    a.main_content_how(href="#")
+                        img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAB5klEQVQ4T62VQUgbQRSG/7dZDZQiXmLp7gsmR7vXXupNKHgs2ptQaAW9FSqCRelRBAvSgzeFVhC8VSmlBUFs7/XQS85JyGTLmiBiirAm7pPFuMawmyyYOQ7/fLz/f29mCCErlUo9TCaTU4C8APAUwFBTdgzgCKBvruvuVCqV/+3HqX0jnTamRWgVwANA9gHtFwDV1DHgjQE0DuCcSN6XSvbnVkYAtCyr/+zsdEMErwBa03V9pVAonIY5yGQyg41GYwmQeSJsDwwMzuZyuQtfGwDTaXNLhCY8z3tp2/ZBGKh9zzCM55qmfSWSvVKp/DoANm1uep6Md4AlAFyGQ2mfSGZ8+3TdgP48QF+UUgthlTGb3wGM1uuNEcdx/MbcWcz8EZA3rnuRJWaeBeSTrveZUZkxmz8BPEsk9CfFYvFfO/A603oZoDliNn8A4iplT3bIjSzL6rsJPtyFsQtQ0gc6AC0rpdajgMPDj0c07fIknz92ojTM/BaQDz5QAJpUSu1Fi81DgI6iMvbPMfMEILtxgb8B/FWq/K5DhQGwq2VmMw4wsNy1KfGAQVNijU3HCu+MTczBPgDkj1L2YvjItAy2L+h29bLZoUe1mnderVZrXa/ejaCnj4MP7fnzdVtpjx7Y1mzu8wVcAV1oMlrF6TuqAAAAAElFTkSuQmCC", alt="")
+                        | How it works
             include includes/_footer

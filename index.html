@@ -2,19 +2,58 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Project</title>
+    <title>PostcardActually</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="./css/jquery-select7.css">
+    <link rel="stylesheet" href="./css/app.css">
   </head>
   <body>
     <main class="wrap">
       <header class="head">
-        <nav class="nav"></nav>
+        <div class="head_hamb">
+          <div class="head_hamb_inner"></div>
+        </div><a href="./" class="head_logo"><img src="./img/logo.png" alt="PostcardActually"></a>
+        <nav class="head_nav">
+          <ul class="menu">
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li></li>
+          </ul>
+        </nav>
+        <select class="select7 select7_dropdown select7_remove_current head_lang">
+          <option>en</option>
+          <option>ru</option>
+        </select>
+        <ul class="head_social">
+          <li><a href="#"><img src="./img/social/vk.png" target="_blank" alt="VK"></a></li>
+          <li><a href="#"><img src="./img/social/fb.png" target="_blank" alt="Facebook"></a></li>
+          <li><a href="#"><img src="./img/social/yt.png" target="_blank" alt="YouTube"></a></li>
+          <li><a href="#"><img src="./img/social/inst.png" target="_blank" alt="Instagram"></a></li>
+        </ul>
       </header>
-      <section class="main"></section>
-      <footer class="footer"></footer>
-      <script src="/js/app.js"></script>
+      <section class="content main">
+        <div class="main_header">
+          <div class="header">We actually add
+            <div class="header_accent">you</div>to a postcard
+            <div class="header_small">and ship it to your loved ones.</div>
+          </div><a href="#" class="button">CREATE A CARD NOW</a>
+        </div>
+        <div class="main_content">
+          <div class="main_video_container">
+            <video class="main_video">
+              <source src="./place_video.mp4" type="video/mp4">
+              <source src="./place_video.webm" type="video/webm">Your browser does not support the video tag.<a href="./place_video.mp4">Download video</a>
+            </video>
+            <button class="main_video_button"></button>
+          </div><a href="#" class="main_content_how"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAB5klEQVQ4T62VQUgbQRSG/7dZDZQiXmLp7gsmR7vXXupNKHgs2ptQaAW9FSqCRelRBAvSgzeFVhC8VSmlBUFs7/XQS85JyGTLmiBiirAm7pPFuMawmyyYOQ7/fLz/f29mCCErlUo9TCaTU4C8APAUwFBTdgzgCKBvruvuVCqV/+3HqX0jnTamRWgVwANA9gHtFwDV1DHgjQE0DuCcSN6XSvbnVkYAtCyr/+zsdEMErwBa03V9pVAonIY5yGQyg41GYwmQeSJsDwwMzuZyuQtfGwDTaXNLhCY8z3tp2/ZBGKh9zzCM55qmfSWSvVKp/DoANm1uep6Md4AlAFyGQ2mfSGZ8+3TdgP48QF+UUgthlTGb3wGM1uuNEcdx/MbcWcz8EZA3rnuRJWaeBeSTrveZUZkxmz8BPEsk9CfFYvFfO/A603oZoDliNn8A4iplT3bIjSzL6rsJPtyFsQtQ0gc6AC0rpdajgMPDj0c07fIknz92ojTM/BaQDz5QAJpUSu1Fi81DgI6iMvbPMfMEILtxgb8B/FWq/K5DhQGwq2VmMw4wsNy1KfGAQVNijU3HCu+MTczBPgDkj1L2YvjItAy2L+h29bLZoUe1mnderVZrXa/ejaCnj4MP7fnzdVtpjx7Y1mzu8wVcAV1oMlrF6TuqAAAAAElFTkSuQmCC" alt="">How it works</a>
+        </div>
+      </section>
+      <footer class="footer">postcardactually.com</footer>
+      <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="./js/jquery-select7.js"></script>
+      <script src="./js/app.js"></script>
     </main>
   </body>
 </html>
