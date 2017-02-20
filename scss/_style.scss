@@ -55,6 +55,9 @@ select.select7{
     &_wreath{
         background: url(../img/bg_wreath.png) right center no-repeat;
     }
+    &_how{
+        background: url(../img/bg_how.png) 30px center no-repeat;
+    }
 }
 
 .head{
@@ -366,7 +369,7 @@ select.select7{
             font-size: 12px;
             letter-spacing: 10px;
             padding-bottom: 5px;
-            border-bottom: 1px solid;
+            border-bottom: 1px solid $black;
             margin-bottom: 2px;
             &::after{
                 content: counter(ch_step);
@@ -374,7 +377,7 @@ select.select7{
                 margin-left: 10px;
             }
         }
-        &_content{
+        &_descr{
             text-align: right;
             line-height: 1.5;
         }
@@ -429,6 +432,73 @@ select.select7{
             width: 1462px;
             height: 694px;
             max-width: none;
+        }
+    }
+}
+
+.how{
+    padding-top: 30px;
+    &_header{
+        width: 330px;
+        margin-right: 40px;
+        z-index: 2;
+        padding-left: 80px;
+        z-index: 2;
+    }
+    &_card{
+        position: relative;
+        width: 595px;
+        height: 425px;
+        margin-top: 54px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: -34px;
+            left: -96px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            background: $white url(../img/card_how.png) center no-repeat;
+        }
+        &_inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            background-color: $white;        
+            z-index: 2;
+            padding: 45px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &_steps{
+        @extend .check_steps;
+        margin: 0;
+    }
+    &_step{
+        @extend .check_step;
+        position: relative;
+        &:first-child{
+            margin: 0;
+        }
+        &_title{
+            @extend .check_step_title;
+            margin-bottom: 6px;
+            color: #8d4c58;
+        }
+        &_label{
+            position: absolute;
+            right: 0;
+            top: 8px;
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            text-transform: uppercase;
+            padding-left: 20px;
+            background-color: $white;
+        }
+        &_descr{
+            @extend .check_step_descr;
         }
     }
 }

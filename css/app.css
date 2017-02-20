@@ -736,6 +736,8 @@ select.select7 { visibility: hidden; }
 
 .wrap_wreath { background: url(../img/bg_wreath.png) right center no-repeat; }
 
+.wrap_how { background: url(../img/bg_how.png) 30px center no-repeat; }
+
 .head { height: 52px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 0 55px; margin-top: 48px; }
 
 .head_hamb { min-width: 52px; height: 52px; cursor: pointer; position: relative; -webkit-transition: 300ms; transition: 300ms; z-index: 2; }
@@ -828,15 +830,15 @@ select.select7 { visibility: hidden; }
 
 .check_descr { letter-spacing: -0.8px; text-align: justify; margin-right: 25px; }
 
-.check_steps { counter-reset: ch_step; margin-right: 25px; }
+.check_steps, .how_steps { counter-reset: ch_step; margin-right: 25px; }
 
-.check_step { counter-increment: ch_step; margin-top: 20px; }
+.check_step, .how_step { counter-increment: ch_step; margin-top: 20px; }
 
-.check_step_title { font-family: 'Playfair Display', serif; text-transform: uppercase; font-size: 12px; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 2px; }
+.check_step_title, .how_step_title { font-family: 'Playfair Display', serif; text-transform: uppercase; font-size: 12px; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 1px solid #000; margin-bottom: 2px; }
 
-.check_step_title::after { content: counter(ch_step); font-size: 16px; margin-left: 10px; }
+.check_step_title::after, .how_step_title::after { content: counter(ch_step); font-size: 16px; margin-left: 10px; }
 
-.check_step_content { text-align: right; line-height: 1.5; }
+.check_step_descr, .how_step_descr { text-align: right; line-height: 1.5; }
 
 .check_card { width: 620px; height: 440px; position: relative; }
 
@@ -851,5 +853,25 @@ select.select7 { visibility: hidden; }
 .check_card_img { overflow: hidden; width: 100%; height: 100%; position: relative; background: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); z-index: 2; }
 
 .check_card img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-48.4%, -51%); transform: translate(-48.4%, -51%); width: 1462px; height: 694px; max-width: none; }
+
+.how { padding-top: 30px; }
+
+.how_header { width: 330px; margin-right: 40px; z-index: 2; padding-left: 80px; z-index: 2; }
+
+.how_card { position: relative; width: 595px; height: 425px; margin-top: 54px; }
+
+.how_card::before { content: ''; position: absolute; top: -34px; left: -96px; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/card_how.png) center no-repeat; }
+
+.how_card_inner { position: relative; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; z-index: 2; padding: 45px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.how_steps { margin: 0; }
+
+.how_step { position: relative; }
+
+.how_step:first-child { margin: 0; }
+
+.how_step_title { margin-bottom: 6px; color: #8d4c58; }
+
+.how_step_label { position: absolute; right: 0; top: 8px; font-family: 'Playfair Display', serif; font-size: 26px; text-transform: uppercase; padding-left: 20px; background-color: #fff; }
 
 .footer { height: 130px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 300; line-height: 48px; text-transform: uppercase; letter-spacing: 3.5px; }

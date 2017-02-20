@@ -3897,6 +3897,12 @@
 		"oAP": "\/fonts\/GTWalsheim\/GTWalsheim.woff2",
 		"oF": 0
 		},
+	"\/how.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/how.html",
+		"oF": 0
+		},
 	"\/img\/bg.png": {
 		"ft": 32768,
 		"iS": 725791,
@@ -3910,6 +3916,14 @@
 		"iS": 795198,
 		"oA": 0,
 		"oAP": "\/img\/bg_card.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_how.png": {
+		"ft": 32768,
+		"iS": 645726,
+		"oA": 0,
+		"oAP": "\/img\/bg_how.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3940,6 +3954,14 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/card_how.png": {
+		"ft": 32768,
+		"iS": 309297,
+		"oA": 0,
+		"oAP": "\/img\/card_how.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/img\/logo.svg": {
 		"ft": 2097152,
