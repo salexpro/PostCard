@@ -69,13 +69,15 @@ table{
     flex-direction: column;
     background-attachment: fixed;
     &_card{
-        background: url(../img/bg_card.png) center bottom no-repeat;
+        background: url(../img/bg_card.png) no-repeat;
+        background-position: center bottom calc(50vh - 410px);
     }
     &_wreath{
-        background: url(../img/bg_wreath.png) right center no-repeat;
+        background: url(../img/bg_wreath.png) no-repeat;
+        background-position: right calc(50vw - 904px) center;
     }
     &_how{
-        background: url(../img/bg_how.png) 30px center no-repeat;
+        background: url(../img/bg_how.png) center no-repeat;
     }
     &_price{
         background: url(../img/bg_price.png) center no-repeat;       
@@ -85,11 +87,13 @@ table{
 .head{
     height: 52px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin: 0 55px;
     margin-top: 48px;
+    &_inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     &_logo{
 
     }
@@ -333,11 +337,12 @@ table{
 }
 
 .actually{
+    padding-top: 30px;
     &_content{
         width: 390px;
         margin-right: -125px;
         z-index: 2;
-        align-self: flex-end;
+        // align-self: flex-end;
         margin-bottom: 14px;
     }
     &_descr{
@@ -352,16 +357,16 @@ table{
         box-shadow: 0 0 65px rgba(0, 0, 0, 0.15);
         background: $white;
         position: relative;
-        margin-top: 30px;
         overflow: hidden;
         background: url(../img/card.svg) no-repeat;
         background-size: 832px;
         background-attachment: fixed;
-        background-position: right calc(50vw - 546px) bottom -18px;
+        background-position: right calc(50vw - 546px) bottom calc(50vh - 410px);
     }
 }
 
 .check{
+    padding-top: 30px;
     &_content{
         width: 340px;
         .header{
@@ -442,7 +447,7 @@ table{
             background: $white url(../img/card_check.svg) no-repeat;
             background-size: 1462px;
             background-attachment: fixed;
-            background-position: right -249px center;
+            background-position: right calc(50vw - 910px) center;
         }
     }
 }
@@ -469,7 +474,7 @@ table{
             width: 100%;
             height: 100%;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
-            background: $white url(../img/bg_how_real.png) 30px center no-repeat;
+            background: $white url(../img/bg_how_real.png) center no-repeat;
             background-attachment: fixed;
         }
         &_inner{
@@ -554,7 +559,7 @@ table{
         }
         .button{
             position: absolute;
-            right: -35px;
+            right: -30px;
             bottom: -16px;
         }
         &_hint{

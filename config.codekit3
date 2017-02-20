@@ -3965,7 +3965,7 @@
 		},
 	"\/img\/bg_card.png": {
 		"ft": 32768,
-		"iS": 795198,
+		"iS": 796232,
 		"oA": 0,
 		"oAP": "\/img\/bg_card.png",
 		"oF": 0,
@@ -4005,9 +4005,17 @@
 		},
 	"\/img\/bg_wreath.png": {
 		"ft": 32768,
-		"iS": 229486,
+		"iS": 826641,
 		"oA": 0,
 		"oAP": "\/img\/bg_wreath.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_wreath_old.png": {
+		"ft": 32768,
+		"iS": 229486,
+		"oA": 0,
+		"oAP": "\/img\/bg_wreath_old.png",
 		"oF": 0,
 		"opt": 1
 		},

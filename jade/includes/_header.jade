@@ -1,8 +1,13 @@
 header.head
-    .head_hamb(class=(page=='price')?"is_active":"")
-        .head_hamb_inner
-    a.head_logo(href="./")
-        img(src="./img/logo.svg", alt="PostcardActually")
+    .head_inner
+        .head_hamb(class=(page=='price')?"is_active":"")
+            .head_hamb_inner
+        a.head_logo(href="./")
+            img(src="./img/logo.svg", alt="PostcardActually")
+        select.select7.select7_dropdown.select7_remove_current.head_lang
+            option en
+            option sp
+            option uk
     nav.head_nav(class=(page=='price')?"is_active":"")
         ul.menu
             li
@@ -11,10 +16,6 @@ header.head
                 a(href="./price.html") PRICING
             li
                 a(href="#") CONTACT
-    select.select7.select7_dropdown.select7_remove_current.head_lang
-        option en
-        option sp
-        option uk
     ul.head_social
         li
             a(href="#")

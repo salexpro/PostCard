@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>PostcardActually</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f297aa">
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#f297aa">
     <meta name="theme-color" content="#f297aa">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900">
@@ -17,9 +17,16 @@
   <body>
     <main class="wrap">
       <header class="head">
-        <div class="head_hamb">
-          <div class="head_hamb_inner"></div>
-        </div><a href="./" class="head_logo"><img src="./img/logo.svg" alt="PostcardActually"></a>
+        <div class="head_inner">
+          <div class="head_hamb">
+            <div class="head_hamb_inner"></div>
+          </div><a href="./" class="head_logo"><img src="./img/logo.svg" alt="PostcardActually"></a>
+          <select class="select7 select7_dropdown select7_remove_current head_lang">
+            <option>en</option>
+            <option>sp</option>
+            <option>uk</option>
+          </select>
+        </div>
         <nav class="head_nav">
           <ul class="menu">
             <li><a href="#">BLOG</a></li>
@@ -27,11 +34,6 @@
             <li><a href="#">CONTACT</a></li>
           </ul>
         </nav>
-        <select class="select7 select7_dropdown select7_remove_current head_lang">
-          <option>en</option>
-          <option>sp</option>
-          <option>uk</option>
-        </select>
         <ul class="head_social">
           <li><a href="#"><img src="./img/social/vk.png" target="_blank" alt="VK"></a></li>
           <li><a href="#"><img src="./img/social/fb.png" target="_blank" alt="Facebook"></a></li>
