@@ -3837,6 +3837,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/check.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/check.html",
+		"oF": 0
+		},
 	"\/css\/app.css": {
 		"aP": 0,
 		"bl": 0,
@@ -3907,21 +3913,29 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/card-opt.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/card-opt.svg",
+	"\/img\/bg_wreath.png": {
+		"ft": 32768,
+		"iS": 229486,
+		"oA": 0,
+		"oAP": "\/img\/bg_wreath.png",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"opt": 1
 		},
 	"\/img\/card.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/card.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/card_check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/card_check.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

@@ -14,6 +14,8 @@ $('.main_video_button').click(function(){
     video.paused ? video.play() : video.pause();
     $(this).toggleClass('paused');
 });
-video.addEventListener('ended', function(){
-    $('.main_video_button').toggleClass('paused');
-});
+if(video){
+    video.addEventListener('ended', function(){
+        $('.main_video_button').toggleClass('paused');
+    });
+}

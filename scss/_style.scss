@@ -52,6 +52,9 @@ select.select7{
     &_card{
         background: url(../img/bg_card.png) center bottom no-repeat;
     }
+    &_wreath{
+        background: url(../img/bg_wreath.png) right center no-repeat;
+    }
 }
 
 .head{
@@ -305,18 +308,18 @@ select.select7{
 }
 
 .actually{
-    &_header{
+    &_content{
         width: 390px;
         margin-right: -125px;
         z-index: 2;
         align-self: flex-end;
         margin-bottom: 14px;
-        &_descr{
-            font-size: 20px;
-            line-height: 1.3;
-            margin-top: 15px;
-            margin-bottom: 33px;
-        }
+    }
+    &_descr{
+        font-size: 20px;
+        line-height: 1.3;
+        margin-top: 15px;
+        margin-bottom: 33px;
     }
     &_card{
         width: 680px;
@@ -333,6 +336,98 @@ select.select7{
             transform: translate(-50.3%, -47.6%);
             width: 832px;
             height: 763px;
+            max-width: none;
+        }
+    }
+}
+
+.check{
+    &_content{
+        width: 340px;
+        .header{
+            margin-bottom: 4px;
+        }
+    }
+    &_descr{
+        letter-spacing: -0.8px;
+        text-align: justify;
+        margin-right: 25px;
+    }
+    &_steps{
+        counter-reset: ch_step;
+        margin-right: 25px;
+    }
+    &_step{
+        counter-increment: ch_step;
+        margin-top: 20px;
+        &_title{
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid;
+            margin-bottom: 2px;
+            &::after{
+                content: counter(ch_step);
+                font-size: 16px;
+                margin-left: 10px;
+            }
+        }
+        &_content{
+            text-align: right;
+            line-height: 1.5;
+        }
+    }
+    &_card{
+        &_outer{
+            position: relative;
+            margin-left: 72px;
+            margin-right: 78px;
+            .button{
+                position: absolute;
+                z-index: 2;
+                bottom: -66px;
+                right: -56px;
+            }
+        }
+        width: 620px;
+        height: 440px;        
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 48px;
+            left: -56px;
+            width: 644px;
+            height: 100%;
+            background: $white;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            z-index: 1;
+        }
+        &::after{
+            @extend .check_card::before;
+            width: 100%;
+            height: 430px;
+            top: -30px;
+            left: 56px;
+        }
+        &_img{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: $white;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            z-index: 2;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-48.4%, -51%);
+            width: 1462px;
+            height: 694px;
             max-width: none;
         }
     }

@@ -734,6 +734,8 @@ select.select7 { visibility: hidden; }
 
 .wrap_card { background: url(../img/bg_card.png) center bottom no-repeat; }
 
+.wrap_wreath { background: url(../img/bg_wreath.png) right center no-repeat; }
+
 .head { height: 52px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 0 55px; margin-top: 48px; }
 
 .head_hamb { min-width: 52px; height: 52px; cursor: pointer; position: relative; -webkit-transition: 300ms; transition: 300ms; z-index: 2; }
@@ -812,12 +814,42 @@ select.select7 { visibility: hidden; }
 
 .main_video_button.paused::before { border-right: 31.5px solid transparent; }
 
-.actually_header { width: 390px; margin-right: -125px; z-index: 2; -ms-flex-item-align: end; align-self: flex-end; margin-bottom: 14px; }
+.actually_content { width: 390px; margin-right: -125px; z-index: 2; -ms-flex-item-align: end; align-self: flex-end; margin-bottom: 14px; }
 
-.actually_header_descr { font-size: 20px; line-height: 1.3; margin-top: 15px; margin-bottom: 33px; }
+.actually_descr { font-size: 20px; line-height: 1.3; margin-top: 15px; margin-bottom: 33px; }
 
 .actually_card { width: 680px; height: 480px; box-shadow: 0 0 65px rgba(0, 0, 0, 0.15); background: #fff; position: relative; margin-top: 30px; overflow: hidden; }
 
 .actually_card img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50.3%, -47.6%); transform: translate(-50.3%, -47.6%); width: 832px; height: 763px; max-width: none; }
+
+.check_content { width: 340px; }
+
+.check_content .header { margin-bottom: 4px; }
+
+.check_descr { letter-spacing: -0.8px; text-align: justify; margin-right: 25px; }
+
+.check_steps { counter-reset: ch_step; margin-right: 25px; }
+
+.check_step { counter-increment: ch_step; margin-top: 20px; }
+
+.check_step_title { font-family: 'Playfair Display', serif; text-transform: uppercase; font-size: 12px; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 2px; }
+
+.check_step_title::after { content: counter(ch_step); font-size: 16px; margin-left: 10px; }
+
+.check_step_content { text-align: right; line-height: 1.5; }
+
+.check_card { width: 620px; height: 440px; position: relative; }
+
+.check_card_outer { position: relative; margin-left: 72px; margin-right: 78px; }
+
+.check_card_outer .button { position: absolute; z-index: 2; bottom: -66px; right: -56px; }
+
+.check_card::before, .check_card::after { content: ''; position: absolute; top: 48px; left: -56px; width: 644px; height: 100%; background: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); z-index: 1; }
+
+.check_card::after { width: 100%; height: 430px; top: -30px; left: 56px; }
+
+.check_card_img { overflow: hidden; width: 100%; height: 100%; position: relative; background: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); z-index: 2; }
+
+.check_card img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-48.4%, -51%); transform: translate(-48.4%, -51%); width: 1462px; height: 694px; max-width: none; }
 
 .footer { height: 130px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 300; line-height: 48px; text-transform: uppercase; letter-spacing: 3.5px; }
