@@ -3927,6 +3927,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bg_how_real.png": {
+		"ft": 32768,
+		"iS": 714043,
+		"oA": 0,
+		"oAP": "\/img\/bg_how_real.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_price.png": {
 		"ft": 32768,
 		"iS": 517283,
@@ -3970,14 +3978,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/img\/card_how.png": {
-		"ft": 32768,
-		"iS": 309297,
-		"oA": 0,
-		"oAP": "\/img\/card_how.png",
-		"oF": 0,
-		"opt": 0
 		},
 	"\/img\/logo.svg": {
 		"ft": 2097152,

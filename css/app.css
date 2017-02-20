@@ -736,7 +736,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .button { letter-spacing: 4px; }
 
-.wrap { height: 100vh; background: url(../img/bg.png) center no-repeat; background-size: contain; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.wrap { height: 100vh; background: url(../img/bg.png) center no-repeat; background-size: contain; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-attachment: fixed; }
 
 .wrap_card { background: url(../img/bg_card.png) center bottom no-repeat; }
 
@@ -744,7 +744,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_how { background: url(../img/bg_how.png) 30px center no-repeat; }
 
-.wrap_price { background: url(../img/bg_price.png) center no-repeat; background-attachment: fixed; }
+.wrap_price { background: url(../img/bg_price.png) center no-repeat; }
 
 .head { height: 52px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 0 55px; margin-top: 48px; }
 
@@ -828,9 +828,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .actually_descr { font-size: 20px; line-height: 1.3; margin-top: 15px; margin-bottom: 33px; }
 
-.actually_card { width: 680px; height: 480px; box-shadow: 0 0 65px rgba(0, 0, 0, 0.15); background: #fff; position: relative; margin-top: 30px; overflow: hidden; }
-
-.actually_card img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50.3%, -47.6%); transform: translate(-50.3%, -47.6%); width: 832px; height: 763px; max-width: none; }
+.actually_card { width: 680px; height: 480px; box-shadow: 0 0 65px rgba(0, 0, 0, 0.15); background: #fff; position: relative; margin-top: 30px; overflow: hidden; background: url(../img/card.svg) no-repeat; background-size: 832px; background-attachment: fixed; background-position: right calc(50vw - 546px) bottom -18px; }
 
 .check_content { width: 340px; }
 
@@ -858,9 +856,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .check_card::after { width: 100%; height: 430px; top: -30px; left: 56px; }
 
-.check_card_img { overflow: hidden; width: 100%; height: 100%; position: relative; background: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); z-index: 2; }
-
-.check_card img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-48.4%, -51%); transform: translate(-48.4%, -51%); width: 1462px; height: 694px; max-width: none; }
+.check_card_img { overflow: hidden; width: 100%; height: 100%; position: relative; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); z-index: 2; background: #fff url(../img/card_check.svg) no-repeat; background-size: 1462px; background-attachment: fixed; background-position: right -249px center; }
 
 .how { padding-top: 30px; }
 
@@ -868,7 +864,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .how_card { position: relative; width: 595px; height: 425px; margin-top: 54px; }
 
-.how_card::before { content: ''; position: absolute; top: -34px; left: -96px; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/card_how.png) center no-repeat; }
+.how_card::before { content: ''; position: absolute; top: -34px; left: -96px; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/bg_how_real.png) 30px center no-repeat; background-attachment: fixed; }
 
 .how_card_inner { position: relative; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; z-index: 2; padding: 45px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
