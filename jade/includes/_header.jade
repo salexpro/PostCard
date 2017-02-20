@@ -1,14 +1,14 @@
 header.head
-    .head_hamb
+    .head_hamb(class=(page=='price')?"is_active":"")
         .head_hamb_inner
     a.head_logo(href="./")
         img(src="./img/logo.svg", alt="PostcardActually")
-    nav.head_nav
+    nav.head_nav(class=(page=='price')?"is_active":"")
         ul.menu
             li
                 a(href="#") BLOG
             li(class=(page=='price')?"active":"")
-                a(href="#") PRICING
+                a(href="./price.html") PRICING
             li
                 a(href="#") CONTACT
     select.select7.select7_dropdown.select7_remove_current.head_lang

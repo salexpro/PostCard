@@ -728,6 +728,12 @@ html, body { -webkit-overflow-scrolling: touch; }
 
 select.select7 { visibility: hidden; }
 
+table { width: 100%; table-layout: fixed; border-spacing: 9px 7px; border-collapse: separate; }
+
+table th, table td { padding: 4px 10px; border: 1px solid #e5e5e5; text-align: center; }
+
+table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; }
+
 .button { letter-spacing: 4px; }
 
 .wrap { height: 100vh; background: url(../img/bg.png) center no-repeat; background-size: contain; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
@@ -737,6 +743,8 @@ select.select7 { visibility: hidden; }
 .wrap_wreath { background: url(../img/bg_wreath.png) right center no-repeat; }
 
 .wrap_how { background: url(../img/bg_how.png) 30px center no-repeat; }
+
+.wrap_price { background: url(../img/bg_price.png) center no-repeat; background-attachment: fixed; }
 
 .head { height: 52px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 0 55px; margin-top: 48px; }
 
@@ -873,5 +881,21 @@ select.select7 { visibility: hidden; }
 .how_step_title { margin-bottom: 6px; color: #8d4c58; }
 
 .how_step_label { position: absolute; right: 0; top: 8px; font-family: 'Playfair Display', serif; font-size: 26px; text-transform: uppercase; padding-left: 20px; background-color: #fff; }
+
+.price { padding-top: 30px; }
+
+.price_card { position: relative; width: 875px; height: 237px; }
+
+.price_card_inner { position: relative; z-index: 2; width: 100%; height: 100%; background-color: #fff; box-shadow: 0 0 60px rgba(0, 0, 0, 0.17); padding: 23px 13px; }
+
+.price_card::before, .price_card::after { content: ''; position: absolute; top: 45px; left: -60px; width: 820px; height: 230px; background: #fff url(../img/bg_price_real.png) center no-repeat; background-attachment: fixed; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); }
+
+.price_card::after { width: 785px; top: -58px; left: 120px; }
+
+.price_card .header { position: absolute; top: -110px; left: -60px; }
+
+.price_card .button { position: absolute; right: -35px; bottom: -16px; }
+
+.price_card_hint { position: absolute; bottom: -65px; left: -60px; }
 
 .footer { height: 130px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 300; line-height: 48px; text-transform: uppercase; letter-spacing: 3.5px; }

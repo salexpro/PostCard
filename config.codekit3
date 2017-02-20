@@ -3927,6 +3927,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bg_price.png": {
+		"ft": 32768,
+		"iS": 517283,
+		"oA": 0,
+		"oAP": "\/img\/bg_price.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_price_real.png": {
+		"ft": 32768,
+		"iS": 549409,
+		"oA": 0,
+		"oAP": "\/img\/bg_price_real.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_wreath.png": {
 		"ft": 32768,
 		"iS": 229486,
@@ -4184,6 +4200,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/place_video.webm",
+		"oF": 0
+		},
+	"\/price.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/price.html",
 		"oF": 0
 		},
 	"\/scss\/_settings.scss": {

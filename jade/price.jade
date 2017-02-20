@@ -1,0 +1,60 @@
+- var page = 'price'
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_price
+            include includes/_header
+            section.content.price
+                .price_card
+                    .price_card_inner
+                        .header.header_medium
+                            | Pricing.
+                        table
+                            thead
+                                tr
+                                    th Country
+                                    th Card+ delivery
+                                    th 
+                                        | Video
+                                        br
+                                        | views 10
+                                    th
+                                        | Video
+                                        br
+                                        | views 25
+                                    th
+                                        | Video
+                                        br
+                                        | views 50
+                                    th 
+                                        | Video
+                                        br
+                                        | views 100
+                            tbody
+                                tr
+                                    td USA 
+                                    td $ 3.75
+                                    td +$ 2
+                                    td +$ 3
+                                    td +$ 4
+                                    td +$ 5
+                                tr
+                                    td Japan
+                                    td $ 4.5
+                                    td +$ 2
+                                    td +$ 3
+                                    td +$ 4
+                                    td +$ 5
+                                tr
+                                    td Canada
+                                    td $ 3
+                                    td +$ 2
+                                    td +$ 3
+                                    td +$ 4
+                                    td +$ 5
+                        a.button(href="#")
+                            | OPEN FULL LIST
+                        .price_card_hint
+                            | Video views are how many times your recipient will be able to watch your video message.
+            include includes/_footer
