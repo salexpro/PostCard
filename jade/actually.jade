@@ -1,0 +1,17 @@
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_card
+            include includes/_header
+            section.content.actually
+                .actually_header
+                    .header.header_medium
+                        | A postcard actually.
+                    .actually_header_descr
+                        | This is a simple postcard. There are millions of these around being sent to millions of recipients. But we added a feature to this card that makes it a postcard actually.
+                    a.button(href="#")
+                        | CLICK TO OPEN
+                .actually_card
+                    img(src="./img/card-opt.svg", alt="")
+            include includes/_footer

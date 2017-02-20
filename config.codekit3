@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25504",
 "files": {
+	"\/actually.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/actually.html",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3893,21 +3899,43 @@
 		"oF": 0,
 		"opt": 1
 		},
-	"\/img\/logo.png": {
+	"\/img\/bg_card.png": {
 		"ft": 32768,
-		"iS": 2505,
+		"iS": 795198,
 		"oA": 0,
-		"oAP": "\/img\/logo.png",
+		"oAP": "\/img\/bg_card.png",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/play_button.png": {
-		"ft": 32768,
-		"iS": 9277,
-		"oA": 0,
-		"oAP": "\/img\/play_button.png",
+	"\/img\/card-opt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/card-opt.svg",
 		"oF": 0,
-		"opt": 1
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/card.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/card.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/social\/fb.png": {
 		"ft": 32768,
@@ -3947,6 +3975,46 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/jade\/actually.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/actually.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/add.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/add.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/check.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/check.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/choose.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/choose.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/how.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/how.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/jade\/includes\/_footer.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -3976,6 +4044,70 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/play.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/play.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/price.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/price.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/record.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/record.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/register.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/register.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/start.jadepick.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/start.jadepick.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/thank.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/thank.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/views.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/views.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/whom.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/whom.html",
 		"oF": 0,
 		"oS": 0
 		},

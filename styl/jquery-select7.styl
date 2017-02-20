@@ -1,10 +1,11 @@
 normalColor = #000
 hoverColor = #9d9d9d
 borderColor = #ccc
+selectWidth = 34px
 selectHeight = 28px
 borderRadius = 4px
-paddingV = 5px
-paddingH = 10px
+paddingV = 2px
+paddingH = 5px
 optionFontSize = 14px
 
 .select7
@@ -31,31 +32,27 @@ optionFontSize = 14px
 		.select7
 			&__current
 				height auto
-				padding 0 paddingH 0 paddingH
+				padding 0
 				border 0 none
 				position relative
 				cursor pointer
-				background-color transparent
-				&:hover
-					.select7
-						&__current-value
-							color hoverColor
-						&__caret
-							border-color normalColor transparent transparent
+				color hoverColor
+				&-value
+					overflow visible
+					display inline-block
+					border-bottom 1px solid normalColor
+					min-width selectWidth
+					text-align center
 			&__drop
 				z-index 1000
 				top 0
 				left 0
 				min-width 100%
-				padding selectHeight 0 5px
+				padding selectHeight + 2 0 0
 				margin-top -3px
 				border-width 1px
 				border-radius borderRadius
 				background-clip padding-box
-			&__current-value
-				overflow visible
-				display inline-block
-				border-bottom 1px solid normalColor
 			&__caret
 				position static
 				margin-top 0
@@ -63,7 +60,7 @@ optionFontSize = 14px
 				transform none
 				margin-top -3px
 			&__option
-				padding paddingV paddingH + 4
+				padding paddingV paddingH
 
 	&_noopts
 		.select7__caret
@@ -91,11 +88,12 @@ optionFontSize = 14px
 		background-color #fff
 		padding paddingV (paddingH + 12) paddingV paddingH
 		cursor pointer
-		height selectHeight
+		height selectHeight	
 		&-value
 			overflow ellipsis
 			display block
 			padding 0 5px
+			transition 300ms
 
 	&__drop
 		display none
@@ -107,12 +105,6 @@ optionFontSize = 14px
 		padding selectHeight 0 5px
 		margin 0
 		font-size optionFontSize
-		background-color #fff
-		border-width 1px
-		border-style solid
-		border-color borderColor
-		border-radius borderRadius
-		box-shadow 0 3px 4px rgba(0,0,0,.1)
 		background-clip padding-box
 	&__drop-list
 		list-style none
@@ -121,7 +113,7 @@ optionFontSize = 14px
 		max-height 168px
 		overflow-y auto
 		-webkit-overflow-scrolling touch
-
+		width calc(100% - 16px)
 	&__caret
 		position absolute
 		top 50%
@@ -135,7 +127,7 @@ optionFontSize = 14px
 		border-width 12px 6px 0 6px
 		border-style solid
 		border-color normalColor transparent transparent
-		transition border-color .1s linear
+		transition all .1s linear
 
 	&__option
 	&__optgroup
@@ -148,6 +140,7 @@ optionFontSize = 14px
 		white-space nowrap
 	&__option
 		cursor pointer
+		text-align center
 		transition background-color .2s ease-in-out
 		.select7_readonly &
 			transition none
@@ -219,25 +212,11 @@ optionFontSize = 14px
 				border-color transparent
 				box-shadow none
 				background-color transparent
-				&:hover
-					.select7
-						&__current-value
-							border-color transparent
-						&__caret
-							border-color transparent transparent normalColor
 			&__caret
-				border-color transparent transparent normalColor
-				border-width 0 6px 12px 6px
+				transform rotate(90deg)
 			&__drop
 				display block
 		&.select7_dropdown
 			.select7
 				&__current
 					box-shadow none
-					&-value
-						border-color transparent
-					&:hover
-						.select7__caret
-							border-color transparent transparent normalColor
-				&__caret
-					border-color transparent transparent normalColor

@@ -20,38 +20,34 @@
 }
 .select7_dropdown {
   display: inline-block;
-  margin: 0 -5px;
+  margin: 0 0px;
   line-height: 26px;
 }
 .select7_dropdown .select7__current {
   height: auto;
-  padding: 0 10px 0 10px;
+  padding: 0;
   border: 0 none;
   position: relative;
   cursor: pointer;
-  background-color: transparent;
-}
-.select7_dropdown .select7__current:hover .select7__current-value {
   color: #9d9d9d;
 }
-.select7_dropdown .select7__current:hover .select7__caret {
-  border-color: #000 transparent transparent;
+.select7_dropdown .select7__current-value {
+  overflow: visible;
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  min-width: 34px;
+  text-align: center;
 }
 .select7_dropdown .select7__drop {
   z-index: 1000;
   top: 0;
   left: 0;
   min-width: 100%;
-  padding: 28px 0 5px;
+  padding: 30px 0 0;
   margin-top: -3px;
   border-width: 1px;
   border-radius: 4px;
   background-clip: padding-box;
-}
-.select7_dropdown .select7__current-value {
-  overflow: visible;
-  display: inline-block;
-  border-bottom: 1px solid #000;
 }
 .select7_dropdown .select7__caret {
   position: static;
@@ -61,7 +57,7 @@
   margin-top: -3px;
 }
 .select7_dropdown .select7__option {
-  padding: 5px 14px;
+  padding: 2px 5px;
 }
 .select7_noopts .select7__caret {
   display: none;
@@ -88,7 +84,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
-  padding: 5px 22px 5px 10px;
+  padding: 2px 17px 2px 5px;
   cursor: pointer;
   height: 28px;
 }
@@ -96,6 +92,7 @@
   overflow: ellipsis;
   display: block;
   padding: 0 5px;
+  transition: 300ms;
 }
 .select7__drop {
   display: none;
@@ -107,12 +104,6 @@
   padding: 28px 0 5px;
   margin: 0;
   font-size: 14px;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ccc;
-  border-radius: 4px;
-  box-shadow: 0 3px 4px rgba(0,0,0,0.1);
   background-clip: padding-box;
 }
 .select7__drop-list {
@@ -122,6 +113,7 @@
   max-height: 168px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  width: calc(100% - 16px);
 }
 .select7__caret {
   position: absolute;
@@ -136,13 +128,13 @@
   border-width: 12px 6px 0 6px;
   border-style: solid;
   border-color: #000 transparent transparent;
-  transition: border-color 0.1s linear;
+  transition: all 0.1s linear;
 }
 .select7__option,
 .select7__optgroup {
   display: block;
   overflow: hidden;
-  padding: 5px 15px;
+  padding: 2px 10px;
   clear: both;
   text-decoration: none;
   color: #1a1a1a;
@@ -150,6 +142,7 @@
 }
 .select7__option {
   cursor: pointer;
+  text-align: center;
   transition: background-color 0.2s ease-in-out;
 }
 .select7_readonly .select7__option {
@@ -198,7 +191,7 @@
 }
 .select7__icon {
   display: inline-block;
-  height: 17px;
+  height: 23px;
   margin-right: 5px;
   vertical-align: text-top;
   text-align: center;
@@ -228,28 +221,12 @@
   box-shadow: none;
   background-color: transparent;
 }
-.select7_open .select7__current:hover .select7__current-value {
-  border-color: transparent;
-}
-.select7_open .select7__current:hover .select7__caret {
-  border-color: transparent transparent #000;
-}
 .select7_open .select7__caret {
-  border-color: transparent transparent #000;
-  border-width: 0 6px 12px 6px;
+  transform: rotate(90deg);
 }
 .select7_open .select7__drop {
   display: block;
 }
 .select7_open.select7_dropdown .select7__current {
   box-shadow: none;
-}
-.select7_open.select7_dropdown .select7__current-value {
-  border-color: transparent;
-}
-.select7_open.select7_dropdown .select7__current:hover .select7__caret {
-  border-color: transparent transparent #000;
-}
-.select7_open.select7_dropdown .select7__caret {
-  border-color: transparent transparent #000;
 }

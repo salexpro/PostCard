@@ -233,7 +233,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: .72em 1em;
+$button-padding: .72em 1.3em;
 $button-margin: 0;
 $button-fill: solid;
 $button-background: $black;
@@ -379,8 +379,8 @@ $mediaobject-image-width-stacked: 100%;
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
-$menu-item-color-active: $white;
-$menu-item-background-active: map-get($foundation-palette, primary);
+$menu-item-color-active: $secondary-color;
+$menu-item-background-active: none;
 $menu-icon-spacing: 0.25rem;
 
 // 23. Meter

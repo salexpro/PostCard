@@ -26,8 +26,7 @@ html, body{
 [type='time'],
 [type='url'],
 [type='color'],
-textarea,
-select {
+textarea {
     outline: none;
 }
 
@@ -36,17 +35,23 @@ button{
     outline: none;
 }
 
+select.select7{
+    visibility: hidden;
+}
+
 .button{
     letter-spacing: 4px;
 }
 
 .wrap{
     height: 100vh;
-    background: url(/img/bg.png) center no-repeat;
+    background: url(../img/bg.png) center no-repeat;
     background-size: contain;
-    // @include clearfix;
     display: flex;
     flex-direction: column;
+    &_card{
+        background: url(../img/bg_card.png) center bottom no-repeat;
+    }
 }
 
 .head{
@@ -101,8 +106,8 @@ button{
     &_nav{
         position: absolute;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 25%;
+        max-width: 400px;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
         font-size: 14px;
@@ -113,16 +118,18 @@ button{
         opacity: 0;
         letter-spacing: 2px;
         &.is_active{
-            transform: translate(45px, -50%);
+            transform: translateX(45px);
             z-index: 1;
             opacity: 1;
+        }
+        .menu{
+            flex-wrap: wrap;
         }
         li{
             margin-left: 20px;
             &:hover, &.active{
                 a{
-                    color: $secondary-color;
-                    box-shadow: 0 1px 0 $black
+                    box-shadow: 0 1px 0 $black;
                 }
             }
             a{
@@ -163,6 +170,9 @@ button{
         line-height: 0.3;
         margin-bottom: 38px;
     }
+    &_medium{
+        font-size: 78px;
+    }
     &_small{
         font-size: 18.5px;
     }
@@ -171,18 +181,17 @@ button{
 .content{
     flex-grow: 1;
     margin: 0 120px;
-}
-
-.main{
     display: flex;
     position: relative;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+}
+
+.main{   
     &_header{
-        position: absolute;
-        left: 30px;
         z-index: 2;
         width: 254px;
+        margin-right: -70px;
         text-align: right;
         .header{
             margin-bottom: 32px;
@@ -203,7 +212,10 @@ button{
             display: inline-block;
             letter-spacing: 4px;
             img{
+                width: 20px;
+                height: 20px;
                 margin-right: 10px;
+                margin-top: -2px;
             }
         }
     }
@@ -218,23 +230,110 @@ button{
             display: flex;
             align-items: center;
             &:hover{
-                .main_video_button{
+                .paused{
                     opacity: 0.42;
                     z-index: 2;
                 }
             }
         }
-        &_button{
+        &_button {
+             $duration: 300ms;
+             $sin: 0.866;
+             $size: 105px;
+             $border: $size/3.95;
+             border: $size*0.12 solid $white;
+             border-radius: 50%;
+             padding: $size*0.45;
+             width: $size;
+             height: $size;
+             font-size: 0;
+             white-space: nowrap;
+             text-align: center;
+             cursor: pointer;
+             position: absolute;
+             left: 50%;
+             top: 50%;
+             transform: translate(-50%,-50%);
+             box-sizing: content-box;
+             opacity: 0.42;
+             &:hover{
+                transform: scale(1.1) translate(-45%, -45%);
+                transform-origin: center;
+             }
+             &,
+             &::before,
+             &::after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                transition: all $duration;
+                transition-tiomig-function: cubic-bezier(1, 0, 0, 1);
+             }
+             &::before {
+                 margin-left: $size/6;
+                 border-left: $size*$sin/2 solid $white;
+                 border-top: $border solid transparent;
+                 border-bottom: $border solid transparent;
+                 border-right: 0px solid transparent;
+                 height: $size - 2*$border;
+             }
+             &::after {
+                 margin: 0;
+                 border-left: $size*$sin/2.1 solid $white;
+                 border-top: $border solid transparent;
+                 border-bottom: $border solid transparent;
+                 height: 0px;
+                 transform: translateX(-0.3px)
+             }
+             &.paused {
+                opacity: 0;
+                z-index: -1;
+                &::before,
+                &::after {
+                    margin: 0;
+                    border-left: $size*0.25 solid $white;
+                    border-top: 0 solid transparent;
+                    border-bottom: 0 solid transparent;
+                    height: $size;
+                }
+                &::before {
+                    border-right: $size*0.3 solid transparent;
+                }
+             }
+         }
+    }
+}
+
+.actually{
+    &_header{
+        width: 390px;
+        margin-right: -125px;
+        z-index: 2;
+        align-self: flex-end;
+        margin-bottom: 14px;
+        &_descr{
+            font-size: 20px;
+            line-height: 1.3;
+            margin-top: 15px;
+            margin-bottom: 33px;
+        }
+    }
+    &_card{
+        width: 680px;
+        height: 480px;
+        box-shadow: 0 0 65px rgba(0, 0, 0, 0.15);
+        background: $white;
+        position: relative;
+        margin-top: 30px;
+        overflow: hidden;
+        img{
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            width: 219px;
-            height: 219px;
-            opacity: 0;
-            z-index: 0;
-            background: url(/img/play_button.png) center no-repeat;
-            transition: 300ms
+            transform: translate(-50.3%, -47.6%);
+            width: 832px;
+            height: 763px;
+            max-width: none;
         }
     }
 }
