@@ -948,7 +948,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .start_header_descr { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; text-align: center; letter-spacing: 10px; min-height: 16px; }
 
-.start_container { width: 100%; max-width: 1130px; margin: auto; margin-top: 25px; box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1); padding: 45px 70px; padding-right: 90px; }
+.start_container { width: 100%; max-width: 1130px; margin: auto; margin-top: 25px; box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1); padding: 45px 90px 20px 70px; }
 
 .start_cards { height: 47vh; min-height: 370px; }
 
@@ -958,9 +958,13 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .start_card { max-width: calc(25% - 30px); margin: 0 15px; margin-bottom: 13px; opacity: 0; -webkit-transition: 300ms; transition: 300ms; }
 
-.start_card_img { position: relative; border: 1px solid #b3b3b3; margin-bottom: 8px; }
+.start_card:hover .start_card_img { box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.31); }
 
-.start_card_actions { position: absolute; right: 0; bottom: 0; }
+.start_card:hover .start_card_actions { opacity: 1; }
+
+.start_card_img { position: relative; border: 1px solid #b3b3b3; margin-bottom: 8px; -webkit-transition: 300ms; transition: 300ms; }
+
+.start_card_actions { position: absolute; right: 0; bottom: 0; opacity: 0; -webkit-transition: 300ms; transition: 300ms; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .start_card_actions a { display: block; width: 40px; height: 40px; background: #000; padding: 10px; -webkit-transition: 300ms; transition: 300ms; margin-left: 2px; }
 

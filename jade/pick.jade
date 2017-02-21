@@ -1,0 +1,39 @@
+- var page = 'start'
+mixin card(img, title)
+    .start_card
+        .start_card_img
+            img(src=img, alt=title)
+            .start_card_actions
+                a(href="#")
+                    img(src="./img/check.svg", alt="Select")
+                a(href="#")
+                    img(src="./img/zoom.svg", alt="Zoom")
+        .start_card_title
+            =title
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap
+            include includes/_header
+            section.content.start
+                .start_header
+                    .header.header_medium
+                        | Pick a card design.
+                    .start_header_descr
+                        | Christmas/New Year
+                .start_container
+                    .start_cards
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+                        +card('//unsplash.it/212/148')
+            include includes/_footer

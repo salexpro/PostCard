@@ -651,8 +651,7 @@ table{
         margin: auto;
         margin-top: 25px;
         box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1);
-        padding: 45px 70px;
-        padding-right: 90px;
+        padding: 45px 90px 20px 70px;
     }
     &_cards{
         height: 47vh;
@@ -672,15 +671,27 @@ table{
         margin-bottom: 13px;
         opacity: 0;
         transition: 300ms;
+        &:hover{
+            .start_card_img{
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.31);
+            }
+            .start_card_actions{
+                opacity: 1;
+            }
+        }
         &_img{
             position: relative;
             border: 1px solid #b3b3b3;
             margin-bottom: 8px;
+            transition: 300ms
         }
         &_actions{
             position: absolute;
             right: 0;
             bottom: 0;
+            opacity: 0;
+            transition: 300ms;
+            display: flex;
             a{
                 display: block;
                 width: 40px;

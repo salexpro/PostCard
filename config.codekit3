@@ -15,6 +15,12 @@
 		"oAP": "\/about.html",
 		"oF": 0
 		},
+	"\/add.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/add.html",
+		"oF": 0
+		},
 	"\/android-chrome-192x192.png": {
 		"ft": 32768,
 		"iS": 2796,
@@ -3707,6 +3713,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3877,6 +3893,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jade\/zoom.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/zoom.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/js\/app.js": {
 		"ft": 64,
 		"mi": 1,
@@ -3904,6 +3928,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/jquery-select7.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery-select7.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3920,6 +3953,12 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/pick.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/pick.html",
+		"oF": 0
+		},
 	"\/place_video.mp4": {
 		"ft": 8192,
 		"oA": 2,
@@ -3932,10 +3971,34 @@
 		"oAP": "\/place_video.webm",
 		"oF": 0
 		},
+	"\/plan.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/plan.html",
+		"oF": 0
+		},
+	"\/play.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/play.html",
+		"oF": 0
+		},
 	"\/price.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/price.html",
+		"oF": 0
+		},
+	"\/record.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/record.html",
+		"oF": 0
+		},
+	"\/register.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/register.html",
 		"oF": 0
 		},
 	"\/safari-pinned-tab.svg": {
@@ -4005,6 +4068,24 @@
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
+		},
+	"\/thank.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/thank.html",
+		"oF": 0
+		},
+	"\/video.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/video.html",
+		"oF": 0
+		},
+	"\/whom.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/whom.html",
+		"oF": 0
 		}
 	},
 "hooks": [
