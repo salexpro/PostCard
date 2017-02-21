@@ -1,0 +1,17 @@
+- var page = 'about'
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_card
+            include includes/_header
+            section.content.about
+                .about_content
+                    .header.header_large
+                        | A postcard about.
+                    .about_descr
+                        | This is a simple postcard. There are millions of these around being sent to millions of recipients. But we added a feature to this card that makes it a postcard about.
+                    a.button(href="./check.html")
+                        | CLICK TO OPEN
+                .about_card
+            include includes/_footer

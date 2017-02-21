@@ -9,10 +9,10 @@
 	],
 "creatorBuild": "25504",
 "files": {
-	"\/actually.html": {
+	"\/about.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/actually.html",
+		"oAP": "\/about.html",
 		"oF": 0
 		},
 	"\/android-chrome-192x192.png": {
@@ -21,7 +21,7 @@
 		"oA": 0,
 		"oAP": "\/android-chrome-192x192.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/android-chrome-256x256.png": {
 		"ft": 32768,
@@ -29,7 +29,7 @@
 		"oA": 0,
 		"oAP": "\/android-chrome-256x256.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/apple-touch-icon.png": {
 		"ft": 32768,
@@ -37,7 +37,7 @@
 		"oA": 0,
 		"oAP": "\/apple-touch-icon.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/bower.json": {
 		"ft": 524288,
@@ -115,438 +115,6 @@
 		"oAP": "\/bower_components\/foundation-sites\/.travis.yml",
 		"oF": 0
 		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/006eaa59b31a7ec2c11a267f27d764a27afa0cd2\/foundation-flex.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/006eaa59b31a7ec2c11a267f27d764a27afa0cd2\/foundation-flex.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/006eaa59b31a7ec2c11a267f27d764a27afa0cd2\/foundation-rtl.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/006eaa59b31a7ec2c11a267f27d764a27afa0cd2\/foundation-rtl.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/006eaa59b31a7ec2c11a267f27d764a27afa0cd2\/foundation.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/006eaa59b31a7ec2c11a267f27d764a27afa0cd2\/foundation.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_classes.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_classes.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_column.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_column.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_flex-grid.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_flex-grid.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_grid.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_grid.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_gutter.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_gutter.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_layout.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_layout.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_position.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_position.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_row.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_row.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_size.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/1483290e05315a03eb7e2ea899144932b7cbb8eb\/_size.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_accordion-menu.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_accordion-menu.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_accordion.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_accordion.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_badge.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_badge.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_breadcrumbs.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_breadcrumbs.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_button-group.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_button-group.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_button.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_button.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_callout.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_callout.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_close-button.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_close-button.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_drilldown.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_drilldown.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_dropdown-menu.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_dropdown-menu.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_dropdown.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_dropdown.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_flex-video.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_flex-video.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_flex.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_flex.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_float.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_float.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_label.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_label.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_media-object.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_media-object.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_menu-icon.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_menu-icon.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_menu.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_menu.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_off-canvas.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_off-canvas.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_orbit.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_orbit.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_pagination.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_pagination.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_progress-bar.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_progress-bar.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_reveal.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_reveal.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_slider.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_slider.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_sticky.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_sticky.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_switch.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_switch.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_table.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_table.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_tabs.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_tabs.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_thumbnail.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_thumbnail.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_title-bar.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_title-bar.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_tooltip.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_tooltip.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_top-bar.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_top-bar.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_visibility.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/573b53de355f30903e2b89b497794faa759c0646\/_visibility.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_alignment.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_alignment.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_base.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_base.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_helpers.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_helpers.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_print.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_print.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_typography.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/c59dfc1983b047c184a157e096c3f3f2ed5b3122\/_typography.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_checkbox.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_checkbox.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_error.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_error.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_fieldset.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_fieldset.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_forms.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_forms.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_help-text.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_help-text.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_input-group.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_input-group.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_label.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_label.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_meter.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_meter.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_progress.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_progress.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_range.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_range.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_select.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_select.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_text.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d01153ba2916f8b1f1a57dcea61adf3e1508dbc3\/_text.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_breakpoint.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_breakpoint.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_color.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_color.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_flex.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_flex.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_mixins.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_mixins.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_selector.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_selector.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_unit.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_unit.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_util.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_util.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_value.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/d9148754aed38e4b5b9c9e95b959580996b3fef4\/_value.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/e89fe4faaf9f7404bfcef517137732dd2ae49b78\/_global.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/e89fe4faaf9f7404bfcef517137732dd2ae49b78\/_global.scssc",
-		"oF": 0
-		},
-	"\/bower_components\/foundation-sites\/assets\/.sass-cache\/e89fe4faaf9f7404bfcef517137732dd2ae49b78\/foundation.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/foundation-sites\/assets\/.sass-cache\/e89fe4faaf9f7404bfcef517137732dd2ae49b78\/foundation.scssc",
-		"oF": 0
-		},
 	"\/bower_components\/foundation-sites\/assets\/foundation-flex.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -611,36 +179,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/bower_components\/foundation-sites\/css\/foundation-flex.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/bower_components\/foundation-sites\/css\/foundation-flex.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/bower_components\/foundation-sites\/css\/foundation-rtl.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/bower_components\/foundation-sites\/css\/foundation-rtl.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/bower_components\/foundation-sites\/css\/foundation.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/bower_components\/foundation-sites\/css\/foundation.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/bower_components\/foundation-sites\/customizer\/complete.json": {
 		"ft": 524288,
@@ -2192,6 +1730,82 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/bower_components\/jquery-mousewheel\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-mousewheel\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery-mousewheel\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-mousewheel\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery-mousewheel\/ChangeLog.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-mousewheel\/ChangeLog.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/jquery-mousewheel\/jquery.mousewheel.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-mousewheel\/jquery.mousewheel.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/jquery-mousewheel\/jquery.mousewheel.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-mousewheel\/jquery.mousewheel.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/jquery-mousewheel\/LICENSE.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-mousewheel\/LICENSE.txt",
+		"oF": 0
+		},
+	"\/bower_components\/jquery-mousewheel\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-mousewheel\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/bower_components\/jquery\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -3162,6 +2776,68 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/bower_components\/malihu-custom-scrollbar-plugin\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/malihu-custom-scrollbar-plugin\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/malihu-custom-scrollbar-plugin\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/malihu-custom-scrollbar-plugin\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.concat.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.concat.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/malihu-custom-scrollbar-plugin\/jquery.mCustomScrollbar.min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/malihu-custom-scrollbar-plugin\/mCSB_buttons.png": {
+		"ft": 32768,
+		"iS": 2998,
+		"oA": 2,
+		"oAP": "\/bower_components\/malihu-custom-scrollbar-plugin\/mCSB_buttons.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/bower_components\/motion-ui\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -3899,7 +3575,7 @@
 		"oA": 0,
 		"oAP": "\/favicon-16x16.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/favicon-32x32.png": {
 		"ft": 32768,
@@ -3907,7 +3583,7 @@
 		"oA": 0,
 		"oAP": "\/favicon-32x32.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/favicon.ico": {
 		"ft": 8192,
@@ -3969,7 +3645,7 @@
 		"oA": 0,
 		"oAP": "\/img\/bg_card.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/bg_how.png": {
 		"ft": 32768,
@@ -3977,7 +3653,7 @@
 		"oA": 0,
 		"oAP": "\/img\/bg_how.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/bg_how_real.png": {
 		"ft": 32768,
@@ -3985,7 +3661,7 @@
 		"oA": 0,
 		"oAP": "\/img\/bg_how_real.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/bg_price.png": {
 		"ft": 32768,
@@ -3993,7 +3669,7 @@
 		"oA": 0,
 		"oAP": "\/img\/bg_price.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/bg_price_real.png": {
 		"ft": 32768,
@@ -4001,21 +3677,13 @@
 		"oA": 0,
 		"oAP": "\/img\/bg_price_real.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/bg_wreath.png": {
 		"ft": 32768,
 		"iS": 826641,
 		"oA": 0,
 		"oAP": "\/img\/bg_wreath.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/bg_wreath_old.png": {
-		"ft": 32768,
-		"iS": 229486,
-		"oA": 0,
-		"oAP": "\/img\/bg_wreath_old.png",
 		"oF": 0,
 		"opt": 1
 		},
@@ -4049,37 +3717,15 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/social\/fb.png": {
-		"ft": 32768,
-		"iS": 521,
-		"oA": 0,
-		"oAP": "\/img\/social\/fb.png",
+	"\/img\/zoom.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/zoom.svg",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/social\/inst.png": {
-		"ft": 32768,
-		"iS": 615,
-		"oA": 0,
-		"oAP": "\/img\/social\/inst.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/social\/vk.png": {
-		"ft": 32768,
-		"iS": 634,
-		"oA": 0,
-		"oAP": "\/img\/social\/vk.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/social\/yt.png": {
-		"ft": 32768,
-		"iS": 525,
-		"oA": 0,
-		"oAP": "\/img\/social\/yt.png",
-		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
@@ -4087,11 +3733,11 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/jade\/actually.jade": {
+	"\/jade\/about.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/actually.html",
+		"oAP": "\/about.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4108,14 +3754,6 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/check.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/jade\/choose.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/choose.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4159,6 +3797,22 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jade\/pick.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/pick.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/plan.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/plan.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/jade\/play.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -4191,11 +3845,11 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/start.jadepick.jade": {
+	"\/jade\/start.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/start.jadepick.html",
+		"oAP": "\/start.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4207,11 +3861,11 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/views.jade": {
+	"\/jade\/video.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/views.html",
+		"oAP": "\/video.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4264,7 +3918,7 @@
 		"oA": 0,
 		"oAP": "\/mstile-150x150.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/place_video.mp4": {
 		"ft": 8192,
@@ -4333,6 +3987,12 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/start.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/start.html",
+		"oF": 0
+		},
 	"\/styl\/jquery-select7.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -4355,7 +4015,8 @@
 	"creationDate": 505831586,
 	"displayValue": "PostCard",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-jake"
+	"iconImageName": "meme-jake",
+	"lastBuiltDate": 509346448
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

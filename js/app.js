@@ -19,3 +19,11 @@ if(video){
         $('.main_video_button').toggleClass('paused');
     });
 }
+
+// Custom scrollbar
+if($('.start_cards').length){
+    $('.start_cards').mCustomScrollbar({
+        scrollbarPosition: 'outside',
+        autoDraggerLength: true
+    });
+}

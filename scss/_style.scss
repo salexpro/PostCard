@@ -12,6 +12,19 @@ html, body{
     -webkit-overflow-scrolling: touch
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #ccc;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+}
+
 [type='text'],
 [type='password'],
 [type='date'],
@@ -61,13 +74,42 @@ table{
     letter-spacing: 4px;
 }
 
+.mCSB_scrollTools{
+    .mCSB_dragger{
+        &:hover .mCSB_dragger_bar{
+            background-color: darken($primary-color, 5);
+        }
+        .mCSB_dragger_bar{
+            width: 1px;
+            background-color: $primary-color !important;
+            &::after{
+                content: '';
+                position: absolute;
+                top: calc(50% - 10.5px);
+                left: -11px;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: 2px solid $primary-color;
+                background: radial-gradient($primary-color 4px, $white 5px);
+            }
+        }
+    }
+    .mCSB_draggerRail{
+        width: 1px;
+        background-color: $black;
+    }
+}
+
 .wrap{
-    height: 100vh;
-    background: url(../img/bg.png) center no-repeat;
-    background-size: contain;
+    height: 100vh;   
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
+    &_main{
+        background: url(../img/bg.png) center no-repeat;
+        background-size: contain;
+    }
     &_card{
         background: url(../img/bg_card.png) no-repeat;
         background-position: center bottom calc(50vh - 410px);
@@ -81,6 +123,27 @@ table{
     }
     &_price{
         background: url(../img/bg_price.png) center no-repeat;       
+    }
+}
+
+.header{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+    &_accent{
+        font-size: 152px;
+        line-height: 0.3;
+        margin-bottom: 38px;
+    }
+    &_small{
+        font-size: 18.5px;
+    }
+    &_medium{
+        font-size: 50px;
+    }
+    &_large{
+        font-size: 78px;
     }
 }
 
@@ -179,34 +242,21 @@ table{
         list-style: none;
         a{
             display: block;
-            height: 21px;
+            width: 22px;
+            height: 22px;
             margin-bottom: 16px;
+            &:hover .cls-1{
+                fill: $primary-color;
+            }
         }
-        img{
-            display: block;
+        .cls-1{
+            fill: $black;
+            transition: 300ms;
         }
     }
     &_lang{
         width: auto;
         text-transform: uppercase;
-    }
-}
-
-.header{
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 1.2;
-    &_accent{
-        font-size: 152px;
-        line-height: 0.3;
-        margin-bottom: 38px;
-    }
-    &_medium{
-        font-size: 78px;
-    }
-    &_small{
-        font-size: 18.5px;
     }
 }
 
@@ -336,7 +386,7 @@ table{
     }
 }
 
-.actually{
+.about{
     padding-top: 30px;
     &_content{
         width: 390px;
@@ -570,8 +620,89 @@ table{
     }
 }
 
+.start{
+    flex-direction: column;
+    padding-top: 30px;
+    min-height: 565px;
+    &_header{
+        .header::after{
+            content: '';
+            display: block;
+            margin: auto;
+            width: 239px;
+            height: 1px;
+            background: $black;
+            opacity: 0.15;
+            margin-top: 10px;
+            margin-bottom: 14px;
+        }
+        &_descr{
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 10px;
+            min-height: 16px;
+        }
+    }
+    &_container{
+        width: 100%;
+        max-width: 1130px;
+        margin: auto;
+        margin-top: 25px;
+        box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1);
+        padding: 45px 70px;
+        padding-right: 90px;
+    }
+    &_cards{
+        height: 47vh;
+        min-height: 370px;
+        .mCSB_container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .start_card{
+                opacity: 1;
+            }
+        }
+    }
+    &_card{
+        max-width: calc(25% - 30px);
+        margin: 0 15px;
+        margin-bottom: 13px;
+        opacity: 0;
+        transition: 300ms;
+        &_img{
+            position: relative;
+            border: 1px solid #b3b3b3;
+            margin-bottom: 8px;
+        }
+        &_actions{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            a{
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: $black;
+                padding: 10px;
+                transition: 300ms;
+                margin-left: 2px;
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+        &_title{
+            min-height: 19px;
+        }
+    }
+}
+
 .footer{
     height: 130px;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;

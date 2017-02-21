@@ -1,0 +1,35 @@
+- var page = 'start'
+mixin card(img, title)
+    .start_card
+        .start_card_img
+            img(src=img, alt=title)
+            .start_card_actions
+                a(href="#")
+                    img(src="./img/zoom.svg", alt="Zoom")
+        .start_card_title
+            =title
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap
+            include includes/_header
+            section.content.start
+                .start_header
+                    .header.header_medium
+                        | Let’s start by choosing card occasion.
+                .start_container
+                    .start_cards
+                        +card('//unsplash.it/212/148', 'Birthday')
+                        +card('//unsplash.it/212/148', 'Christmas and New Year')
+                        +card('//unsplash.it/212/148', 'St Valentine’s Day')
+                        +card('//unsplash.it/212/148', 'Wedding')
+                        +card('//unsplash.it/212/148', 'Wedding Invitations')
+                        +card('//unsplash.it/212/148', 'Mother’s Day')
+                        +card('//unsplash.it/212/148', 'Father’s Day')
+                        +card('//unsplash.it/212/148', 'Easter')
+                        +card('//unsplash.it/212/148', 'Birthday')
+                        +card('//unsplash.it/212/148', 'Christmas and New Year')
+                        +card('//unsplash.it/212/148', 'St Valentine’s Day')
+                        +card('//unsplash.it/212/148', 'Wedding')
+            include includes/_footer
