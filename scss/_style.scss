@@ -73,6 +73,29 @@ table{
 .button{
     letter-spacing: 4px;
     text-transform: uppercase;
+    &.arrow{
+        &_right{
+            &::after{
+                content: '';
+                display: inline-block;
+                border: 6px solid transparent; border-left: 10px solid $white;
+                border-right: 0;
+                margin-left: 10px;
+                margin-bottom: -1px;
+                margin-right: -20px;
+            }
+        }
+    }
+}
+
+.progress{
+    outline: none;
+    border: 1px solid $white;
+    box-shadow: inset 0 0 3px $medium-gray, 0 0 3px $medium-gray;
+    &-meter{
+        border-radius: 5px;
+        box-shadow: inset 0 0 3px $medium-gray;
+    }
 }
 
 .mCSB_scrollTools{
@@ -128,6 +151,9 @@ table{
     &_video{
         background: url(../img/bg_video.png) center no-repeat;    
     }
+    &_add{
+        background: url(../img/bg_add.png) center no-repeat;  
+    }
 }
 
 .header{
@@ -135,11 +161,6 @@ table{
     font-size: 35px;
     font-weight: 700;
     line-height: 1.2;
-    &_accent{
-        font-size: 152px;
-        line-height: 0.3;
-        margin-bottom: 38px;
-    }
     &_small{
         font-size: 18.5px;
     }
@@ -148,6 +169,14 @@ table{
     }
     &_large{
         font-size: 78px;
+    }
+    &_largest{
+        font-size: 98px;
+    }
+    &_accent{
+        font-size: 152px;
+        line-height: 0.3;
+        margin-bottom: 38px;
     }
 }
 
@@ -738,23 +767,194 @@ table{
     }
     &_variant{
         width: 295px;
+        height: 490px;
         box-shadow: 0 0 65px rgba(0, 0, 0, 0.15);
+        &_add{
+            .video_variant_img{
+                height: 325px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-bottom: 0;
+            }
+            .video_variant_content{
+                height: 165px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
         &_img{
             height: 350px;
             border: 40px solid $white;
             border-top-width: 30px;
             border-bottom-width: 25px;
-            background: rgba(#ededed, 0.75);
+            background: rgba($white, 0.75);
             text-align: center;
             padding: 95px 10px 0 20px;
+            box-shadow: inset 0 0 65px rgba(0, 0, 0, 0.15);
+        }
+        &_progress{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+            margin-bottom: 45px;    
+            .uil-spin-css {
+                background: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                height: 200px;
+                transform: scale(.75) translate(-50%, -50%);
+                transform-origin: top left
+            }
+
+            @keyframes uil-spin-css {
+                0% {
+                    opacity: 1;
+                    -ms-transform: scale(2);
+                    -moz-transform: scale(2);
+                    -webkit-transform: scale(2);
+                    -o-transform: scale(2);
+                    transform: scale(2);
+                }
+                100% {
+                    opacity: 0.1;
+                    -ms-transform: scale(1);
+                    -moz-transform: scale(1);
+                    -webkit-transform: scale(1);
+                    -o-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+
+            .uil-spin-css > div {
+                width: 12px;
+                height: 12px;
+                margin-left: 10px;
+                margin-top: 10px;
+                position: absolute;
+            }
+
+            .uil-spin-css > div > div {
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                background: #e4b4ae;
+            }
+
+            .uil-spin-css > div:nth-of-type(1) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0s;
+            }
+
+            .uil-spin-css > div:nth-of-type(1) {
+                transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+            }
+
+            .uil-spin-css > div:nth-of-type(2) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.12s;
+            }
+
+            .uil-spin-css > div:nth-of-type(2) {
+                transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+            }
+
+            .uil-spin-css > div:nth-of-type(3) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.25s;
+            }
+
+            .uil-spin-css > div:nth-of-type(3) {
+                transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+            }
+
+            .uil-spin-css > div:nth-of-type(4) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.37s;
+            }
+
+            .uil-spin-css > div:nth-of-type(4) {
+                transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+            }
+
+            .uil-spin-css > div:nth-of-type(5) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.5s;
+            }
+
+            .uil-spin-css > div:nth-of-type(5) {
+                transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+            }
+
+            .uil-spin-css > div:nth-of-type(6) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.62s;
+            }
+
+            .uil-spin-css > div:nth-of-type(6) {
+                transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+            }
+
+            .uil-spin-css > div:nth-of-type(7) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.75s;
+            }
+
+            .uil-spin-css > div:nth-of-type(7) {
+                transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+            }
+
+            .uil-spin-css > div:nth-of-type(8) > div {
+                animation: uil-spin-css 1s linear infinite;
+                animation-delay: 0.87s;
+            }
+
+            .uil-spin-css > div:nth-of-type(8) {
+                transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+            }
         }
         &_content{
+            height: 140px;
             background-color: $white;
-            padding: 75px 40px;
-            padding-top: 0;
+            padding: 0 40px;
+            [type="file"]{
+                display: none;
+            }
             .button{
+                width: 100%;
                 line-height: 1.5;
             }
+            p{
+                font-size: 18px;
+                margin: 10px 0 0;
+            }
+        }
+    }
+}
+
+.add{
+    padding-top: 30px;
+    &_header{
+        margin-right: 60px;
+        .header{
+            line-height: .9;
+            margin-bottom: .2em;
+        }
+    }
+    &_next{
+        margin-left: 200px;
+        margin-bottom: -373px;
+        .button{
+            width: 190px;
         }
     }
 }

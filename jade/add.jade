@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_add
+            include includes/_header
+            section.content.add
+                .add_header
+                    .header.header_largest
+                        | Add
+                        br
+                        | video
+                    .header.header_medium
+                        | from your file.
+                .video_variant.video_variant_add
+                    .video_variant_img
+                        .video_variant_progress
+                            | 35%
+                            .uil-spin-css
+                                div
+                                    div
+                                div
+                                    div
+                                div
+                                    div
+                                div
+                                    div
+                                div
+                                    div
+                                div
+                                    div
+                                div
+                                    div
+                                div
+                                    div
+                        .video_variant_progress_bar
+                            .progress(role='progressbar', tabindex='0', aria-valuenow='35', aria-valuemin='0', aria-valuetext='35 percent', aria-valuemax='100')
+                                span.progress-meter(style='width: 35%')
+                    .video_variant_content
+                        input(type="file" id="video")
+                        label.button(for="video")
+                            | CHOOSE FILE
+                        p Max size 30MB
+                .add_next
+                    a.button.primary.arrow_right(href="#")
+                        | next
+            include includes/_footer

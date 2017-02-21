@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94.17 94.17">
+    <defs>
+        <style>
+        .cls-1 {
+            fill: url(#Безымянный_градиент_90);
+        }
+        
+        .cls-2 {
+            fill: url(#Безымянный_градиент_90-2);
+        }
+        
+        .cls-3 {
+            fill: url(#Безымянный_градиент_90-3);
+        }
+        
+        .cls-4 {
+            fill: url(#Безымянный_градиент_90-4);
+        }
+        
+        .cls-5 {
+            fill: url(#Безымянный_градиент_90-5);
+        }
+        
+        .cls-6 {
+            fill: url(#Безымянный_градиент_90-6);
+        }
+        </style>
+        <linearGradient id="Безымянный_градиент_90" x1="-0.57" y1="70.18" x2="110.59" y2="70.18" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ce919a" />
+            <stop offset="0.28" stop-color="#ce919a" />
+            <stop offset="0.54" stop-color="#ce959a" />
+            <stop offset="1" stop-color="#fbd3c2" />
+        </linearGradient>
+        <linearGradient id="Безымянный_градиент_90-2" x1="-0.57" y1="43.28" x2="110.59" y2="43.28" gradientTransform="translate(81.52 -54.66) rotate(60)" xlink:href="#Безымянный_градиент_90" />
+        <linearGradient id="Безымянный_градиент_90-3" x1="-0.57" y1="18.93" x2="110.59" y2="18.93" gradientTransform="translate(54.51 -56.58) rotate(59.99)" xlink:href="#Безымянный_градиент_90" />
+        <linearGradient id="Безымянный_градиент_90-4" x1="-0.57" y1="4.86" x2="110.59" y2="4.86" xlink:href="#Безымянный_градиент_90" />
+        <linearGradient id="Безымянный_градиент_90-5" x1="-0.57" y1="5.53" x2="110.59" y2="5.53" gradientTransform="translate(17.81 -19.79) rotate(60)" xlink:href="#Безымянный_градиент_90" />
+        <linearGradient id="Безымянный_градиент_90-6" x1="-0.57" y1="20.71" x2="110.59" y2="20.71" xlink:href="#Безымянный_градиент_90" />
+    </defs>
+    <title>spin</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Слой_1-2" data-name="Слой 1">
+            <path class="cls-1" d="M88.23,64.4a6.68,6.68,0,1,0,2.45,9.12A6.68,6.68,0,0,0,88.23,64.4Z" />
+            <circle class="cls-2" cx="88.1" cy="43.28" r="6.07" transform="translate(6.57 97.93) rotate(-60)" />
+            <circle class="cls-3" cx="76.26" cy="18.93" r="5.46" transform="translate(21.73 75.5) rotate(-59.99)" />
+            <path class="cls-4" d="M55.54.65a4.85,4.85,0,1,0,1.78,6.63A4.85,4.85,0,0,0,55.54.65Z" />
+            <circle class="cls-5" cx="26.04" cy="5.52" r="4.25" transform="translate(8.24 25.32) rotate(-60)" />
+            <path class="cls-6" d="M5.46,17.56a3.64,3.64,0,1,0,1.34,5A3.64,3.64,0,0,0,5.46,17.56Z" />
+        </g>
+    </g>
+</svg>

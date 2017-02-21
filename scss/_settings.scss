@@ -239,7 +239,7 @@ $button-fill: solid;
 $button-background: $black;
 $button-background-hover: $primary-color;
 $button-color: $white;
-$button-color-alt: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -441,11 +441,11 @@ $pagination-arrows: true;
 // 27. Progress Bar
 // ----------------
 
-$progress-height: 1rem;
-$progress-background: $medium-gray;
+$progress-height: 10px;
+$progress-background: $white;
 $progress-margin-bottom: $global-margin;
 $progress-meter-background: $primary-color;
-$progress-radius: $global-radius;
+$progress-radius: 5px;
 
 // 28. Reveal
 // ----------
