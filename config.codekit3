@@ -3685,6 +3685,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/bg_video.png": {
+		"ft": 32768,
+		"iS": 639813,
+		"oA": 0,
+		"oAP": "\/img\/bg_video.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_wreath.png": {
 		"ft": 32768,
 		"iS": 826641,
@@ -3728,6 +3736,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/record.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/record.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/upload.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/upload.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

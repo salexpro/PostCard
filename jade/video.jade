@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_video
+            include includes/_header
+            section.content.video
+                .video_content
+                    .header.header_large
+                        | Thanks.
+                    .video_descr
+                        | Now please add your personal video to your card:
+                        br
+                        | nothing works better than your own live video.
+                .video_variants
+                    .video_variant
+                        .video_variant_img
+                            img(src="./img/record.svg", alt="Record")
+                        .video_variant_content
+                            a.button(href="./record.html")
+                                | record yourself now
+                    .video_variant
+                        .video_variant_img
+                            img(src="./img/upload.svg", alt="Upload")
+                        .video_variant_content
+                            a.button(href="./add.html")
+                                | add video from your file
+            include includes/_footer
