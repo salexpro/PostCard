@@ -3677,6 +3677,22 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/bg_plan.png": {
+		"ft": 32768,
+		"iS": 357378,
+		"oA": 0,
+		"oAP": "\/img\/bg_plan.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_plan_real.png": {
+		"ft": 32768,
+		"iS": 382370,
+		"oA": 0,
+		"oAP": "\/img\/bg_plan_real.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_price.png": {
 		"ft": 32768,
 		"iS": 517283,

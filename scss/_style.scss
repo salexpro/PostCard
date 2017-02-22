@@ -51,8 +51,10 @@ button{
 a{
     color: $black;
     transition: color 300ms;
-    &:hover{
-        color: $primary-color;
+    &:hover, &:focus{
+        path{
+            fill: $primary-color
+        }
     }
 }
 
@@ -178,6 +180,9 @@ table{
     }
     &_register{
         background: fixed url(../img/bg_register.png) center no-repeat;
+    }
+    &_plan{
+        background: fixed url(../img/bg_plan.png) center no-repeat;
     }
 }
 
@@ -348,11 +353,6 @@ table{
             margin-top: 20px;
             display: inline-block;
             letter-spacing: 4px;
-            &:hover{
-                path{
-                    fill: $primary-color
-                }
-            }
             svg{
                 display: inline-block;
                 width: 20px;
@@ -1132,6 +1132,81 @@ table{
         }
         &_forgot{
             margin-bottom: 20px;
+        }
+    }
+}
+
+.plan{
+    &_content{
+        width: 290px;
+        .header{
+            font-size: 30px;
+        }
+        &_descr{
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+            margin-right: 10px;
+        }
+    }
+    &_items{
+        display: flex;
+        margin-left: 55px;
+        position: relative;
+        [type="radio"]{
+            display: none;
+            &:checked + label .plan_item_bg{
+                box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+                opacity: 1;
+                border-color: #989696;
+            }
+        }
+        .button{
+            position: absolute;
+            right: 0;
+            bottom: -90px;
+        }
+    }
+    &_item{
+        width: 146px;
+        height: 258px;
+        margin: 0 45px 0 0 !important;
+        position: relative;
+        padding: 70px 25px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 45px;
+        &:hover{
+            .plan_item_bg{
+                opacity: 1;
+                transform: scale(1.1)
+            }
+        }
+        &:last-of-type{
+            margin: 0 !important;
+        }
+        &_bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $white url(../img/bg_plan_real.png) center no-repeat;
+            background-attachment: fixed;
+            opacity: 0.4;
+            transition: 300ms;
+            border: 1px solid transparent;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+        }
+        &_label{
+            height: 40px;
+            border: 1px solid #bebebe;
+            background-color: $white;
+            position: relative;
+            font-size: 18px;
+            text-align: center;
+            line-height: 38px;
         }
     }
 }
