@@ -3701,6 +3701,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bg_register.png": {
+		"ft": 32768,
+		"iS": 333253,
+		"oA": 0,
+		"oAP": "\/img\/bg_register.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_video.png": {
 		"ft": 32768,
 		"iS": 639813,
@@ -3737,11 +3745,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/check.svg": {
+	"\/img\/card_register.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/check.svg",
+		"oAP": "\/img\/card_register.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/zoom.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/zoom.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -3772,16 +3800,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/upload.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/zoom.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/zoom.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

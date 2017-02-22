@@ -1,5 +1,3 @@
-// $(document).foundation();
-
 // Menu
 $('.head_hamb').click(function(){
     $('.head_hamb, .head_nav').toggleClass('is_active');

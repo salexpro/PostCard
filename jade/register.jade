@@ -1,0 +1,37 @@
+- var page = 'register'
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_register
+            include includes/_header
+            section.content.register
+                .register_content
+                    .header
+                        .header_large
+                            | Register or log in.
+                        | Please register or log in to save your work.
+                    .register_content_descr
+                        | Please note, that we will not be emailing you unless you ask us to send you a copy of the postcard you  are about to create. We need your email just as a virtual ID to link your card to a video you are planning to add to the card. 
+                .register_card
+                    .register_card_inner
+                        ul#register.tabs(data-tabs)
+                            li.tabs-title.is-active
+                                a(href='#new', aria-selected='true')
+                                    | New user
+                            li.tabs-title
+                                a(href='#have')
+                                    | I have an account
+                        .tabs-content(data-tabs-content='register')
+                            #new.tabs-panel.is-active
+                                form.register_form(action="")
+                                    input(type="email" placeholder="Enter your email address here")
+                                    input(type="password" placeholder="Create a password")
+                                    input(type="password" placeholder="Re-enter password")
+                            #have.tabs-panel
+                                form.register_form(action="")
+                                    input(type="email" placeholder="Enter your email address here")
+                                    input(type="password" placeholder="Enter your password")
+                                    a.register_form_forgot(href="#")
+                                        | Forgot password?
+            include includes/_footer

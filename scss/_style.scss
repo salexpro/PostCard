@@ -149,33 +149,35 @@ table{
     height: 100vh;   
     display: flex;
     flex-direction: column;
-    background-attachment: fixed;
     &_main{
-        background: url(../img/bg.png) center no-repeat;
+        background: fixed url(../img/bg.png) center no-repeat;
         background-size: contain;
     }
     &_card{
-        background: url(../img/bg_card.png) no-repeat;
+        background: fixed url(../img/bg_card.png) no-repeat;
         background-position: center bottom calc(50vh - 410px);
     }
     &_wreath{
-        background: url(../img/bg_wreath.png) no-repeat;
+        background: fixed url(../img/bg_wreath.png) no-repeat;
         background-position: right calc(50vw - 904px) center;
     }
     &_how{
-        background: url(../img/bg_how.png) center no-repeat;
+        background: fixed url(../img/bg_how.png) center no-repeat;
     }
     &_price{
-        background: url(../img/bg_price.png) center no-repeat;       
+        background: fixed url(../img/bg_price.png) center no-repeat;       
     }
     &_video{
-        background: url(../img/bg_video.png) center no-repeat;    
+        background: fixed url(../img/bg_video.png) center no-repeat;    
     }
     &_add{
-        background: url(../img/bg_add.png) center no-repeat;
+        background: fixed url(../img/bg_add.png) center no-repeat;
     }
     &_record{
-        background: url(../img/bg_record.png) center no-repeat;
+        background: fixed url(../img/bg_record.png) center no-repeat;
+    }
+    &_register{
+        background: fixed url(../img/bg_register.png) center no-repeat;
     }
 }
 
@@ -208,6 +210,7 @@ table{
     position: relative;
     margin: 0 55px;
     margin-top: 48px;
+    margin-bottom: 30px;
     &_inner{
         display: flex;
         align-items: center;
@@ -448,7 +451,6 @@ table{
 }
 
 .about{
-    padding-top: 30px;
     &_content{
         width: 390px;
         margin-right: -125px;
@@ -477,7 +479,6 @@ table{
 }
 
 .check{
-    padding-top: 30px;
     &_content{
         width: 340px;
         .header{
@@ -564,7 +565,6 @@ table{
 }
 
 .how{
-    padding-top: 30px;
     &_header{
         width: 330px;
         margin-right: 40px;
@@ -632,7 +632,6 @@ table{
 }
 
 .price{
-    padding-top: 30px;
     &_card{
         position: relative;
         width: 875px;
@@ -683,7 +682,6 @@ table{
 
 .start{
     flex-direction: column;
-    padding-top: 30px;
     min-height: 565px;
     &_header{
         .header::after{
@@ -773,7 +771,6 @@ table{
 }
 
 .video{
-    padding-top: 30px;
     &_content{
         width: 450px;
         background-color: $white;
@@ -966,7 +963,6 @@ table{
 }
 
 .add{
-    padding-top: 30px;
     &_header{
         margin-right: 60px;
         .header{
@@ -981,7 +977,6 @@ table{
 }
 
 .record{
-    padding-top: 30px;
     &_card{
         display: flex;
         flex-direction: column;
@@ -1024,6 +1019,120 @@ table{
     }
     &_header{
         font-size: 27px;
+    }
+}
+
+.register{
+    &_content{
+        width: 325px;
+        .header{
+            font-size: 32px;
+        }
+        &_descr{
+            line-height: 1.4;
+            text-align: justify;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+    }
+    &_card{
+        position: relative;
+        width: 423px;
+        height: 283px;
+        margin-left: 145px;
+        &_inner{
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            background-color: $white;
+            position: relative;
+            z-index: 1;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: -75px;
+            bottom: -56px;
+            width: 434px;
+            height: 250px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            background: $white url(../img/card_register.svg) center no-repeat;
+            background-attachment: fixed;
+            background-size: 1146px;
+        }
+        &::after{
+            @extend .register_card::before;
+            left: 70px;
+            bottom: 80px;
+        }
+        .tabs{
+            box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.17);
+            &-title{
+                width: 50%;
+                text-align: center;
+                position: relative;
+                transition: 300ms;
+                background-image: linear-gradient(to right, $white, $white);
+                background-repeat: no-repeat;
+                background-origin: content-box;
+                &:first-child{
+                    padding-right: 20px;
+                    background-position: 220px 0;
+                }
+                &:last-child{
+                    padding-left: 20px;
+                    background-position: -220px 0;
+                    &::after{
+                        display: none;
+                    }
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: -20px;
+                    display: block;
+                    border: 20px solid transparent; 
+                    border-right: 20px solid $white; 
+                    border-bottom: 20px solid $white;
+                    transition: 300ms;
+                }
+                &.is-active{
+                    box-shadow: none;
+                    background-position: 0;
+                    &::after{
+                        border: 20px solid transparent; 
+                        border-bottom: 20px solid $white; 
+                        border-left: 20px solid $white;
+                    }
+                    > a{
+                        color: $black;
+                    }
+                }
+                > a{
+                    color: #9c9c9c;
+                }
+            }
+            &-content{
+                height: calc(100% - 40px);
+            }
+            &-panel{
+                height: 100%;
+            }
+        }
+    }
+    &_form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        input{
+            margin: 0;
+        }
+        &_forgot{
+            margin-bottom: 20px;
+        }
     }
 }
 
