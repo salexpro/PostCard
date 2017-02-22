@@ -3693,6 +3693,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/bg_record.png": {
+		"ft": 32768,
+		"iS": 599234,
+		"oA": 0,
+		"oAP": "\/img\/bg_record.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_video.png": {
 		"ft": 32768,
 		"iS": 639813,
@@ -3754,16 +3762,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/record.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/spin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/spin.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

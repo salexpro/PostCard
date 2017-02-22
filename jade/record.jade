@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_record
+            include includes/_header
+            section.content.record
+                .record_card
+                    .record_card_video
+                        video.main_video(controls)
+                            source(src="./place_video.mp4" type="video/mp4")
+                            source(src="./place_video.webm" type="video/webm")
+                            | Your browser does not support the video tag.
+                            a.button(href="./place_video.mp4") Download video
+                    .record_card_actions
+                        button.record_card_actions_stop
+                        button.record_card_actions_rec
+                .record_content
+                    .record_content_time
+                        | 01:59:00
+                    .record_header
+                        .header.header_large
+                            | Record yourself here.
+                        | You have 2 minutes.
+                    a.button.expanded.max.arrow_right(href="#")
+                        | next
+            include includes/_footer

@@ -12,7 +12,7 @@ html(lang="ru")
                             | you
                         | to a postcard
                         .header_small and ship it to your loved ones.
-                    a.button(href="./start.html")
+                    a.button.expanded(href="./start.html")
                         | CREATE A CARD NOW
                 .main_content
                     .main_video_container
@@ -20,9 +20,12 @@ html(lang="ru")
                             source(src="./place_video.mp4" type="video/mp4")
                             source(src="./place_video.webm" type="video/webm")
                             | Your browser does not support the video tag.
-                            a(href="./place_video.mp4") Download video
+                            a.button(href="./place_video.mp4") Download video
                         button.main_video_button
                     a.main_content_how(href="./how.html")
-                        img(src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MiA1MiI+CiAgICA8Zz4KICAgICAgICA8cGF0aCBkPSJNMjYsMEEyNiwyNiwwLDEsMCw1MiwyNiwyNiwyNiwwLDAsMCwyNiwwWm0wLDQ4LjhBMjIuOCwyMi44LDAsMSwxLDQ4LjgsMjYsMjIuODMsMjIuODMsMCwwLDEsMjYsNDguOFptMCwwIiAvPgogICAgICAgIDxwYXRoIGQ9Ik0yOS4wOSwxNS42M0EyLjY4LDIuNjgsMCwxLDEsMjYuNDEsMTNhMi42OCwyLjY4LDAsMCwxLDIuNjgsMi42OFptMCwwIiAvPgogICAgICAgIDxwYXRoIGQ9Ik0yNS43MSwyMi42N2ExLjYsMS42LDAsMCwwLTEuNiwxLjZ2MTMuNmExLjYsMS42LDAsMCwwLDMuMiwwVjI0LjI3YTEuNiwxLjYsMCwwLDAtMS42LTEuNlptMCwwIiAvPgogICAgPC9nPgo8L3N2Zz4K", alt="")
+                        svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 52 52')
+                            path(d='M26,0A26,26,0,1,0,52,26,26,26,0,0,0,26,0Zm0,48.8A22.8,22.8,0,1,1,48.8,26,22.83,22.83,0,0,1,26,48.8Zm0,0')
+                            path(d='M29.09,15.63A2.68,2.68,0,1,1,26.41,13a2.68,2.68,0,0,1,2.68,2.68Zm0,0')
+                            path(d='M25.71,22.67a1.6,1.6,0,0,0-1.6,1.6v13.6a1.6,1.6,0,0,0,3.2,0V24.27a1.6,1.6,0,0,0-1.6-1.6Zm0,0')
                         | How it works
             include includes/_footer
