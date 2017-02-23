@@ -7,7 +7,7 @@
 		"uuidString": "7D29E042-54F9-4598-AA30-66AF65731051"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
 	"\/about.html": {
 		"ft": 8192,
@@ -3733,6 +3733,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bg_whom.png": {
+		"ft": 32768,
+		"iS": 300977,
+		"oA": 0,
+		"oAP": "\/img\/bg_whom.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_whom_real.png": {
+		"ft": 32768,
+		"iS": 307026,
+		"oA": 0,
+		"oAP": "\/img\/bg_whom_real.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_wreath.png": {
 		"ft": 32768,
 		"iS": 826641,
@@ -5047,6 +5063,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -5375,6 +5395,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -5468,6 +5492,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
