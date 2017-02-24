@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_thank
+            include includes/_header
+            section.content.thank
+                .thank_header
+                    .header
+                        .header_large
+                            | Thank you for your purchase.
+
+                        | Your card is on the way to your recipient.
+                .thank_card
+                    .thank_card_inner
+                        | Would you like to get a copy of the card you just sent to your email?
+                        button.button
+                            | yes
+                        button.button
+                            | no
+                    a.button(href="#")
+                        | SEND ANOTHER POSTCARD ACTUALLY
+            include includes/_footer

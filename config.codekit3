@@ -3725,6 +3725,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bg_thank.png": {
+		"ft": 32768,
+		"iS": 331402,
+		"oA": 0,
+		"oAP": "\/img\/bg_thank.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_video.png": {
 		"ft": 32768,
 		"iS": 639813,
@@ -3782,6 +3790,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/card_register.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/card_thank.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/card_thank.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -3984,14 +4002,6 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/whom.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/jade\/zoom.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/zoom.html",
 		"oF": 0,
 		"oS": 0
 		},
