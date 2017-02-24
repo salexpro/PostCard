@@ -956,11 +956,11 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .main_video_button.paused::before { border-right: 31.5px solid transparent; }
 
-.about_content { width: 390px; margin-right: -125px; z-index: 2; margin-bottom: 14px; }
+.actually_content { width: 390px; margin-right: -125px; z-index: 2; margin-bottom: 14px; }
 
-.about_descr { font-size: 20px; line-height: 1.3; margin-top: 15px; margin-bottom: 33px; }
+.actually_descr { font-size: 20px; line-height: 1.3; margin-top: 15px; margin-bottom: 33px; }
 
-.about_card { width: 680px; height: 480px; box-shadow: 0 0 65px rgba(0, 0, 0, 0.15); background: #fff; position: relative; overflow: hidden; background: url(../img/card.svg) no-repeat; background-size: 832px; background-attachment: fixed; background-position: right calc(50vw - 546px) bottom calc(50vh - 410px); }
+.actually_card { width: 680px; height: 480px; box-shadow: 0 0 65px rgba(0, 0, 0, 0.15); background: #fff; position: relative; overflow: hidden; background: url(../img/card.svg) no-repeat; background-size: 832px; background-attachment: fixed; background-position: right calc(50vw - 546px) bottom calc(50vh - 410px); }
 
 .check_content { width: 340px; }
 
@@ -1262,7 +1262,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .play_card .button { position: absolute; right: 0; bottom: -60px; z-index: 1; }
 
-.play .about_card { width: 645px; height: 448px; background-position: right calc(50vw - 615px) bottom calc(50vh - 410px); z-index: 1; }
+.play .actually_card { width: 645px; height: 448px; background-position: right calc(50vw - 615px) bottom calc(50vh - 410px); z-index: 1; }
 
 .thank_header { width: 540px; position: relative; z-index: 1; }
 
