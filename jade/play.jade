@@ -1,0 +1,31 @@
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_play
+            include includes/_header
+            section.content.play
+                .play_plan
+                    table
+                        tr
+                            td
+                                | Card+  delivery
+                            td
+                                | $ 3.25
+                        tr
+                            td
+                                | Video views 25
+                            td
+                                | +$ 3
+                        tr
+                            td
+                                | Your total
+                            td
+                                | $ 6.25
+                    a.button(href="#")
+                        | CHANGE VIEW PLAN
+                .play_card
+                    .about_card
+                    a.button.expanded.max(href="#")
+                        | play now
+            include includes/_footer

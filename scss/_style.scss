@@ -196,6 +196,10 @@ table{
     &_whom{
         background: fixed url(../img/bg_whom.png) center no-repeat;
     }
+    &_play{
+        background: fixed url(../img/bg_card.png) no-repeat;
+        background-position: right calc(50vw - 615px) bottom calc(50vh - 410px);
+    }
 }
 
 .header{
@@ -1302,6 +1306,62 @@ table{
                 float: right;
             }
         }
+    }
+}
+
+.play{
+    &_plan{
+        width: 482px;
+        height: 258px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+        background-color: $white;
+        margin-right: -70px;
+        position: relative;
+        font-size: 18px;
+        padding: 20px;
+        padding-right: 130px;
+        table{
+            border-spacing: 14px;
+        }
+        td{
+            padding: 11px 10px;
+            &:first-child{
+                width: 60%;
+            }
+        }
+        .button{
+            position: absolute;
+            bottom: -18px;
+            left: calc(50% - 55px);
+            transform: translateX(-50%)
+
+        }
+    }
+    &_card{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            left: -40px;
+            bottom: -45px;
+            width: 645px;
+            height: 448px;
+            background-color: $white;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            z-index: 0;
+        }
+        .button{
+            position: absolute;
+            right: 0;
+            bottom: -60px;
+            z-index: 1;
+        }
+    }
+    .about_card{
+        width: 645px;
+        height: 448px;
+        background-position: right calc(50vw - 615px) bottom calc(50vh - 410px);
+        z-index: 1;
     }
 }
 
