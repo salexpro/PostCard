@@ -45,6 +45,12 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/blog.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blog.html",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3653,6 +3659,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bg_blog.png": {
+		"ft": 32768,
+		"iS": 423697,
+		"oA": 0,
+		"oAP": "\/img\/bg_blog.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg_card.png": {
 		"ft": 32768,
 		"iS": 796232,
@@ -3877,11 +3891,35 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jade\/article.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/article.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/blog.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/blog.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/jade\/check.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/check.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/contacts.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/contacts.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4019,15 +4057,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/app.min.min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery-select7.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery-select7.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

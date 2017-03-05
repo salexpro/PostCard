@@ -1,15 +1,19 @@
 footer.footer
     | postcardactually.com
 script(src="./bower_components/jquery/dist/jquery.min.js")
-script(src="./js/jquery-select7.js")
-if page=='start'
+script(src="./js/jquery-select7.min.js")
+if page == 'start'
     script(src="./bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js")
-if page = 'register'
+if page == 'register' || page == 'blog'
     script(src="./bower_components/foundation-sites/dist/plugins/foundation.core.js")
     script(src="./bower_components/foundation-sites/dist/plugins/foundation.util.mediaQuery.js")
+if page == 'register'
     script(src="./bower_components/foundation-sites/dist/plugins/foundation.util.keyboard.js")
-    //- script(src="./bower_components/foundation-sites/dist/plugins/foundation.util.timerAndImageLoader.js")
     script(src="./bower_components/foundation-sites/dist/plugins/foundation.tabs.js")
+if page == 'blog'
+    script(src="./bower_components/foundation-sites/dist/plugins/foundation.util.triggers.js")
+    script(src="./bower_components/foundation-sites/dist/plugins/foundation.sticky.js")
+if page == 'register' || page == 'blog'
     script.
         $(document).foundation();
 script(src="./js/app.js")
