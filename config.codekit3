@@ -45,6 +45,12 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/article.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/article.html",
+		"oF": 0
+		},
 	"\/blog.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -3656,6 +3662,22 @@
 		"iS": 366539,
 		"oA": 0,
 		"oAP": "\/img\/bg_add.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_article_left.png": {
+		"ft": 32768,
+		"iS": 128746,
+		"oA": 0,
+		"oAP": "\/img\/bg_article_left.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_article_right.png": {
+		"ft": 32768,
+		"iS": 176435,
+		"oA": 0,
+		"oAP": "\/img\/bg_article_right.png",
 		"oF": 0,
 		"opt": 0
 		},

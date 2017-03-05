@@ -886,6 +886,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_blog { background: fixed url(../img/bg_blog.png) center no-repeat; }
 
+.wrap_article { background: fixed url(../img/bg_article_left.png) left bottom no-repeat, fixed url(../img/bg_article_right.png) right 53px no-repeat; }
+
 .header { font-family: 'Playfair Display', serif; font-size: 35px; font-weight: 700; line-height: 1.2; }
 
 .header_small { font-size: 18.5px; }
@@ -1300,13 +1302,13 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .blog_articles { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: -47px; }
 
-.blog_article { position: relative; max-width: 380px; width: calc(50% - 30px); box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; margin-right: 30px; margin-bottom: 47px; padding: 9px 28px 30px; }
+.blog_article { position: relative; max-width: 380px; width: calc(50% - 30px); box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; margin-right: 30px; margin-bottom: 47px; padding: 9px 28px 20px; }
 
 .blog_article .header { font-size: 30px; }
 
 .blog_article_date { color: #7a7a7a; font-size: 14px; }
 
-.blog_article_brief { line-height: 1.58; margin-top: 10px; }
+.blog_article_brief { line-height: 1.58; margin: 10px 0; }
 
 .blog_article .button { position: absolute; left: 50%; bottom: -17px; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
@@ -1327,5 +1329,15 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 .blog_pager > a.current, .blog_pager > b.current { border-bottom: 1px solid; }
 
 .blog_pager > a img, .blog_pager > b img { margin-top: -3px; }
+
+.article { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.article_tags { margin-bottom: 7px; }
+
+.article_tags a { color: #7a7a7a; margin-right: 30px; }
+
+.article_tags a:hover { text-decoration: underline; }
+
+.article .blog_article_brief:last-child { margin-bottom: 0; }
 
 .footer { height: 130px; min-height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 300; line-height: 48px; text-transform: uppercase; letter-spacing: 3.5px; }

@@ -207,6 +207,9 @@ table{
     &_blog{
         background: fixed url(../img/bg_blog.png) center no-repeat;
     }
+    &_article{
+        background: fixed url(../img/bg_article_left.png) left bottom no-repeat, fixed url(../img/bg_article_right.png) right 53px no-repeat;
+    }
 }
 
 .header{
@@ -1444,7 +1447,7 @@ table{
         background-color: $white;
         margin-right: 30px;
         margin-bottom: 47px;
-        padding: 9px 28px 30px;
+        padding: 9px 28px 20px;
         .header{
             font-size: 30px;
         }
@@ -1454,7 +1457,7 @@ table{
         }
         &_brief{
             line-height: 1.58;
-            margin-top: 10px;
+            margin: 10px 0;
         }
         .button{
             position: absolute;
@@ -1498,6 +1501,24 @@ table{
                 margin-top: -3px;
             }
         }
+    }
+}
+
+.article{
+    flex-direction: column;
+    align-items: flex-start;
+    &_tags{
+        margin-bottom: 7px;
+        a{
+            color: $secondary-color;
+            margin-right: 30px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .blog_article_brief:last-child{
+        margin-bottom: 0;
     }
 }
 

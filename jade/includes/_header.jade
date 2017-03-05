@@ -1,6 +1,6 @@
 header.head
     .head_inner
-        .head_hamb(class=(page=='blog'||page=='price'||page=='contact')?"is_active":"")
+        .head_hamb(class=(page=='blog'||page=='article'||page=='price'||page=='contact')?"is_active":"")
             .head_hamb_inner
         a.head_logo(href="./")
             img(src="./img/logo.svg", alt="PostcardActually")
@@ -8,9 +8,9 @@ header.head
             option en
             option sp
             option uk
-    nav.head_nav(class=(page=='blog'||page=='price'||page=='contact')?"is_active":"")
+    nav.head_nav(class=(page=='blog'||page=='article'||page=='price'||page=='contact')?"is_active":"")
         ul.menu
-            li(class=(page=='blog')?"active":"")
+            li(class=(page=='blog'||page=='article')?"active":"")
                 a(href="./blog.html") Blog
             li(class=(page=='price')?"active":"")
                 a(href="./price.html") PRICING

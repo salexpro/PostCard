@@ -25,22 +25,3 @@ if($('.start_cards').length){
         autoDraggerLength: true
     });
 }
-
-// Sticky sidebar
-// if($('.blog_sidebar').length){
-//     if($(window).height()>760){
-//         $('.blog_sidebar').css('position','fixed')
-//         $(window).scroll(function(){
-//             if($(document).scrollTop() < 100){
-//                 $('.blog_sidebar').css('top', 130 - $(document).scrollTop())
-//             } else if(($(document).height() - ($('.blog_sidebar').offset().top + $(window).height())) > 100){
-//                 $('.blog_sidebar').css('top', '30px');
-//             } else {
-//                 $('.blog_sidebar').css({
-//                     top: 'auto',
-//                     bottom: 130 - ($(document).height() - ($(window).scrollTop() + $(window).height()))
-//                 })
-//             }
-//         })
-//     }
-// }
