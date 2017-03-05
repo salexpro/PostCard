@@ -38,23 +38,26 @@ html, body{
 [type='tel'],
 [type='time'],
 [type='url'],
-[type='color'], {
+[type='color']{
     outline: none;
     height: 38px;
     padding: 0 18px;
 }
 
 [type="submit"],
-button,
-textarea{
+button{
     outline: none;
 }
 
 textarea{
-    border: 0 !important;
-    padding-left: 0;
     resize: none;
-    line-height: 1.6;
+    height: auto;
+    padding: 10px 18px;
+    &.clear{
+        border: 0 !important;
+        padding-left: 0;    
+        line-height: 1.6;
+    }
 }
 
 a{
@@ -92,14 +95,11 @@ table{
 .button{
     letter-spacing: 4px;
     text-transform: uppercase;
-    &.expanded{
-        width: 100%;
-        &.min{
-            min-width: 190px;
-        }
-        &.max{
-            max-width: 190px;
-        }
+    &.min{
+        min-width: 190px;
+    }
+    &.max{
+        max-width: 190px;
     }
     &.higher{
         line-height: 1.5;
@@ -209,6 +209,9 @@ table{
     }
     &_article{
         background: fixed url(../img/bg_article_left.png) left bottom no-repeat, fixed url(../img/bg_article_right.png) right 53px no-repeat;
+    }
+    &_contact{
+        background: fixed url(../img/bg_contact.png) center no-repeat;
     }
 }
 
@@ -1519,6 +1522,60 @@ table{
     }
     .blog_article_brief:last-child{
         margin-bottom: 0;
+    }
+}
+
+.contact{
+    .header{
+        margin-bottom: 20px;
+    }
+    &_header{
+        font-size: 18px;
+        line-height: 1.7;
+        margin-right: 105px;
+    }
+    &_card{
+        position: relative;
+        width: 420px;
+        height: 440px;
+        &::before{
+            content: '';
+            position: absolute;
+            left: -75px;
+            bottom: -40px;
+            width: 237px;
+            height: 391px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+            background: $white fixed url(../img/bg_contact_real.png) center no-repeat;
+        }
+        &::after{
+            @extend .contact_card::before;
+            left: auto;
+            bottom: auto;
+            right: -80px;
+            top: -40px;
+            width: 297px;
+            height: 382px;
+        }
+        &_inner{
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            padding: 20px 35px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
+        }
+        input{
+            margin-bottom: 28px;
+        }
+        .button{
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+            margin: 0;
+        }
     }
 }
 

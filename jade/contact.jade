@@ -1,0 +1,27 @@
+- var page = 'contact'
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_contact
+            include includes/_header
+            section.content.contact
+                .contact_header
+                    .header.header_medium
+                        | Contact Us
+                    | Tel:​ 
+                    a(href="tel:+38 098 98 240 20")
+                        | +38 098 98 240 20
+                    br
+                    | Email: 
+                    a(href="maiilto:messageonwine@gmail.com")
+                        | messageonwine@gmail.com
+                .contact_card
+                    form.contact_card_inner(action="")
+                        .header.header_medium
+                            | Customer Care
+                        input(type="text"  placeholder="Name")
+                        input(type="email" placeholder="E-mail")
+                        textarea(rows="7" placeholder="Message")
+                        input.button.expanded.max(type="submit" value="Send")
+            include includes/_footer

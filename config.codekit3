@@ -3567,6 +3567,12 @@
 		"oAP": "\/check.html",
 		"oF": 0
 		},
+	"\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/contact.html",
+		"oF": 0
+		},
 	"\/css\/app.css": {
 		"aP": 0,
 		"bl": 0,
@@ -3696,6 +3702,22 @@
 		"oAP": "\/img\/bg_card.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/img\/bg_contact.png": {
+		"ft": 32768,
+		"iS": 709008,
+		"oA": 0,
+		"oAP": "\/img\/bg_contact.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bg_contact_real.png": {
+		"ft": 32768,
+		"iS": 727663,
+		"oA": 0,
+		"oAP": "\/img\/bg_contact_real.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/img\/bg_how.png": {
 		"ft": 32768,
@@ -3937,11 +3959,11 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/contacts.jade": {
+	"\/jade\/contact.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/contacts.html",
+		"oAP": "\/contact.html",
 		"oF": 0,
 		"oS": 0
 		},
