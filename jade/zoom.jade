@@ -1,0 +1,25 @@
+- var page = 'zoom'
+doctype html
+html(lang="ru")
+    include includes/_head
+    body
+        main.wrap.wrap_start
+            include includes/_header
+            section.content.start
+                .start_header
+                    .header.header_medium
+                        | Pick a card design.
+                    .start_header_descr
+                        | Christmas/New Year
+                .zoom_container
+                    .zoom_img
+                        img(src="//unsplash.it/555/390", alt="")
+                    .zoom_controls
+                        a.zoom_controls_prev(href="#")
+                        a.zoom_controls_next(href="#")      
+                    .zoom_actions
+                        a(href="./pick.html")
+                            img(src="./img/icons/cat.svg", alt="To category")
+                        a(href="./video.html")
+                            img(src="./img/icons/check.svg", alt="Select")
+            include includes/_footer

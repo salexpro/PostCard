@@ -2,11 +2,11 @@
 mixin card(img, title)
     .start_card
         .start_card_img
-            img(src=img, alt=title)
+            img(src="//unsplash.it/212/148", alt=title)
             .start_card_actions
-                a(href="#")
+                a(href="./video.html")
                     img(src="./img/icons/check.svg", alt="Select")
-                a(href="#")
+                a(href="./zoom.html")
                     img(src="./img/icons/zoom.svg", alt="Zoom")
         .start_card_title
             =title
@@ -24,16 +24,16 @@ html(lang="ru")
                         | Christmas/New Year
                 .start_container
                     .start_cards
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
-                        +card('//unsplash.it/212/148')
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
+                        +card
             include includes/_footer

@@ -2,9 +2,9 @@
 mixin card(img, title)
     .start_card
         .start_card_img
-            img(src=img, alt=title)
+            img(src="//unsplash.it/212/148", alt=title)
             .start_card_actions
-                a(href="#")
+                a(href="./zoom.html")
                     img(src="./img/icons/zoom.svg", alt="Zoom")
         .start_card_title
             =title
@@ -12,7 +12,7 @@ doctype html
 html(lang="ru")
     include includes/_head
     body
-        main.wrap
+        main.wrap.wrap_start
             include includes/_header
             section.content.start
                 .start_header
@@ -20,16 +20,16 @@ html(lang="ru")
                         | Let’s start by choosing card occasion.
                 .start_container
                     .start_cards
-                        +card('//unsplash.it/212/148', 'Birthday')
-                        +card('//unsplash.it/212/148', 'Christmas and New Year')
-                        +card('//unsplash.it/212/148', 'St Valentine’s Day')
-                        +card('//unsplash.it/212/148', 'Wedding')
-                        +card('//unsplash.it/212/148', 'Wedding Invitations')
-                        +card('//unsplash.it/212/148', 'Mother’s Day')
-                        +card('//unsplash.it/212/148', 'Father’s Day')
-                        +card('//unsplash.it/212/148', 'Easter')
-                        +card('//unsplash.it/212/148', 'Birthday')
-                        +card('//unsplash.it/212/148', 'Christmas and New Year')
-                        +card('//unsplash.it/212/148', 'St Valentine’s Day')
-                        +card('//unsplash.it/212/148', 'Wedding')
+                        +card('', 'Birthday')
+                        +card('', 'Christmas and New Year')
+                        +card('', 'St Valentine’s Day')
+                        +card('', 'Wedding')
+                        +card('', 'Wedding Invitations')
+                        +card('', 'Mother’s Day')
+                        +card('', 'Father’s Day')
+                        +card('', 'Easter')
+                        +card('', 'Birthday')
+                        +card('', 'Christmas and New Year')
+                        +card('', 'St Valentine’s Day')
+                        +card('', 'Wedding')
             include includes/_footer
