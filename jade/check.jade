@@ -5,7 +5,7 @@ html(lang="ru")
         main.wrap.wrap_wreath
             include includes/_header
             section.content.check
-                .check_content
+                .check_content.animated.fadeInLeft
                     .header.header_large
                         | Play with this card.
                     .check_descr
@@ -29,7 +29,7 @@ html(lang="ru")
                                 | at the postcard.
                 .check_card_outer
                     .check_card
-                        .check_card_img
-                    a.button(href="./thank.html")
+                        .check_card_img.animated.fadeIn
+                    a.button.animated.fadeInUp(href="./thank.html")
                         | CREATE YOUR CARD NOW
             include includes/_footer

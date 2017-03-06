@@ -6,23 +6,23 @@ html(lang="ru")
             include includes/_header
             section.content.main
                 .main_header
-                    .header
+                    .header.animated.fadeInLeft
                         | We actually add
                         .header_accent
                             | you
                         | to a postcard
                         .header_small and ship it to your loved ones.
-                    a.button.expanded(href="./start.html")
+                    a.button.expanded.animated.fadeInUp(href="./start.html")
                         | CREATE A CARD NOW
                 .main_content
-                    .main_video_container
+                    .main_video_container.animated.fadeIn
                         video.main_video
                             source(src="./place_video.mp4" type="video/mp4")
                             source(src="./place_video.webm" type="video/webm")
                             | Your browser does not support the video tag.
                             a.button(href="./place_video.mp4") Download video
                         button.main_video_button
-                    a.main_content_how(href="./how.html")
+                    a.main_content_how.animated.fadeInUp(href="./how.html")
                         svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 52 52')
                             path(d='M26,0A26,26,0,1,0,52,26,26,26,0,0,0,26,0Zm0,48.8A22.8,22.8,0,1,1,48.8,26,22.83,22.83,0,0,1,26,48.8Zm0,0')
                             path(d='M29.09,15.63A2.68,2.68,0,1,1,26.41,13a2.68,2.68,0,0,1,2.68,2.68Zm0,0')

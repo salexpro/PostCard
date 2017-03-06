@@ -5,14 +5,14 @@ html(lang="ru")
         main.wrap.wrap_plan
             include includes/_header
             section.content.plan
-                .plan_content
+                .plan_content.animated.fadeIn
                     .header
                         .header_large
                             | Thanks!
                         | You are almost done.
                     .plan_content_descr
                         | How many views would you like your card to have?
-                    a.main_content_how(href="./actually.html")
+                    a.main_content_how.animated.fadeInUp(href="./actually.html")
                         svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 52 52')
                             path(d='M26,0A26,26,0,1,0,52,26,26,26,0,0,0,26,0Zm0,48.8A22.8,22.8,0,1,1,48.8,26,22.83,22.83,0,0,1,26,48.8Zm0,0')
                             path(d='M29.09,15.63A2.68,2.68,0,1,1,26.41,13a2.68,2.68,0,0,1,2.68,2.68Zm0,0')
@@ -20,33 +20,33 @@ html(lang="ru")
                         | what’s this?
                 .plan_items
                     input(type="radio" name="plan" id="plan10")
-                    label.plan_item(for="plan10")
+                    label.plan_item.animated.fadeInRight(for="plan10")
                         .plan_item_bg
                         .plan_item_label
                             | 10 views
                         .plan_item_label
                             | $2
                     input(type="radio" name="plan" id="plan20")
-                    label.plan_item(for="plan20")
+                    label.plan_item.animated.fadeInRight(for="plan20")
                         .plan_item_bg
                         .plan_item_label
                             | 20 views
                         .plan_item_label
                             | $3
                     input(type="radio" name="plan" id="plan50")
-                    label.plan_item(for="plan50")
+                    label.plan_item.animated.fadeInRight(for="plan50")
                         .plan_item_bg
                         .plan_item_label
                             | 50 views
                         .plan_item_label
                             | $4
                     input(type="radio" name="plan" id="plan100")
-                    label.plan_item(for="plan100")
+                    label.plan_item.animated.fadeInRight(for="plan100")
                         .plan_item_bg
                         .plan_item_label
                             | 100 views
                         .plan_item_label
                             | $5
-                    a.button(href="./whom.html")
+                    a.button.animated.fadeInUp(href="./whom.html")
                         | PROCEED TO CHECK OUT
             include includes/_footer

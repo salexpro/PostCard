@@ -7,9 +7,9 @@ html(lang="ru")
             include includes/_header
             section.content.price
                 .price_card
-                    .price_card_inner
-                        .header.header_large
-                            | Pricing.
+                    .header.header_large.animated.fadeInDown
+                        | Pricing.
+                    .price_card_inner.animated.fadeInUp
                         table
                             thead
                                 tr
@@ -53,8 +53,8 @@ html(lang="ru")
                                     td +$ 3
                                     td +$ 4
                                     td +$ 5
-                        a.button(href="#")
-                            | OPEN FULL LIST
-                        .price_card_hint
-                            | Video views are how many times your recipient will be able to watch your video message.
+                    a.button.animated.fadeInUp(href="#")
+                        | OPEN FULL LIST
+                    .price_card_hint.animated.fadeInUp
+                        | Video views are how many times your recipient will be able to watch your video message.
             include includes/_footer

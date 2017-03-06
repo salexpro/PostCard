@@ -14,15 +14,15 @@ doctype html
 html(lang="ru")
     include includes/_head
     body
-        main.wrap
+        main.wrap.wrap_start
             include includes/_header
             section.content.start
-                .start_header
+                .start_header.animated.fadeInDown
                     .header.header_medium
                         | Pick a card design.
                     .start_header_descr
                         | Christmas/New Year
-                .start_container
+                .start_container.animated.fadeInUp
                     .start_cards
                         +card
                         +card

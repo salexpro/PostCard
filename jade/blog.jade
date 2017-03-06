@@ -22,14 +22,14 @@ html(lang="ru")
         main.wrap.wrap_blog
             include includes/_header
             section#blog.content.blog
-                .blog_articles
+                .blog_articles.animated.fadeInUp
                     +article
                     +article
                     +article
                     +article
                     +article
                     +article
-                .blog_sidebar(data-sticky-container)
+                .blog_sidebar.animated.fadeInRight(data-sticky-container)
                     .sticky.blog_sidebar_inner(data-sticky data-anchor="blog" data-margin-top="1.5")
                         .blog_search
                             form(action="")

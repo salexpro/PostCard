@@ -50,6 +50,5 @@
   },
   "_source": "https://github.com/malihu/malihu-custom-scrollbar-plugin.git",
   "_target": "^3.1.5",
-  "_originalSource": "malihu-custom-scrollbar-plugin",
-  "_direct": true
+  "_originalSource": "malihu-custom-scrollbar-plugin"
 }

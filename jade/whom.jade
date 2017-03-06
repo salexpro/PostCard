@@ -5,11 +5,11 @@ html(lang="ru")
         main.wrap.wrap_whom
             include includes/_header
             section.content.whom
-                .whom_header
+                .whom_header.animated.fadeInLeft
                     .header.header_large
                         | Now, who gets this card?
                 form.whom_card(action="")
-                    .whom_card_inner
+                    .whom_card_inner.animated.fadeInUp
                         .whom_card_form
                             .whom_card_label
                                 | First name*
@@ -39,8 +39,8 @@ html(lang="ru")
                             input(type="text" placeholder="Type your text ...I")
                             .whom_card_label
                                 span optional
-                            textarea(rows="3" placeholder="Type a few nice words here and they will also appear on your card")
+                            textarea.clean(rows="3" placeholder="Type a few nice words here and they will also appear on your card")
                         input.button.expanded.max(type="submit" value="save")
-                    a.button(href="./play.html")
+                    a.button.animated.fadeInUp(href="./play.html")
                             | send your card
             include includes/_footer
