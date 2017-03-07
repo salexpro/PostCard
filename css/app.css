@@ -898,6 +898,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_how::after { background: fixed url(../img/bg_how.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
 
+@media screen and (max-width: 63.9375em) { .wrap_how::after { background-attachment: scroll; } }
+
 .wrap_price::after { background: fixed url(../img/bg_price.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
 
 .wrap_start { overflow: hidden; }
@@ -1181,46 +1183,46 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 41.8125em) { .check_descr { font-size: 16px; } }
 
-.check_steps, .how_steps { counter-reset: ch_step; margin-right: 25px; }
+.check_steps { counter-reset: ch_step; margin-right: 25px; }
 
-@media screen and (max-width: 74.9375em) { .check_steps, .how_steps { position: absolute; top: 100%; right: 0; width: 284px; margin: 0; -webkit-animation: 1s 1.3s both fadeInRight; animation: 1s 1.3s both fadeInRight; } }
+@media screen and (max-width: 74.9375em) { .check_steps { position: absolute; top: 100%; right: 0; width: 284px; margin: 0; -webkit-animation: 1s 1.3s both fadeInRight; animation: 1s 1.3s both fadeInRight; } }
 
-@media screen and (max-width: 63.9375em) { .check_steps, .how_steps { width: 250px; } }
+@media screen and (max-width: 63.9375em) { .check_steps { width: 250px; } }
 
-@media screen and (max-width: 41.8125em) { .check_steps, .how_steps { position: static; width: 100%; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 10px; } }
+@media screen and (max-width: 41.8125em) { .check_steps { position: static; width: 100%; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 10px; } }
 
-.check_step, .how_step { counter-increment: ch_step; margin-top: 20px; }
+.check_step { counter-increment: ch_step; margin-top: 20px; }
 
-@media screen and (max-width: 74.9375em) { .check_step, .how_step { margin-top: 50px; }
-  .check_step:first-child, .how_step:first-child { margin: 0; } }
+@media screen and (max-width: 74.9375em) { .check_step { margin-top: 50px; }
+  .check_step:first-child { margin: 0; } }
 
-@media screen and (max-width: 41.8125em) { .check_step, .how_step { width: 50%; margin: 0; } }
+@media screen and (max-width: 41.8125em) { .check_step { width: 50%; margin: 0; } }
 
-@media screen and (max-width: 74.9375em) { .check_step span, .how_step span { display: table; margin: auto; padding: 0 5px; font-weight: 700; border-bottom: 1px solid; } }
+@media screen and (max-width: 74.9375em) { .check_step span { display: table; margin: auto; padding: 0 5px; font-weight: 700; border-bottom: 1px solid; } }
 
-@media screen and (max-width: 41.8125em) { .check_step span, .how_step span { display: inline-block; } }
+@media screen and (max-width: 41.8125em) { .check_step span { display: inline-block; } }
 
-@media screen and (max-width: 74.9375em) { .check_step span + br, .how_step span + br { display: none; } }
+@media screen and (max-width: 74.9375em) { .check_step span + br { display: none; } }
 
-@media screen and (max-width: 41.8125em) { .check_step span + br, .how_step span + br { display: block; } }
+@media screen and (max-width: 41.8125em) { .check_step span + br { display: block; } }
 
-.check_step_title, .how_step_title { font-family: 'Playfair Display', serif; text-transform: uppercase; font-size: 12px; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 2px; }
+.check_step_title { font-family: 'Playfair Display', serif; text-transform: uppercase; font-size: 12px; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 2px; }
 
-@media screen and (max-width: 74.9375em) { .check_step_title, .how_step_title { display: table; margin: auto; padding-left: 15px; padding-right: 5px; font-size: 21px; margin-bottom: 5px; } }
+@media screen and (max-width: 74.9375em) { .check_step_title { display: table; margin: auto; padding-left: 15px; padding-right: 5px; font-size: 21px; margin-bottom: 5px; } }
 
-@media screen and (max-width: 41.8125em) { .check_step_title, .how_step_title { color: #794044; font-size: 14px; padding-bottom: 2px; padding-left: 10px; padding-right: 0; } }
+@media screen and (max-width: 41.8125em) { .check_step_title { color: #794044; font-size: 14px; padding-bottom: 2px; padding-left: 10px; padding-right: 0; } }
 
-.check_step_title::after, .how_step_title::after { content: counter(ch_step); font-size: 16px; margin-left: 10px; }
+.check_step_title::after { content: counter(ch_step); font-size: 16px; margin-left: 10px; }
 
-@media screen and (max-width: 74.9375em) { .check_step_title::after, .how_step_title::after { font-size: 27px; line-height: 0; } }
+@media screen and (max-width: 74.9375em) { .check_step_title::after { font-size: 27px; line-height: 0; } }
 
-@media screen and (max-width: 41.8125em) { .check_step_title::after, .how_step_title::after { font-size: 18px; } }
+@media screen and (max-width: 41.8125em) { .check_step_title::after { font-size: 18px; } }
 
-.check_step_descr, .how_step_descr { text-align: right; line-height: 1.5; }
+.check_step_descr { text-align: right; line-height: 1.5; }
 
-@media screen and (max-width: 74.9375em) { .check_step_descr, .how_step_descr { text-align: center; font-size: 18px; } }
+@media screen and (max-width: 74.9375em) { .check_step_descr { text-align: center; font-size: 18px; } }
 
-@media screen and (max-width: 41.8125em) { .check_step_descr, .how_step_descr { font-size: 16px; } }
+@media screen and (max-width: 41.8125em) { .check_step_descr { font-size: 16px; } }
 
 .check_card { width: 100%; height: 100%; position: relative; }
 
@@ -1278,23 +1280,65 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 41.8125em) { .check_card_img { height: 0; padding: 35.7% 0; background-size: 260%; } }
 
-.how_header { width: 330px; margin-right: 40px; z-index: 2; padding-left: 80px; z-index: 2; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+@media screen and (max-width: 63.9375em) { .how { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
+.how_header { width: 330px; margin-right: 40px; z-index: 2; padding-left: 80px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+
+@media screen and (max-width: 63.9375em) { .how_header { padding: 0; margin: 0; width: 100%; text-align: center; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; } }
+
+@media screen and (max-width: 63.9375em) { .how_header .header { font-size: 50px; } }
+
+@media screen and (max-width: 63.9375em) { .how_header .header { font-size: 40px; } }
 
 .how_card { position: relative; width: 595px; height: 425px; margin-top: 54px; }
 
+@media screen and (max-width: 63.9375em) { .how_card { width: 100%; height: auto; max-width: 645px; margin-top: 30px; } }
+
+@media screen and (max-width: 41.8125em) { .how_card { margin-top: 20px; } }
+
 .how_card::before { content: ''; position: absolute; top: -34px; left: -96px; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/bg_how.png) center no-repeat; background-attachment: fixed; -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+
+@media screen and (max-width: 63.9375em) { .how_card::before { display: none; } }
 
 .how_card_inner { position: relative; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; z-index: 2; padding: 45px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
 
-.how_steps { margin: 0; }
+@media screen and (max-width: 63.9375em) { .how_card_inner { box-shadow: none; background: none; padding: 0; } }
 
-.how_step { position: relative; }
+@media screen and (max-width: 41.8125em) { .how_card_inner { background-color: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); padding: 25px; } }
+
+.how_steps { counter-reset: ch_step; margin-right: 25px; margin: 0; }
+
+.how_step { counter-increment: ch_step; margin-top: 20px; position: relative; }
 
 .how_step:first-child { margin: 0; }
 
-.how_step_title { margin-bottom: 6px; color: #8d4c58; }
+.how_step_top { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.how_step_label { position: absolute; right: 0; top: 8px; font-family: 'Playfair Display', serif; font-size: 26px; text-transform: uppercase; padding-left: 20px; background-color: #fff; }
+@media screen and (max-width: 41.8125em) { .how_step_top { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
+.how_step_title { font-family: 'Playfair Display', serif; text-transform: uppercase; font-size: 12px; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 8px; color: #8d4c58; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+
+@media screen and (max-width: 63.9375em) { .how_step_title { font-size: 20px; margin-bottom: 15px; } }
+
+@media screen and (max-width: 41.8125em) { .how_step_title { font-size: 16px; margin-bottom: 2px; } }
+
+.how_step_title::after { content: counter(ch_step); font-size: 16px; margin-left: 10px; }
+
+@media screen and (max-width: 63.9375em) { .how_step_title::after { font-size: 25px; line-height: 0; } }
+
+@media screen and (max-width: 41.8125em) { .how_step_title::after { font-size: 22px; } }
+
+.how_step_label { position: relative; top: 8px; font-family: 'Playfair Display', serif; font-size: 26px; text-transform: uppercase; padding-left: 20px; }
+
+@media screen and (max-width: 63.9375em) { .how_step_label { font-size: 33px; letter-spacing: 3.5px; } }
+
+@media screen and (max-width: 41.8125em) { .how_step_label { top: 0; text-align: right; font-size: 18px; } }
+
+.how_step_descr { text-align: right; line-height: 1.5; }
+
+@media screen and (max-width: 63.9375em) { .how_step_descr { font-size: 20px; padding-left: 10%; } }
+
+@media screen and (max-width: 41.8125em) { .how_step_descr { font-size: 16px; padding-left: 5%; } }
 
 .price_card { position: relative; width: 875px; height: 237px; }
 
