@@ -862,9 +862,13 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap::after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; }
 
-.wrap_main::after { background: fixed url(../img/bg.png) center no-repeat; -webkit-animation: 1s 1.5s both fadeIn; animation: 1s 1.5s both fadeIn; }
+.wrap_main::after { background: url(../img/bg.png) center no-repeat; -webkit-animation: 1s 1.5s both fadeIn; animation: 1s 1.5s both fadeIn; }
 
-.wrap_card::after { background: fixed url(../img/bg_card.png) no-repeat; background-position: center bottom calc(50vh - 410px); -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_card::after { background: url(../img/bg_card.png) no-repeat; background-position: center bottom calc(50% - 30px); -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+
+@media screen and (max-width: 74.9375em) { .wrap_card::after { background-position: right calc(50vw - 355px) bottom calc(50% - 85px); background-size: 932px; } }
+
+@media screen and (max-width: 41.8125em) { .wrap_card::after { background-position: right 20.2% bottom calc(50% - 69px); background-size: calc(172.4% - 20px); } }
 
 @-webkit-keyframes fadeOutPart { from { opacity: 1; }
   to { opacity: 0.2; } }
@@ -1008,11 +1012,11 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .head_lang { width: auto; text-transform: uppercase; }
 
-.content, .main_inner { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 0 120px; display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.content, .main_inner, .actually_inner { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 0 120px; display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-@media screen and (max-width: 74.9375em) { .content, .main_inner { margin: 0 100px; } }
+@media screen and (max-width: 74.9375em) { .content, .main_inner, .actually_inner { margin: 0 100px; } }
 
-@media screen and (max-width: 41.8125em) { .content, .main_inner { margin: 0 20px; } }
+@media screen and (max-width: 41.8125em) { .content, .main_inner, .actually_inner { margin: 0 20px; } }
 
 .main_inner { margin: 0; }
 
@@ -1108,13 +1112,38 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 41.8125em) { .main_video_button.paused::before { border-right: 13.5px solid transparent; } }
 
+.actually_inner { margin: 0; }
+
+@media screen and (max-width: 74.9375em) { .actually_inner { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
 .actually_content { width: 390px; margin-right: -125px; z-index: 2; margin-bottom: 14px; }
+
+@media screen and (max-width: 74.9375em) { .actually_content { width: 100%; text-align: center; margin: 0; } }
 
 .actually_content .header, .actually_content .button { -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
+.actually_content .header { white-space: nowrap; }
+
+@media screen and (max-width: 74.9375em) { .actually_content .header { -webkit-animation-name: fadeInDown; animation-name: fadeInDown; white-space: normal; font-size: 50px; }
+  .actually_content .header br { display: none; } }
+
+@media screen and (max-width: 41.8125em) { .actually_content .header { font-size: 40px; height: 96px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; } }
+
+@media screen and (max-width: 74.9375em) { .actually_content .button { position: absolute; left: calc(50% - 95px); bottom: -26px; } }
+
+@media screen and (max-width: 41.8125em) { .actually_content .button { bottom: 14px; } }
+
 .actually_descr { font-size: 20px; line-height: 1.3; margin-top: 15px; margin-bottom: 33px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
-.actually_card { width: 680px; height: 480px; box-shadow: 0 0 65px rgba(0, 0, 0, 0.15); background: #fff; position: relative; overflow: hidden; background: url(../img/card.svg) no-repeat; background-size: 832px; background-attachment: fixed; background-position: right calc(50vw - 546px) bottom calc(50vh - 410px); -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+@media screen and (max-width: 74.9375em) { .actually_descr { max-width: 720px; height: 70px; margin: auto; font-size: 18px; margin-top: 0; margin-bottom: 10px; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+
+@media screen and (max-width: 41.8125em) { .actually_descr { height: 90px; font-size: 15px; margin-top: 5px; } }
+
+.actually_card { width: 680px; height: 480px; box-shadow: 0 0 65px rgba(0, 0, 0, 0.15); position: relative; overflow: hidden; background: #fff url(../img/card.svg) no-repeat; background-size: 832px; background-position: center -112px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; margin-left: -5px; }
+
+@media screen and (max-width: 74.9375em) { .actually_card { width: 100%; max-width: 560px; height: 400px; background-size: 712px; background-position: center -102px; margin: 0; margin-bottom: 20px; } }
+
+@media screen and (max-width: 41.8125em) { .actually_card { max-width: none; height: 0; padding: 27.8% 0; background-size: 140%; background-position: center bottom calc(50% - 15px); margin-bottom: 60px; } }
 
 .check_content { width: 340px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 

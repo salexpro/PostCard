@@ -176,15 +176,23 @@ table{
     }
     &_main{
         &::after{
-            background: fixed url(../img/bg.png) center no-repeat;
+            background: url(../img/bg.png) center no-repeat;
             animation: 1s 1.5s both fadeIn;
         }
     }
     &_card::after{
-        background: fixed url(../img/bg_card.png) no-repeat;
-        background-position: center bottom calc(50vh - 410px);
+        background: url(../img/bg_card.png) no-repeat;
+        background-position: center bottom calc(50% - 30px);
         animation: 300ms 1s both fadeIn, 
                    1s 2s forwards fadeOutPart;
+        @include breakpoint(large down) {
+            background-position: right calc(50vw - 355px) bottom calc(50% - 85px);
+            background-size: 932px;
+        }
+        @include breakpoint(small down) {
+            background-position: right 20.2% bottom calc(50% - 69px);
+            background-size: calc(172.4% - 20px);
+        }
         @keyframes fadeOutPart{
             from{
                 opacity: 1;
@@ -809,14 +817,54 @@ table{
 }
 
 .actually{
+    &_inner{
+        @extend .content;
+        margin: 0;
+        @include breakpoint(large down) {
+            flex-direction: column;
+        }
+    }
     &_content{
         width: 390px;
         margin-right: -125px;
         z-index: 2;
-        // align-self: flex-end;
         margin-bottom: 14px;
+        @include breakpoint(large down) {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
         .header, .button{
             animation-delay: 1.3s;
+        }
+        .header{
+            white-space: nowrap;
+            @include breakpoint(large down) {
+                animation-name: fadeInDown;
+                white-space: normal;
+                font-size: 50px;
+                br{
+                    display: none;
+                }
+            }
+            @include breakpoint(small down) {
+                font-size: 40px;
+                height: 96px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        .button{
+            @include breakpoint(large down) {
+                position: absolute;
+                left: calc(50% - 95px);
+                bottom: -26px;
+            }
+            @include breakpoint(small down) {
+                bottom: 14px;
+            }
         }
     }
     &_descr{
@@ -825,19 +873,51 @@ table{
         margin-top: 15px;
         margin-bottom: 33px;
         animation-delay: 1.3s;
+        @include breakpoint(large down) {
+            max-width: 720px;
+            height: 70px;
+            margin: auto;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            animation-name: fadeInDown;
+            display: flex;
+            align-items: center;
+        }
+        @include breakpoint(small down) {
+            height: 90px;
+            font-size: 15px;
+            margin-top: 5px;
+        }
     }
     &_card{
         width: 680px;
         height: 480px;
         box-shadow: 0 0 65px rgba(0, 0, 0, 0.15);
-        background: $white;
         position: relative;
         overflow: hidden;
-        background: url(../img/card.svg) no-repeat;
+        background: $white url(../img/card.svg) no-repeat;
         background-size: 832px;
-        background-attachment: fixed;
-        background-position: right calc(50vw - 546px) bottom calc(50vh - 410px);
+        background-position: center -112px;
         animation-delay: 1.3s;
+        margin-left: -5px;
+        @include breakpoint(large down) {
+            width: 100%;
+            max-width: 560px;
+            height: 400px;
+            background-size: 712px;
+            background-position: center -102px;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        @include breakpoint(small down) {
+            max-width: none;
+            height: 0;
+            padding: 27.8% 0;
+            background-size: 140%;
+            background-position: center bottom calc(50% - 15px);
+            margin-bottom: 60px;
+        }
     }
 }
 

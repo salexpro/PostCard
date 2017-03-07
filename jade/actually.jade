@@ -6,12 +6,15 @@ html(lang="ru")
         main.wrap.wrap_card
             include includes/_header
             section.content.actually
-                .actually_content
-                    .header.header_large.animated.fadeInLeft
-                        | A postcard actually.
-                    .actually_descr.animated.fadeInLeft
-                        | This is a simple postcard. There are millions of these around being sent to millions of recipients. But we added a feature to this card that makes it a postcard actually.
-                    a.button.animated.fadeInUp(href="./check.html")
-                        | CLICK TO OPEN
-                .actually_card.animated.fadeIn
+                .actually_inner
+                    .actually_content
+                        .header.header_large.animated.fadeInLeft
+                            | A postcard 
+                            br
+                            | actually.
+                        .actually_descr.animated.fadeInLeft
+                            | This is a simple postcard. There are millions of these around being sent to millions of recipients. But we added a feature to this card that makes it a postcard actually.
+                        a.button.animated.fadeInUp(href="./check.html")
+                            | CLICK TO OPEN
+                    .actually_card.animated.fadeIn
             include includes/_footer
