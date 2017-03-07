@@ -830,9 +830,21 @@ select.select7 { visibility: hidden; }
 
 table { width: 100%; table-layout: fixed; border-spacing: 9px 7px; border-collapse: separate; }
 
+@media screen and (max-width: 41.8125em) { table { border-spacing: 7px; font-size: 14px; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: -7px; }
+  table thead, table tbody { width: 75%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+  table thead { width: 25%; }
+  table thead tr { width: 100%; }
+  table tbody tr { width: 33.33%; margin-left: 7px; } }
+
 table th, table td { padding: 4px 10px; border: 1px solid #e5e5e5; text-align: center; }
 
+@media screen and (max-width: 41.8125em) { table th, table td { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 44px; margin-bottom: 7px; padding: 0; } }
+
 table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; }
+
+@media screen and (max-width: 41.8125em) { table th { padding: 0; } }
+
+@media screen and (max-width: 41.8125em) { table td { background-color: #fff; } }
 
 .button { letter-spacing: 4px; text-transform: uppercase; }
 
@@ -898,9 +910,11 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_how::after { background: fixed url(../img/bg_how.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
 
-@media screen and (max-width: 63.9375em) { .wrap_how::after { background-attachment: scroll; } }
+@media screen and (max-width: 63.9375em) { .wrap_how::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
 .wrap_price::after { background: fixed url(../img/bg_price.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+
+@media screen and (max-width: 63.9375em) { .wrap_price::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
 .wrap_start { overflow: hidden; }
 
@@ -1340,19 +1354,39 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 41.8125em) { .how_step_descr { font-size: 16px; padding-left: 5%; } }
 
-.price_card { position: relative; width: 875px; height: 237px; }
+.price_card { position: relative; width: 100%; max-width: 875px; margin: 90px 60px; }
 
-.price_card_inner { position: relative; z-index: 2; width: 100%; height: 100%; background-color: #fff; box-shadow: 0 0 60px rgba(0, 0, 0, 0.17); padding: 23px 13px; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
+@media screen and (max-width: 63.9375em) { .price_card { margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 
-.price_card::before, .price_card::after { content: ''; position: absolute; top: 45px; left: -60px; width: 820px; height: 230px; background: #fff url(../img/bg_price.png) center no-repeat; background-attachment: fixed; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+@media screen and (max-width: 41.8125em) { .price_card { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; } }
 
-.price_card::after { width: 785px; top: -58px; left: 120px; }
+.price_card_inner { position: relative; z-index: 2; width: 100%; height: 100%; background-color: #fff; box-shadow: 0 0 60px rgba(0, 0, 0, 0.17); padding: 28px 13px; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
+
+@media screen and (max-width: 63.9375em) { .price_card_inner { margin: 60px 0; -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; } }
+
+@media screen and (max-width: 41.8125em) { .price_card_inner { margin: 20px 0; padding: 0; background: none; box-shadow: none; } }
+
+.price_card::before, .price_card::after { content: ''; position: absolute; top: 45px; left: -60px; width: 94%; height: 230px; background: #fff url(../img/bg_price.png) center no-repeat; background-attachment: fixed; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+
+@media screen and (max-width: 63.9375em) { .price_card::before, .price_card::after { display: none; } }
+
+.price_card::after { width: 90%; top: -58px; left: 120px; }
 
 .price_card .header { position: absolute; z-index: 2; top: -110px; left: -60px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
+@media screen and (max-width: 63.9375em) { .price_card .header { position: static; font-size: 50px; text-align: center; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; } }
+
+@media screen and (max-width: 41.8125em) { .price_card .header { font-size: 40px; } }
+
 .price_card .button { position: absolute; z-index: 2; right: -30px; bottom: -16px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
+@media screen and (max-width: 63.9375em) { .price_card .button { position: static; -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; } }
+
 .price_card_hint { position: absolute; bottom: -65px; left: -60px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+
+@media screen and (max-width: 63.9375em) { .price_card_hint { position: static; max-width: 380px; margin: auto; text-align: center; font-size: 18px; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; } }
+
+@media screen and (max-width: 41.8125em) { .price_card_hint { font-size: 16px; } }
 
 .start { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 

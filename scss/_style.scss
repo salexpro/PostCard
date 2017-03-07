@@ -80,16 +80,53 @@ table{
     table-layout: fixed;
     border-spacing: 9px 7px;
     border-collapse: separate;
+    @include breakpoint(small down) {
+        border-spacing: 7px;
+        font-size: 14px;
+        display: flex;
+        margin-bottom: -7px;
+        thead, tbody{
+            width: 75%;
+            display: flex;
+        }
+        thead{
+            width: 25%;
+            tr{
+                width: 100%;
+            }
+        }
+        tbody tr{
+            width: 33.33%;
+            margin-left: 7px;
+        }
+    }
     th, td{
         padding: 4px 10px;
         border: 1px solid #e5e5e5;
         text-align: center;
+        @include breakpoint(small down) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 44px;
+            margin-bottom: 7px;
+            padding: 0;
+        }
     }
     th{
         background: $black;
         color: $white;
         padding: 10px 15px;
         font-weight: 400;
+        @include breakpoint(small down) {
+            padding: 0;
+        }
+    }
+    td{
+        @include breakpoint(small down) {
+            background-color: $white;
+        }
     }
 }
 
@@ -245,13 +282,18 @@ table{
                        1s 2s forwards fadeOutPart;
             @include breakpoint(medium down) {
                 background-attachment: scroll;
+                animation: 300ms 800ms both fadeInPart;
             }
         }
     }
     &_price::after{
         background: fixed url(../img/bg_price.png) center no-repeat;
         animation: 300ms 1s both fadeIn, 
-                   1s 2s forwards fadeOutPart;    
+                   1s 2s forwards fadeOutPart;
+        @include breakpoint(medium down) {
+            background-attachment: scroll;
+            animation: 300ms 800ms both fadeInPart;
+        }
     }
     &_start{
         overflow: hidden;
@@ -1377,8 +1419,18 @@ table{
 .price{
     &_card{
         position: relative;
-        width: 875px;
-        height: 237px;
+        width: 100%;
+        max-width: 875px;
+        margin: 90px 60px;
+        @include breakpoint(medium down) {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include breakpoint(small down) {
+            align-items: stretch;
+        }
         &_inner{
             position: relative;
             z-index: 2;
@@ -1386,24 +1438,37 @@ table{
             height: 100%;
             background-color: $white;
             box-shadow: 0 0 60px rgba(0, 0, 0, 0.17);
-            padding: 23px 13px;
+            padding: 28px 13px;
             animation-delay: 1.5s;
+            @include breakpoint(medium down) {
+                margin: 60px 0;
+                order: 3
+            }
+            @include breakpoint(small down) {
+                margin: 20px 0;
+                padding: 0;
+                background: none;
+                box-shadow: none;
+            }
         }
         &::before{
             content: '';
             position: absolute;
             top: 45px;
             left: -60px;
-            width: 820px;
+            width: 94%;
             height: 230px;
             background: $white url(../img/bg_price.png) center no-repeat;
             background-attachment: fixed;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
             animation: 1s 1.3s both fadeIn;
+            @include breakpoint(medium down) {
+                display: none;
+            }
         }
         &::after{
             @extend .price_card::before;
-            width: 785px;
+            width: 90%;
             top: -58px;
             left: 120px;
         }
@@ -1413,6 +1478,15 @@ table{
             top: -110px;
             left: -60px;
             animation-delay: 1.3s;
+            @include breakpoint(medium down) {
+                position: static;
+                font-size: 50px;
+                text-align: center;
+                order: 1;
+            }
+            @include breakpoint(small down) {
+                font-size: 40px;
+            }
         }
         .button{
             position: absolute;
@@ -1420,12 +1494,27 @@ table{
             right: -30px;
             bottom: -16px;
             animation-delay: 1.3s;
+            @include breakpoint(medium down) {
+                position: static;
+                order: 4
+            }
         }
         &_hint{
             position: absolute;
             bottom: -65px;
             left: -60px;
             animation-delay: 1.3s;
+            @include breakpoint(medium down) {
+                position: static;
+                max-width: 380px;
+                margin: auto;
+                text-align: center;
+                font-size: 18px;
+                order: 2
+            }
+            @include breakpoint(small down) {
+                font-size: 16px;
+            }
         }
     }
 }
