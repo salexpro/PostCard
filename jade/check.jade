@@ -5,31 +5,33 @@ html(lang="ru")
         main.wrap.wrap_wreath
             include includes/_header
             section.content.check
-                .check_content.animated.fadeInLeft
-                    .header.header_large
-                        | Play with this card.
-                    .check_descr
-                        | We let you add your personal video messages to an old fashioned postcard and mail it for you. Check it out here:
-                    .check_steps
-                        .check_step
-                            .check_step_title
-                                | STEP
-                            .check_step_descr     
-                                | Download free LOOKSAR APP
-                                br
-                                | from App Store/Google Play.
-                        .check_step
-                            .check_step_title
-                                | STEP
-                            .check_step_descr
-                                | Enter this code: r t s f
-                                br
-                                | and point your smartphone
-                                br
-                                | at the postcard.
-                .check_card_outer
-                    .check_card
-                        .check_card_img.animated.fadeIn
-                    a.button.animated.fadeInUp(href="./thank.html")
-                        | CREATE YOUR CARD NOW
+                .check_inner
+                    .check_content.animated.fadeInLeft
+                        .header.header_large
+                            | Play with this card.
+                        .check_descr
+                            | We let you add your personal video messages to an old fashioned postcard and mail it for you. Check it out here:
+                        .check_steps
+                            .check_step
+                                .check_step_title
+                                    | STEP
+                                .check_step_descr     
+                                    | Download free LOOKSAR APP
+                                    br
+                                    | from App Store/Google Play.
+                            .check_step
+                                .check_step_title
+                                    | STEP
+                                .check_step_descr
+                                    | Enter this code: 
+                                    span r t s f
+                                    br
+                                    | and point your smartphone
+                                    br
+                                    | at the postcard.
+                    .check_card_outer
+                        .check_card
+                            .check_card_img.animated.fadeIn
+                        a.button.animated.fadeInUp(href="./thank.html")
+                            | CREATE YOUR CARD NOW
             include includes/_footer
