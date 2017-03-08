@@ -1408,9 +1408,14 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .start_header_descr { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; text-align: center; letter-spacing: 10px; min-height: 16px; }
 
-.start_container { width: 100%; max-width: 1130px; margin-top: 25px; box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1); padding: 45px 90px 20px 70px; -webkit-animation-delay: 1s; animation-delay: 1s; }
+@media screen and (max-width: 74.9375em) { .start_header_descr { font-size: 21px; }
+  .start_header_descr::before { content: ''; display: block; margin: auto; width: 80%; height: 1px; background: #000; opacity: 0.15; margin-top: 10px; margin-bottom: 10px; } }
 
-@media screen and (max-width: 74.9375em) { .start_container { padding: 25px 48px; } }
+@media screen and (max-width: 41.8125em) { .start_header_descr { font-size: 12px; letter-spacing: 8px; text-transform: uppercase; } }
+
+.start_container { width: 100%; max-width: 1130px; margin-top: 10px; box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1); padding: 45px 90px 20px 70px; -webkit-animation-delay: 1s; animation-delay: 1s; }
+
+@media screen and (max-width: 74.9375em) { .start_container { padding: 25px 48px; margin-top: 25px; } }
 
 @media screen and (max-width: 41.8125em) { .start_container { padding: 15px 8px; padding-right: 25px; } }
 

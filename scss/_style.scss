@@ -1564,17 +1564,37 @@ table{
             text-align: center;
             letter-spacing: 10px;
             min-height: 16px;
+            @include breakpoint(large down) {
+                font-size: 21px;
+                &::before{
+                    content: '';
+                    display: block;
+                    margin: auto;
+                    width: 80%;
+                    height: 1px;
+                    background: $black;
+                    opacity: 0.15;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            @include breakpoint(small down) {
+                font-size: 12px;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+            }
         }
     }
     &_container{
         width: 100%;
         max-width: 1130px;
-        margin-top: 25px;
+        margin-top: 10px;
         box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1);
         padding: 45px 90px 20px 70px;
         animation-delay: 1s;
         @include breakpoint(large down) {
             padding: 25px 48px;
+            margin-top: 25px;
         }
         @include breakpoint(small down) {
             padding: 15px 8px;
