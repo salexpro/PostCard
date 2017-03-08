@@ -5,43 +5,44 @@ html(lang="ru")
         main.wrap.wrap_add
             include includes/_header
             section.content.add
-                .add_header.animated.fadeInLeft
-                    .header.header_largest
-                        | Add
-                        br
-                        | video
-                    .header.header_medium
-                        | from your file.
-                .video_variant.video_variant_add.animated.fadeInUp
-                    .video_variant_img
-                        .video_variant_progress
-                            | 35%
-                            .uil-spin-css
-                                div
+                .add_inner
+                    .add_header.animated.fadeInLeft
+                        .header.header_largest
+                            | Add 
+                            br
+                            | video
+                        .header.header_medium
+                            |  from your file.
+                    .video_variant.video_variant_add.animated.fadeInUp
+                        .video_variant_img
+                            .video_variant_progress
+                                | 35%
+                                .uil-spin-css
                                     div
-                                div
+                                        div
                                     div
-                                div
+                                        div
                                     div
-                                div
+                                        div
                                     div
-                                div
+                                        div
                                     div
-                                div
+                                        div
                                     div
-                                div
+                                        div
                                     div
-                                div
+                                        div
                                     div
-                        .video_variant_progress_bar
-                            .progress(role='progressbar', tabindex='0', aria-valuenow='35', aria-valuemin='0', aria-valuetext='35 percent', aria-valuemax='100')
-                                span.progress-meter(style='width: 35%')
-                    .video_variant_content
-                        input(type="file" id="video")
-                        label.button.expanded.higher(for="video")
-                            | CHOOSE FILE
-                        p Max size 30MB
-                .add_next.animated.fadeInRight
-                    a.button.expanded.min.arrow_right(href="./register.html")
-                        | next
+                                        div
+                            .video_variant_progress_bar
+                                .progress(role='progressbar', tabindex='0', aria-valuenow='35', aria-valuemin='0', aria-valuetext='35 percent', aria-valuemax='100')
+                                    span.progress-meter(style='width: 35%')
+                        .video_variant_content
+                            input(type="file" id="video")
+                            label.button.expanded.higher(for="video")
+                                | CHOOSE FILE
+                            p Max size 30MB
+                    .add_next.animated.fadeInRight
+                        a.button.expanded.min.arrow_right(href="./register.html")
+                            | next
             include includes/_footer

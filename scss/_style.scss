@@ -313,7 +313,7 @@ table{
     &_add{
         overflow: hidden;
         &::after{
-            background: fixed url(../img/bg_add.png) center no-repeat;
+            background: url(../img/bg_add.png) center no-repeat;
             animation: 1s 1s both fadeIn;
         }
     }
@@ -1786,12 +1786,25 @@ table{
             }
         }
         &_add{
+            min-width: 295px;
             animation-delay: 500ms;
+            @include breakpoint(small down) {
+                width: 100%;
+                max-width: 250px;
+                min-width: auto;
+            }
             .video_variant_img{
                 height: 325px;
                 padding-left: 15px;
                 padding-right: 15px;
                 border-bottom: 0;
+                @include breakpoint(large down) {
+                    height: 300px;
+                }
+                @include breakpoint(small down) {
+                    height: 250px;
+                    padding: 0;
+                }
             }
             .video_variant_content{
                 height: 165px;
@@ -1799,6 +1812,14 @@ table{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                @include breakpoint(small down) {
+                    height: auto;
+                    padding-top: 20px;
+                    .button{
+                        height: auto;
+                        min-height: 40px;
+                    }
+                }
             }
         }
         &_img{
@@ -1821,6 +1842,7 @@ table{
                 padding-top: 20%;
                 padding-bottom: 20%;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
@@ -1835,7 +1857,16 @@ table{
             text-align: center;
             font-size: 18px;
             position: relative;
-            margin-bottom: 45px;    
+            margin-bottom: 45px;
+            @include breakpoint(small down) {
+                margin: 0;
+                margin-bottom: 30px;
+            }
+            &_bar{
+                @include breakpoint(small down) {
+                    width: 90%;
+                }
+            }    
             .uil-spin-css {
                 background: none;
                 position: absolute;
@@ -1879,10 +1910,14 @@ table{
                 height: 100%;
                 border-radius: 15px;
                 background: #e4b4ae;
+                animation-name: uil-spin-css;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
             }
 
             .uil-spin-css > div:nth-of-type(1) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0s;
             }
 
@@ -1891,7 +1926,6 @@ table{
             }
 
             .uil-spin-css > div:nth-of-type(2) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0.12s;
             }
 
@@ -1900,7 +1934,6 @@ table{
             }
 
             .uil-spin-css > div:nth-of-type(3) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0.25s;
             }
 
@@ -1909,7 +1942,6 @@ table{
             }
 
             .uil-spin-css > div:nth-of-type(4) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0.37s;
             }
 
@@ -1918,7 +1950,6 @@ table{
             }
 
             .uil-spin-css > div:nth-of-type(5) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0.5s;
             }
 
@@ -1927,7 +1958,6 @@ table{
             }
 
             .uil-spin-css > div:nth-of-type(6) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0.62s;
             }
 
@@ -1936,7 +1966,6 @@ table{
             }
 
             .uil-spin-css > div:nth-of-type(7) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0.75s;
             }
 
@@ -1945,7 +1974,6 @@ table{
             }
 
             .uil-spin-css > div:nth-of-type(8) > div {
-                animation: uil-spin-css 1s linear infinite;
                 animation-delay: 0.87s;
             }
 
@@ -1986,18 +2014,59 @@ table{
 }
 
 .add{
+    &_inner{
+        @extend .content;
+        margin: 0;
+        @include breakpoint(large down) {
+            flex-direction: column;
+        }
+    }
     &_header{
         margin-right: 60px;
         animation-delay: 1s;
+        @include breakpoint(large down) {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 35px;
+            animation-name: fadeInDown;
+            > div {
+                display: inline-block;
+            }
+            br{
+                display: none;
+            }
+        }
+        @include breakpoint(small down) {
+            margin-bottom: 20px;
+        }
         .header{
             line-height: .9;
             margin-bottom: .2em;
+            &_largest{
+                @include breakpoint(large down) {
+                    font-size: 50px;
+                }
+                @include breakpoint(small down) {
+                    font-size: 40px;
+                }
+            }
         }
     }
     &_next{
         margin-left: 200px;
         margin-bottom: -373px;
         animation-delay: 1s;
+        @include breakpoint(large down) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            animation-name: fadeInUp;
+        }
+        @include breakpoint(small down) {
+            position: static;
+            margin-top: 20px;
+        }
     }
 }
 
