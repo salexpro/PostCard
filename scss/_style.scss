@@ -192,6 +192,11 @@ table{
         background-color: $black;
     }
 }
+@include breakpoint(small down) {
+    .mCSB_outside+.mCSB_scrollTools{
+        right: -16px;
+    }
+}
 
 .wrap{
     min-height: 100vh;
@@ -385,6 +390,9 @@ table{
     }
     &_medium{
         font-size: 50px;
+        @include breakpoint(small down) {
+            font-size: 40px;
+        }
     }
     &_large{
         font-size: 78px;
@@ -1521,18 +1529,33 @@ table{
 
 .start{
     flex-direction: column;
+    @include breakpoint(medium down) {
+        margin: 0;
+    }
+    @include breakpoint(small down) {
+        margin: 0 20px;
+    }
     &_header{
         animation-delay: 500ms;
-        .header::after{
-            content: '';
-            display: block;
-            margin: auto;
-            width: 239px;
-            height: 1px;
-            background: $black;
-            opacity: 0.15;
-            margin-top: 10px;
-            margin-bottom: 14px;
+        text-align: center;
+        @include breakpoint(large down) {
+            max-width: 520px
+        }
+        .header{
+            &::after{
+                content: '';
+                display: block;
+                margin: auto;
+                width: 239px;
+                height: 1px;
+                background: $black;
+                opacity: 0.15;
+                margin-top: 10px;
+                margin-bottom: 14px;
+                @include breakpoint(large down) {
+                    display: none;
+                }
+            }
         }
         &_descr{
             font-family: 'Playfair Display', serif;
@@ -1546,11 +1569,17 @@ table{
     &_container{
         width: 100%;
         max-width: 1130px;
-        margin: auto;
         margin-top: 25px;
         box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1);
         padding: 45px 90px 20px 70px;
         animation-delay: 1s;
+        @include breakpoint(large down) {
+            padding: 25px 48px;
+        }
+        @include breakpoint(small down) {
+            padding: 15px 8px;
+            padding-right: 25px;
+        }
     }
     &_cards{
         height: 47vh;
@@ -1565,11 +1594,16 @@ table{
         }
     }
     &_card{
-        max-width: calc(25% - 30px);
+        width: calc(25% - 30px);
         margin: 0 15px;
         margin-bottom: 13px;
         opacity: 0;
         transition: 300ms;
+        @include breakpoint(small down) {
+            width: calc(50% - 16px);
+            margin: 0 8px;
+            margin-bottom: 8px;
+        }
         &:hover{
             .start_card_img{
                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.31);
@@ -1582,7 +1616,10 @@ table{
             position: relative;
             border: 1px solid #b3b3b3;
             margin-bottom: 8px;
-            transition: 300ms
+            transition: 300ms;
+            img {
+                width: 100%;
+            }
         }
         &_actions{
             position: absolute;

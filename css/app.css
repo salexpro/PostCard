@@ -124,7 +124,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
-.foundation-mq { font-family: "small=0em&medium=41.875em&large=64em&xlarge=75em&xxlarge=90em"; }
+.foundation-mq { font-family: "small=0em&medium=41.875em&large=64.0625em&xlarge=75em&xxlarge=90em"; }
 
 html { font-size: 16px; box-sizing: border-box; }
 
@@ -320,7 +320,7 @@ button { -webkit-appearance: none; -moz-appearance: none; background: transparen
 @media screen and (min-width: 41.875em) { .medium-collapse > .column, .medium-collapse > .columns { padding-left: 0; padding-right: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns { padding-left: 0.9375rem; padding-right: 0.9375rem; } }
 
-@media screen and (min-width: 64em) { .large-1 { -webkit-box-flex: 0; -ms-flex: 0 0 8.3333333333%; flex: 0 0 8.3333333333%; max-width: 8.3333333333%; }
+@media screen and (min-width: 64.0625em) { .large-1 { -webkit-box-flex: 0; -ms-flex: 0 0 8.3333333333%; flex: 0 0 8.3333333333%; max-width: 8.3333333333%; }
   .large-offset-0 { margin-left: 0%; }
   .large-2 { -webkit-box-flex: 0; -ms-flex: 0 0 16.6666666667%; flex: 0 0 16.6666666667%; max-width: 16.6666666667%; }
   .large-offset-1 { margin-left: 8.3333333333%; }
@@ -367,13 +367,13 @@ button { -webkit-appearance: none; -moz-appearance: none; background: transparen
   .large-up-8 { -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .large-up-8 > .column, .large-up-8 > .columns { -webkit-box-flex: 0; -ms-flex: 0 0 12.5%; flex: 0 0 12.5%; max-width: 12.5%; } }
 
-@media screen and (min-width: 64em) and (min-width: 64em) { .large-expand { -webkit-box-flex: 1; -ms-flex: 1 1 0px; flex: 1 1 0px; } }
+@media screen and (min-width: 64.0625em) and (min-width: 64.0625em) { .large-expand { -webkit-box-flex: 1; -ms-flex: 1 1 0px; flex: 1 1 0px; } }
 
 .row.large-unstack > .column, .row.large-unstack > .columns { -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; }
 
-@media screen and (min-width: 64em) { .row.large-unstack > .column, .row.large-unstack > .columns { -webkit-box-flex: 1; -ms-flex: 1 1 0px; flex: 1 1 0px; } }
+@media screen and (min-width: 64.0625em) { .row.large-unstack > .column, .row.large-unstack > .columns { -webkit-box-flex: 1; -ms-flex: 1 1 0px; flex: 1 1 0px; } }
 
-@media screen and (min-width: 64em) { .large-collapse > .column, .large-collapse > .columns { padding-left: 0; padding-right: 0; }
+@media screen and (min-width: 64.0625em) { .large-collapse > .column, .large-collapse > .columns { padding-left: 0; padding-right: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns { padding-left: 0.9375rem; padding-right: 0.9375rem; } }
 
 .shrink { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; max-width: 100%; }
@@ -478,7 +478,7 @@ p + .stat { margin-top: -1rem; }
   .medium-text-center { text-align: center; }
   .medium-text-justify { text-align: justify; } }
 
-@media screen and (min-width: 64em) { .large-text-left { text-align: left; }
+@media screen and (min-width: 64.0625em) { .large-text-left { text-align: left; }
   .large-text-right { text-align: right; }
   .large-text-center { text-align: center; }
   .large-text-justify { text-align: justify; } }
@@ -708,7 +708,7 @@ select[multiple] { height: auto; background-image: none; }
   .menu.medium-vertical > li { -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
   .menu.medium-vertical > li > a { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
 
-@media screen and (min-width: 64em) { .menu.large-horizontal { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+@media screen and (min-width: 64.0625em) { .menu.large-horizontal { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
   .menu.large-horizontal > li { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
   .menu.large-vertical { -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .menu.large-vertical > li { -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
@@ -868,6 +868,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .mCSB_scrollTools .mCSB_draggerRail { width: 1px; background-color: #000; }
 
+@media screen and (max-width: 41.8125em) { .mCSB_outside + .mCSB_scrollTools { right: -16px; } }
+
 .wrap { min-height: 100vh; padding-top: 48px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: relative; }
 
 @media screen and (max-width: 41.8125em) { .wrap { padding-top: 5px; } }
@@ -894,7 +896,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 74.9375em) { .wrap_wreath::after { background-position: right calc(50% + 144px) bottom calc(50% - 70px); } }
 
-@media screen and (max-width: 63.9375em) { .wrap_wreath::after { background-position: right calc(50% + 126px) bottom calc(50% - 70px); } }
+@media screen and (max-width: 64em) { .wrap_wreath::after { background-position: right calc(50% + 126px) bottom calc(50% - 70px); } }
 
 @media screen and (max-width: 41.8125em) { .wrap_wreath::after { background-position: right calc(50% - 6px) bottom calc(50% - 64px); background-size: 239%; } }
 
@@ -910,11 +912,11 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_how::after { background: fixed url(../img/bg_how.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
 
-@media screen and (max-width: 63.9375em) { .wrap_how::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
+@media screen and (max-width: 64em) { .wrap_how::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
 .wrap_price::after { background: fixed url(../img/bg_price.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
 
-@media screen and (max-width: 63.9375em) { .wrap_price::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
+@media screen and (max-width: 64em) { .wrap_price::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
 .wrap_start { overflow: hidden; }
 
@@ -963,6 +965,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 .header_small { font-size: 18.5px; }
 
 .header_medium { font-size: 50px; }
+
+@media screen and (max-width: 41.8125em) { .header_medium { font-size: 40px; } }
 
 .header_large { font-size: 78px; }
 
@@ -1201,7 +1205,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 74.9375em) { .check_steps { position: absolute; top: 100%; right: 0; width: 284px; margin: 0; -webkit-animation: 1s 1.3s both fadeInRight; animation: 1s 1.3s both fadeInRight; } }
 
-@media screen and (max-width: 63.9375em) { .check_steps { width: 250px; } }
+@media screen and (max-width: 64em) { .check_steps { width: 250px; } }
 
 @media screen and (max-width: 41.8125em) { .check_steps { position: static; width: 100%; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 10px; } }
 
@@ -1244,7 +1248,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 74.9375em) { .check_card_outer { margin: 0; width: calc(100% - 300px); height: 400px; margin-right: 300px; } }
 
-@media screen and (max-width: 63.9375em) { .check_card_outer { width: calc(100% - 265px); margin-right: 265px; } }
+@media screen and (max-width: 64em) { .check_card_outer { width: calc(100% - 265px); margin-right: 265px; } }
 
 @media screen and (max-width: 41.8125em) { .check_card_outer { width: 100%; height: auto; margin: 0; text-align: center; } }
 
@@ -1252,7 +1256,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 74.9375em) { .check_card_outer .button { width: 284px; bottom: 0; left: calc(100% + 15px); } }
 
-@media screen and (max-width: 63.9375em) { .check_card_outer .button { width: 250px; } }
+@media screen and (max-width: 64em) { .check_card_outer .button { width: 250px; } }
 
 @media screen and (max-width: 41.8125em) { .check_card_outer .button { position: static; width: auto; margin-top: 10px; } }
 
@@ -1294,29 +1298,29 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 41.8125em) { .check_card_img { height: 0; padding: 35.7% 0; background-size: 260%; } }
 
-@media screen and (max-width: 63.9375em) { .how { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+@media screen and (max-width: 64em) { .how { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 
 .how_header { width: 330px; margin-right: 40px; z-index: 2; padding-left: 80px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
-@media screen and (max-width: 63.9375em) { .how_header { padding: 0; margin: 0; width: 100%; text-align: center; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; } }
+@media screen and (max-width: 64em) { .how_header { padding: 0; margin: 0; width: 100%; text-align: center; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; } }
 
-@media screen and (max-width: 63.9375em) { .how_header .header { font-size: 50px; } }
+@media screen and (max-width: 64em) { .how_header .header { font-size: 50px; } }
 
-@media screen and (max-width: 63.9375em) { .how_header .header { font-size: 40px; } }
+@media screen and (max-width: 64em) { .how_header .header { font-size: 40px; } }
 
 .how_card { position: relative; width: 595px; height: 425px; margin-top: 54px; }
 
-@media screen and (max-width: 63.9375em) { .how_card { width: 100%; height: auto; max-width: 645px; margin-top: 30px; } }
+@media screen and (max-width: 64em) { .how_card { width: 100%; height: auto; max-width: 645px; margin-top: 30px; } }
 
 @media screen and (max-width: 41.8125em) { .how_card { margin-top: 20px; } }
 
 .how_card::before { content: ''; position: absolute; top: -34px; left: -96px; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/bg_how.png) center no-repeat; background-attachment: fixed; -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
 
-@media screen and (max-width: 63.9375em) { .how_card::before { display: none; } }
+@media screen and (max-width: 64em) { .how_card::before { display: none; } }
 
 .how_card_inner { position: relative; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; z-index: 2; padding: 45px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
 
-@media screen and (max-width: 63.9375em) { .how_card_inner { box-shadow: none; background: none; padding: 0; } }
+@media screen and (max-width: 64em) { .how_card_inner { box-shadow: none; background: none; padding: 0; } }
 
 @media screen and (max-width: 41.8125em) { .how_card_inner { background-color: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); padding: 25px; } }
 
@@ -1332,71 +1336,83 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .how_step_title { font-family: 'Playfair Display', serif; text-transform: uppercase; font-size: 12px; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 1px solid; margin-bottom: 8px; color: #8d4c58; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
-@media screen and (max-width: 63.9375em) { .how_step_title { font-size: 20px; margin-bottom: 15px; } }
+@media screen and (max-width: 64em) { .how_step_title { font-size: 20px; margin-bottom: 15px; } }
 
 @media screen and (max-width: 41.8125em) { .how_step_title { font-size: 16px; margin-bottom: 2px; } }
 
 .how_step_title::after { content: counter(ch_step); font-size: 16px; margin-left: 10px; }
 
-@media screen and (max-width: 63.9375em) { .how_step_title::after { font-size: 25px; line-height: 0; } }
+@media screen and (max-width: 64em) { .how_step_title::after { font-size: 25px; line-height: 0; } }
 
 @media screen and (max-width: 41.8125em) { .how_step_title::after { font-size: 22px; } }
 
 .how_step_label { position: relative; top: 8px; font-family: 'Playfair Display', serif; font-size: 26px; text-transform: uppercase; padding-left: 20px; }
 
-@media screen and (max-width: 63.9375em) { .how_step_label { font-size: 33px; letter-spacing: 3.5px; } }
+@media screen and (max-width: 64em) { .how_step_label { font-size: 33px; letter-spacing: 3.5px; } }
 
 @media screen and (max-width: 41.8125em) { .how_step_label { top: 0; text-align: right; font-size: 18px; } }
 
 .how_step_descr { text-align: right; line-height: 1.5; }
 
-@media screen and (max-width: 63.9375em) { .how_step_descr { font-size: 20px; padding-left: 10%; } }
+@media screen and (max-width: 64em) { .how_step_descr { font-size: 20px; padding-left: 10%; } }
 
 @media screen and (max-width: 41.8125em) { .how_step_descr { font-size: 16px; padding-left: 5%; } }
 
 .price_card { position: relative; width: 100%; max-width: 875px; margin: 90px 60px; }
 
-@media screen and (max-width: 63.9375em) { .price_card { margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+@media screen and (max-width: 64em) { .price_card { margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 
 @media screen and (max-width: 41.8125em) { .price_card { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; } }
 
 .price_card_inner { position: relative; z-index: 2; width: 100%; height: 100%; background-color: #fff; box-shadow: 0 0 60px rgba(0, 0, 0, 0.17); padding: 28px 13px; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
 
-@media screen and (max-width: 63.9375em) { .price_card_inner { margin: 60px 0; -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; } }
+@media screen and (max-width: 64em) { .price_card_inner { margin: 60px 0; -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; } }
 
 @media screen and (max-width: 41.8125em) { .price_card_inner { margin: 20px 0; padding: 0; background: none; box-shadow: none; } }
 
 .price_card::before, .price_card::after { content: ''; position: absolute; top: 45px; left: -60px; width: 94%; height: 230px; background: #fff url(../img/bg_price.png) center no-repeat; background-attachment: fixed; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
 
-@media screen and (max-width: 63.9375em) { .price_card::before, .price_card::after { display: none; } }
+@media screen and (max-width: 64em) { .price_card::before, .price_card::after { display: none; } }
 
 .price_card::after { width: 90%; top: -58px; left: 120px; }
 
 .price_card .header { position: absolute; z-index: 2; top: -110px; left: -60px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
-@media screen and (max-width: 63.9375em) { .price_card .header { position: static; font-size: 50px; text-align: center; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; } }
+@media screen and (max-width: 64em) { .price_card .header { position: static; font-size: 50px; text-align: center; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; } }
 
 @media screen and (max-width: 41.8125em) { .price_card .header { font-size: 40px; } }
 
 .price_card .button { position: absolute; z-index: 2; right: -30px; bottom: -16px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
-@media screen and (max-width: 63.9375em) { .price_card .button { position: static; -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; } }
+@media screen and (max-width: 64em) { .price_card .button { position: static; -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; } }
 
 .price_card_hint { position: absolute; bottom: -65px; left: -60px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
-@media screen and (max-width: 63.9375em) { .price_card_hint { position: static; max-width: 380px; margin: auto; text-align: center; font-size: 18px; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; } }
+@media screen and (max-width: 64em) { .price_card_hint { position: static; max-width: 380px; margin: auto; text-align: center; font-size: 18px; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; } }
 
 @media screen and (max-width: 41.8125em) { .price_card_hint { font-size: 16px; } }
 
 .start { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
-.start_header { -webkit-animation-delay: 500ms; animation-delay: 500ms; }
+@media screen and (max-width: 64em) { .start { margin: 0; } }
+
+@media screen and (max-width: 41.8125em) { .start { margin: 0 20px; } }
+
+.start_header { -webkit-animation-delay: 500ms; animation-delay: 500ms; text-align: center; }
+
+@media screen and (max-width: 74.9375em) { .start_header { max-width: 520px; } }
 
 .start_header .header::after { content: ''; display: block; margin: auto; width: 239px; height: 1px; background: #000; opacity: 0.15; margin-top: 10px; margin-bottom: 14px; }
 
+@media screen and (max-width: 74.9375em) { .start_header .header::after { display: none; } }
+
 .start_header_descr { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; text-align: center; letter-spacing: 10px; min-height: 16px; }
 
-.start_container { width: 100%; max-width: 1130px; margin: auto; margin-top: 25px; box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1); padding: 45px 90px 20px 70px; -webkit-animation-delay: 1s; animation-delay: 1s; }
+.start_container { width: 100%; max-width: 1130px; margin-top: 25px; box-shadow: inset 1px 1px 35px rgba(0, 0, 0, 0.1); padding: 45px 90px 20px 70px; -webkit-animation-delay: 1s; animation-delay: 1s; }
+
+@media screen and (max-width: 74.9375em) { .start_container { padding: 25px 48px; } }
+
+@media screen and (max-width: 41.8125em) { .start_container { padding: 15px 8px; padding-right: 25px; } }
 
 .start_cards { height: 47vh; min-height: 370px; }
 
@@ -1404,13 +1420,17 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .start_cards .mCSB_container .start_card { opacity: 1; }
 
-.start_card { max-width: calc(25% - 30px); margin: 0 15px; margin-bottom: 13px; opacity: 0; -webkit-transition: 300ms; transition: 300ms; }
+.start_card { width: calc(25% - 30px); margin: 0 15px; margin-bottom: 13px; opacity: 0; -webkit-transition: 300ms; transition: 300ms; }
+
+@media screen and (max-width: 41.8125em) { .start_card { width: calc(50% - 16px); margin: 0 8px; margin-bottom: 8px; } }
 
 .start_card:hover .start_card_img { box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.31); }
 
 .start_card:hover .start_card_actions { opacity: 1; }
 
 .start_card_img { position: relative; border: 1px solid #b3b3b3; margin-bottom: 8px; -webkit-transition: 300ms; transition: 300ms; }
+
+.start_card_img img { width: 100%; }
 
 .start_card_actions { position: absolute; right: 0; bottom: 0; opacity: 0; -webkit-transition: 300ms; transition: 300ms; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
