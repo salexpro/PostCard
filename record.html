@@ -57,23 +57,25 @@
         </ul>
       </header>
       <section class="content record">
-        <div class="record_card animated fadeInLeft">
-          <div class="record_card_video">
-            <video controls class="main_video">
-              <source src="./place_video.mp4" type="video/mp4">
-              <source src="./place_video.webm" type="video/webm">Your browser does not support the video tag.<a href="./place_video.mp4" class="button">Download video</a>
-            </video>
+        <div class="record_inner">
+          <div class="record_card animated fadeInLeft">
+            <div class="record_card_video">
+              <video poster="//unsplash.it/620/350" controls class="main_video">
+                <source src="./place_video.mp4" type="video/mp4">
+                <source src="./place_video.webm" type="video/webm">Your browser does not support the video tag.<a href="./place_video.mp4" class="button">Download video</a>
+              </video>
+            </div>
+            <div class="record_card_actions">
+              <button class="record_card_actions_stop"></button>
+              <button class="record_card_actions_rec"></button>
+            </div>
           </div>
-          <div class="record_card_actions">
-            <button class="record_card_actions_stop"></button>
-            <button class="record_card_actions_rec"></button>
+          <div class="record_content animated fadeInRight">
+            <div class="record_content_time">01:59:00</div>
+            <div class="record_header">
+              <div class="header header_large">Record yourself here.</div>You have 2 minutes.
+            </div><a href="./register.html" class="button expanded max arrow_right">next</a>
           </div>
-        </div>
-        <div class="record_content animated fadeInRight">
-          <div class="record_content_time">01:59:00</div>
-          <div class="record_header">
-            <div class="header header_large">Record yourself here.</div>You have 2 minutes.
-          </div><a href="./register.html" class="button expanded max arrow_right">next</a>
         </div>
       </section>
       <footer class="footer">postcardactually.com</footer>
