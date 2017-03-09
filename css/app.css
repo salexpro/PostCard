@@ -932,6 +932,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_register::after { background: fixed url(../img/bg_register.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
 
+@media screen and (max-width: 41.8125em) { .wrap_register::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
+
 .wrap_plan::after { background: fixed url(../img/bg_plan.png) center no-repeat; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; }
 
 @-webkit-keyframes fadeInPart { from { opacity: 0; }
@@ -1666,23 +1668,51 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 41.8125em) { .record_header .header { position: static; white-space: normal; font-size: 40px; margin-bottom: 5px; } }
 
+@media screen and (max-width: 64em) { .register { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
 .register_content { width: 325px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+
+@media screen and (max-width: 64em) { .register_content { width: 100%; text-align: center; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; } }
 
 .register_content .header { font-size: 32px; }
 
+@media screen and (max-width: 64em) { .register_content .header { font-size: 20px; letter-spacing: 8px; } }
+
+@media screen and (max-width: 41.8125em) { .register_content .header { letter-spacing: 0; font-size: 18px; } }
+
+@media screen and (max-width: 64em) { .register_content .header_large { display: table; margin: auto; font-size: 50px; padding: 0 60px; padding-bottom: 5px; border-bottom: 1px solid rgba(0, 0, 0, 0.15); letter-spacing: 0; margin-bottom: 5px; white-space: nowrap; } }
+
+@media screen and (max-width: 41.8125em) { .register_content .header_large { white-space: normal; border: 0; padding: 0; font-size: 40px; } }
+
 .register_content_descr { line-height: 1.4; text-align: justify; margin-right: 20px; margin-top: 5px; }
 
-.register_card { position: relative; width: 423px; height: 283px; margin-left: 145px; }
+@media screen and (max-width: 64em) { .register_content_descr { text-align: center; font-size: 18px; width: 85%; margin: auto; margin-top: 5px; } }
+
+@media screen and (max-width: 41.8125em) { .register_content_descr { width: 100%; font-size: 16px; } }
+
+.register_card { position: relative; width: 100%; max-width: 423px; height: 283px; margin-left: 145px; }
+
+@media screen and (max-width: 64em) { .register_card { margin: 35px 0; } }
+
+@media screen and (max-width: 41.8125em) { .register_card { margin-top: 15px; margin-bottom: 50px; height: 230px; } }
 
 .register_card_inner { width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; position: relative; z-index: 1; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
 
-.register_card::before, .register_card::after { content: ''; position: absolute; left: -75px; bottom: -56px; width: 434px; height: 250px; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/card_register.svg) center no-repeat; background-attachment: fixed; background-size: 1146px; -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+.register_card::before, .register_card::after { content: ''; position: absolute; left: -75px; bottom: -56px; width: 103%; height: 250px; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/card_register.svg) center no-repeat; background-attachment: fixed; background-size: 1146px; -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+
+@media screen and (max-width: 64em) { .register_card::before, .register_card::after { bottom: -34px; left: -17vw; } }
+
+@media screen and (max-width: 41.8125em) { .register_card::before, .register_card::after { display: none; } }
 
 .register_card::after { left: 70px; bottom: 80px; }
 
-.register_card .tabs { box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.17); }
+@media screen and (max-width: 64em) { .register_card::after { bottom: 52px; left: auto; right: -17vw; } }
 
-.register_card .tabs-title { width: 50%; text-align: center; position: relative; -webkit-transition: 300ms; transition: 300ms; background-image: -webkit-linear-gradient(left, #fff, #fff); background-image: linear-gradient(to right, #fff, #fff); background-repeat: no-repeat; background-origin: content-box; }
+.register_card .tabs { display: -webkit-box; display: -ms-flexbox; display: flex; box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.17); }
+
+.register_card .tabs-title { width: 50%; text-align: center; position: relative; -webkit-transition: 300ms; transition: 300ms; background-image: -webkit-linear-gradient(left, #fff, #fff); background-image: linear-gradient(to right, #fff, #fff); background-repeat: no-repeat; background-origin: content-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+@media screen and (max-width: 41.8125em) { .register_card .tabs-title { padding: 0 !important; } }
 
 .register_card .tabs-title:first-child { padding-right: 20px; background-position: 220px 0; }
 
@@ -1692,6 +1722,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .register_card .tabs-title::after { content: ''; position: absolute; top: 0; right: -20px; display: block; border: 20px solid transparent; border-right: 20px solid #fff; border-bottom: 20px solid #fff; -webkit-transition: 300ms; transition: 300ms; }
 
+@media screen and (max-width: 41.8125em) { .register_card .tabs-title::after { display: none; } }
+
 .register_card .tabs-title.is-active { box-shadow: none; background-position: 0; }
 
 .register_card .tabs-title.is-active::after { border: 20px solid transparent; border-bottom: 20px solid #fff; border-left: 20px solid #fff; }
@@ -1700,13 +1732,21 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .register_card .tabs-title > a { color: #9c9c9c; }
 
+@media screen and (max-width: 41.8125em) { .register_card .tabs-title > a { padding-left: 0; padding-right: 0; font-size: 16px; } }
+
 .register_card .tabs-content { height: calc(100% - 40px); }
 
 .register_card .tabs-panel { height: 100%; }
 
+@media screen and (max-width: 41.8125em) { .register_card .tabs-panel { padding: 20px; } }
+
 .register_form { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .register_form input { margin: 0; }
+
+.register_form input[type="submit"] { position: absolute; left: calc(50% - 92px); top: calc(100% + 10px); }
+
+@media screen and (max-width: 41.8125em) { .register_form input[type="submit"] { max-width: none; top: calc(100% + 15px); left: 0; } }
 
 .register_form_forgot { margin-bottom: 20px; }
 

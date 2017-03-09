@@ -325,6 +325,10 @@ table{
         background: fixed url(../img/bg_register.png) center no-repeat;
         animation: 300ms 1s both fadeIn, 
                    1s 2s forwards fadeOutPart;
+        @include breakpoint(small down) {
+            background-attachment: scroll;
+            animation: 300ms 800ms both fadeInPart;
+        }
     }
     &_plan::after{
         background: fixed url(../img/bg_plan.png) center no-repeat;
@@ -2225,24 +2229,79 @@ table{
 }
 
 .register{
+    @include breakpoint(medium down) {
+        flex-direction: column;
+    }
     &_content{
         width: 325px;
         animation-delay: 1.3s;
+        @include breakpoint(medium down) {
+            width: 100%;
+            text-align: center;
+            animation-name: fadeInDown;
+        }
         .header{
             font-size: 32px;
+            @include breakpoint(medium down) {
+                font-size: 20px;
+                letter-spacing: 8px;
+            }
+            @include breakpoint(small down) {
+                letter-spacing: 0;
+                font-size: 18px;
+            }
+            &_large{
+                @include breakpoint(medium down) {
+                    display: table;
+                    margin: auto;
+                    font-size: 50px;
+                    padding: 0 60px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid rgba($black, 0.15);
+                    letter-spacing: 0;
+                    margin-bottom: 5px;
+                    white-space: nowrap;
+                }
+                @include breakpoint(small down) {
+                    white-space: normal;
+                    border: 0;
+                    padding: 0;
+                    font-size: 40px;
+                }
+            }
         }
         &_descr{
             line-height: 1.4;
             text-align: justify;
             margin-right: 20px;
             margin-top: 5px;
+            @include breakpoint(medium down) {
+                text-align: center;
+                font-size: 18px;
+                width: 85%;
+                margin: auto;
+                margin-top: 5px;
+            }
+            @include breakpoint(small down) {
+                width: 100%;
+                font-size: 16px;
+            }
         }
     }
     &_card{
         position: relative;
-        width: 423px;
+        width: 100%;
+        max-width: 423px;
         height: 283px;
         margin-left: 145px;
+        @include breakpoint(medium down) {
+            margin: 35px 0;
+        }
+        @include breakpoint(small down) {
+            margin-top: 15px;
+            margin-bottom: 50px;
+            height: 230px;
+        }
         &_inner{
             width: 100%;
             height: 100%;
@@ -2257,20 +2316,33 @@ table{
             position: absolute;
             left: -75px;
             bottom: -56px;
-            width: 434px;
+            width: 103%;
             height: 250px;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
             background: $white url(../img/card_register.svg) center no-repeat;
             background-attachment: fixed;
             background-size: 1146px;
             animation: 1s 1.3s both fadeIn;
+            @include breakpoint(medium down) {
+                bottom: -34px;
+                left: -17vw;
+            }
+            @include breakpoint(small down) {
+                display: none;
+            }
         }
         &::after{
             @extend .register_card::before;
             left: 70px;
             bottom: 80px;
+            @include breakpoint(medium down) {
+                bottom: 52px;
+                left: auto;
+                right: -17vw;
+            }
         }
         .tabs{
+            display: flex;
             box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.17);
             &-title{
                 width: 50%;
@@ -2280,6 +2352,12 @@ table{
                 background-image: linear-gradient(to right, $white, $white);
                 background-repeat: no-repeat;
                 background-origin: content-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include breakpoint(small down) {
+                    padding: 0 !important;
+                }
                 &:first-child{
                     padding-right: 20px;
                     background-position: 220px 0;
@@ -2301,6 +2379,9 @@ table{
                     border-right: 20px solid $white; 
                     border-bottom: 20px solid $white;
                     transition: 300ms;
+                    @include breakpoint(small down) {
+                        display: none;
+                    }
                 }
                 &.is-active{
                     box-shadow: none;
@@ -2316,6 +2397,11 @@ table{
                 }
                 > a{
                     color: #9c9c9c;
+                    @include breakpoint(small down) {
+                        padding-left: 0;
+                        padding-right: 0;
+                        font-size: 16px;
+                    }
                 }
             }
             &-content{
@@ -2323,6 +2409,9 @@ table{
             }
             &-panel{
                 height: 100%;
+                @include breakpoint(small down) {
+                    padding: 20px;
+                }
             }
         }
     }
@@ -2334,6 +2423,16 @@ table{
         justify-content: space-between;
         input{
             margin: 0;
+            &[type="submit"]{
+                position: absolute;
+                left: calc(50% - 92px);
+                top: calc(100% + 10px);
+                @include breakpoint(small down) {
+                    max-width: none;
+                    top: calc(100% + 15px);
+                    left: 0;
+                }
+            }
         }
         &_forgot{
             margin-bottom: 20px;
