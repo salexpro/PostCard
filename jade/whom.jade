@@ -8,8 +8,8 @@ html(lang="ru")
                 .whom_header.animated.fadeInLeft
                     .header.header_large
                         | Now, who gets this card?
-                form.whom_card(action="")
-                    .whom_card_inner.animated.fadeInUp
+                .whom_card
+                    form.whom_card_inner.animated.fadeInUp(action="")
                         .whom_card_form
                             .whom_card_label
                                 | First name*
@@ -41,6 +41,8 @@ html(lang="ru")
                                 span optional
                             textarea.clean(rows="3" placeholder="Type a few nice words here and they will also appear on your card")
                         input.button.expanded.max(type="submit" value="save")
+                    button#step2.button.expanded.arrow_right.animated.fadeInUp
+                        | STEP 2
                     a.button.animated.fadeInUp(href="./play.html")
                             | send your card
             include includes/_footer

@@ -151,6 +151,7 @@ table{
                 border-right: 0;
                 margin-left: 6px;
                 margin-right: -16px;
+                margin-bottom: -1px;
             }
         }
     }
@@ -348,6 +349,10 @@ table{
             background: fixed url(../img/bg_whom.png) center no-repeat;
             animation: 300ms 1s both fadeIn, 
                        1s 2s forwards fadeOutPart;
+            @include breakpoint(large down) {
+                background-attachment: scroll;
+                animation: 300ms 800ms both fadeInPart;
+            }
         }
     }
     &_play{
@@ -2621,40 +2626,108 @@ table{
 }
 
 .whom{
+    @include breakpoint(large down) {
+        flex-direction: column;
+    }
+    @include breakpoint(small down) {
+        align-items: flex-start;
+    }
     &_header{
         width: 350px;
         position: relative;
         z-index: 2;
         animation-delay: 1.3s;
+        @include breakpoint(large down) {
+            animation-delay: 1s;
+            width: 100%;
+            text-align: center;
+            animation-name: fadeInDown;
+        }
+        @include breakpoint(small down) {
+            &::after{
+                content: 'Step 1/2';
+                display: block;
+                margin-top: 10px;
+            }
+            &.step2::after{
+                content: 'Step 2/2';
+            }
+        }
+        .header{
+            @include breakpoint(large down) {
+                font-size: 50px;
+            }
+            @include breakpoint(small down) {
+                font-size: 40px;
+            }
+        }
     }
     &_card{
         position: relative;
-        width: 730px;
-        height: 335px;
+        width: 100%;
+        max-width: 730px;
+        min-width: 680px;
+        @include breakpoint(large down) {
+            margin-top: 60px;
+        }
+        @include breakpoint(small down) {
+            width: calc(200vw - 40px);
+            max-width: none;
+            min-width: auto;
+            margin-top: 20px;
+            transition: transform 500ms;
+            &.step2{
+                transform: translateX(calc(-50% - 20px));
+            }
+        }
         &::before{
             content: '';
             position: absolute;
             left: -64px;
             top: -48px;
-            width: 573px;
+            width: 79%;
             height: 310px;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
             background: $white url(../img/bg_whom.png) center no-repeat;
             background-attachment: fixed;
             animation: 1s 1.3s both fadeIn;
+            @include breakpoint(large down) {
+                display: none;
+            }
         }
         &::after{
             @extend .whom_card::before;
-            width: 648px;
+            width: 89%;
             height: 362px;
             left: 120px;
             top: 20px;
         }
-        > .button{
+        > a.button{
             position: absolute;
             right: 0;
             bottom: -125px;
             animation-delay: 1.3s;
+            @include breakpoint(large down) {
+                display: table;
+                position: static;
+                margin: auto;
+                margin-top: 70px;
+            }
+            @include breakpoint(small down) {
+                margin: 0;
+                display: block;
+                width: calc(50% - 20px);
+                float: right;
+            }
+        }
+        > button.button{
+            display: none;
+            animation-delay: 1.3s;
+            @include breakpoint(small down) {
+                display: block;
+                float: left;
+                width: calc(50% - 20px);
+            }
         }
         &_inner{
             position: relative;
@@ -2666,17 +2739,29 @@ table{
             background-color: #fbfbfb;
             padding: 20px 35px 30px;
             animation-delay: 1.5s;
-            .button{
+            @include breakpoint(small down) {
+                background: none;
+                padding: 0;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+            input.button{
                 position: absolute;
                 bottom: -18px;
                 left: 50%;
                 transform: translateX(-50%);
+                @include breakpoint(small down) {
+                    display: none;
+                }
             }
         }
         &_form{
             width: 50%;
             &:first-child{
                 padding-right: 60px;
+                @include breakpoint(small down) {
+                    padding-right: 20px;
+                }
                 &::before{
                     content: '';
                     position: absolute;
@@ -2685,13 +2770,25 @@ table{
                     width: 1px;
                     height: 75%;
                     background-color: #bfbfbf;
+                    @include breakpoint(small down) {
+                        display: none;
+                    }
                 }
             }
             &:last-of-type{
                 padding-left: 60px;
+                @include breakpoint(small down) {
+                    padding-left: 20px;
+                }
             }
             [type="text"]{
                 margin-bottom: 8px;
+                &:last-child{
+                    margin: 0;
+                }
+            }
+            textarea{
+                margin: 0;
             }
         }
         &_label{

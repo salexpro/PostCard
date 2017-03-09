@@ -854,7 +854,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .button.higher { line-height: 1.5; }
 
-.button.arrow_right::after { content: ''; display: inline-block; border: 6px solid transparent; border-left: 10px solid #fff; border-right: 0; margin-left: 6px; margin-right: -16px; }
+.button.arrow_right::after { content: ''; display: inline-block; border: 6px solid transparent; border-left: 10px solid #fff; border-right: 0; margin-left: 6px; margin-right: -16px; margin-bottom: -1px; }
 
 .progress { outline: none; border: 1px solid #fff; box-shadow: inset 0 0 3px #cacaca, 0 0 3px #cacaca; }
 
@@ -945,6 +945,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 .wrap_whom { overflow: hidden; }
 
 .wrap_whom::after { background: fixed url(../img/bg_whom.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+
+@media screen and (max-width: 74.9375em) { .wrap_whom::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
 .wrap_play { overflow: hidden; }
 
@@ -1818,29 +1820,71 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .plan_item_label { height: 40px; border: 1px solid #bebebe; background-color: #fff; position: relative; font-size: 18px; text-align: center; line-height: 38px; }
 
+@media screen and (max-width: 74.9375em) { .whom { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
+@media screen and (max-width: 41.8125em) { .whom { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; } }
+
 .whom_header { width: 350px; position: relative; z-index: 2; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
-.whom_card { position: relative; width: 730px; height: 335px; }
+@media screen and (max-width: 74.9375em) { .whom_header { -webkit-animation-delay: 1s; animation-delay: 1s; width: 100%; text-align: center; -webkit-animation-name: fadeInDown; animation-name: fadeInDown; } }
 
-.whom_card::before, .whom_card::after { content: ''; position: absolute; left: -64px; top: -48px; width: 573px; height: 310px; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/bg_whom.png) center no-repeat; background-attachment: fixed; -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+@media screen and (max-width: 41.8125em) { .whom_header::after { content: 'Step 1/2'; display: block; margin-top: 10px; }
+  .whom_header.step2::after { content: 'Step 2/2'; } }
 
-.whom_card::after { width: 648px; height: 362px; left: 120px; top: 20px; }
+@media screen and (max-width: 74.9375em) { .whom_header .header { font-size: 50px; } }
 
-.whom_card > .button { position: absolute; right: 0; bottom: -125px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+@media screen and (max-width: 41.8125em) { .whom_header .header { font-size: 40px; } }
+
+.whom_card { position: relative; width: 100%; max-width: 730px; min-width: 680px; }
+
+@media screen and (max-width: 74.9375em) { .whom_card { margin-top: 60px; } }
+
+@media screen and (max-width: 41.8125em) { .whom_card { width: calc(200vw - 40px); max-width: none; min-width: auto; margin-top: 20px; -webkit-transition: -webkit-transform 500ms; transition: -webkit-transform 500ms; transition: transform 500ms; transition: transform 500ms, -webkit-transform 500ms; }
+  .whom_card.step2 { -webkit-transform: translateX(calc(-50% - 20px)); transform: translateX(calc(-50% - 20px)); } }
+
+.whom_card::before, .whom_card::after { content: ''; position: absolute; left: -64px; top: -48px; width: 79%; height: 310px; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff url(../img/bg_whom.png) center no-repeat; background-attachment: fixed; -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+
+@media screen and (max-width: 74.9375em) { .whom_card::before, .whom_card::after { display: none; } }
+
+.whom_card::after { width: 89%; height: 362px; left: 120px; top: 20px; }
+
+.whom_card > a.button { position: absolute; right: 0; bottom: -125px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+
+@media screen and (max-width: 74.9375em) { .whom_card > a.button { display: table; position: static; margin: auto; margin-top: 70px; } }
+
+@media screen and (max-width: 41.8125em) { .whom_card > a.button { margin: 0; display: block; width: calc(50% - 20px); float: right; } }
+
+.whom_card > button.button { display: none; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+
+@media screen and (max-width: 41.8125em) { .whom_card > button.button { display: block; float: left; width: calc(50% - 20px); } }
 
 .whom_card_inner { position: relative; z-index: 2; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 100%; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fbfbfb; padding: 20px 35px 30px; -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
 
-.whom_card_inner .button { position: absolute; bottom: -18px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+@media screen and (max-width: 41.8125em) { .whom_card_inner { background: none; padding: 0; box-shadow: none; margin-bottom: 20px; } }
+
+.whom_card_inner input.button { position: absolute; bottom: -18px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+@media screen and (max-width: 41.8125em) { .whom_card_inner input.button { display: none; } }
 
 .whom_card_form { width: 50%; }
 
 .whom_card_form:first-child { padding-right: 60px; }
 
+@media screen and (max-width: 41.8125em) { .whom_card_form:first-child { padding-right: 20px; } }
+
 .whom_card_form:first-child::before { content: ''; position: absolute; left: 50%; top: 35px; width: 1px; height: 75%; background-color: #bfbfbf; }
+
+@media screen and (max-width: 41.8125em) { .whom_card_form:first-child::before { display: none; } }
 
 .whom_card_form:last-of-type { padding-left: 60px; }
 
+@media screen and (max-width: 41.8125em) { .whom_card_form:last-of-type { padding-left: 20px; } }
+
 .whom_card_form [type="text"] { margin-bottom: 8px; }
+
+.whom_card_form [type="text"]:last-child { margin: 0; }
+
+.whom_card_form textarea { margin: 0; }
 
 .whom_card_label { color: #9d9d9d; margin-bottom: 1px; }
 

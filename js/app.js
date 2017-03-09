@@ -25,3 +25,8 @@ if($('.start_cards').length){
         autoDraggerLength: true
     });
 }
+
+// Whom page mobile form
+$('#step2').click(function(){
+    $('.whom_header, .whom_card').addClass('step2');
+})
