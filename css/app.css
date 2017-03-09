@@ -958,11 +958,13 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 @media screen and (max-width: 41.8125em) { .wrap_blog::after { background-attachment: scroll; background-position: top center; } }
 
-.wrap_article::after { background: fixed url(../img/bg_article_left.png) left bottom no-repeat, fixed url(../img/bg_article_right.png) right 53px no-repeat; -webkit-animation: 300ms 800ms both fadeIn; animation: 300ms 800ms both fadeIn; }
+.wrap_article::after { background: url(../img/bg_article_left.png) left bottom no-repeat, url(../img/bg_article_right.png) right 53px no-repeat; -webkit-animation: 300ms 800ms both fadeIn; animation: 300ms 800ms both fadeIn; }
 
 .wrap_contact { overflow: hidden; }
 
 .wrap_contact::after { background: fixed url(../img/bg_contact.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+
+@media screen and (max-width: 41.8125em) { .wrap_contact::after { background-attachment: scroll; } }
 
 .header { font-family: 'Playfair Display', serif; font-size: 35px; font-weight: 700; line-height: 1.2; }
 
@@ -1925,21 +1927,48 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .article .blog_article_brief:last-child { margin-bottom: 0; -webkit-animation-delay: 1.8s; animation-delay: 1.8s; }
 
+@media screen and (max-width: 55.9375em) { .contact { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
 .contact .header { margin-bottom: 20px; }
 
-.contact_header { font-size: 18px; line-height: 1.7; margin-right: 105px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+@media screen and (max-width: 41.8125em) { .contact .header { margin-bottom: 10px; } }
 
-.contact_card { position: relative; width: 420px; height: 440px; }
+.contact_header { font-size: 18px; line-height: 1.7; margin-right: 105px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; position: relative; z-index: 2; }
+
+@media screen and (max-width: 74.9375em) { .contact_header { margin-right: 25px; } }
+
+@media screen and (max-width: 55.9375em) { .contact_header { text-align: center; margin: 0; margin-bottom: 10px; }
+  .contact_header .header { margin-bottom: 0; } }
+
+@media screen and (max-width: 41.8125em) { .contact_header { font-size: 16px; line-height: normal; } }
+
+.contact_card { position: relative; min-width: 420px; height: 440px; }
+
+@media screen and (max-width: 74.9375em) { .contact_card { margin: 40px 0; } }
+
+@media screen and (max-width: 41.8125em) { .contact_card { max-width: 420px; width: 100%; height: auto; min-width: auto; margin-top: 48px; margin-bottom: 56px; }
+  .contact_card .header { width: 100%; position: absolute; white-space: nowrap; left: 0; bottom: 100%; }
+  .contact_card textarea { margin: 0; } }
+
+@media screen and (max-width: 41.8125em) and (max-width: 41.8125em) { .contact_card textarea { max-height: 130px; } }
 
 .contact_card::before, .contact_card::after { content: ''; position: absolute; left: -75px; bottom: -40px; width: 237px; height: 391px; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background: #fff fixed url(../img/bg_contact.png) center no-repeat; -webkit-animation: 1s 1.3s both fadeIn; animation: 1s 1.3s both fadeIn; }
+
+@media screen and (max-width: 41.8125em) { .contact_card::before, .contact_card::after { display: none; } }
 
 .contact_card::after { left: auto; bottom: auto; right: -80px; top: -40px; width: 297px; height: 382px; }
 
 .contact_card_inner { position: relative; z-index: 1; width: 100%; height: 100%; background-color: #fff; padding: 20px 35px; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
 
+@media screen and (max-width: 41.8125em) { .contact_card_inner { text-align: center; padding: 20px; } }
+
 .contact_card input { margin-bottom: 28px; }
 
+@media screen and (max-width: 41.8125em) { .contact_card input { margin-bottom: 20px; } }
+
 .contact_card .button { position: absolute; left: 50%; bottom: -15px; -webkit-transform: translateX(-50%); transform: translateX(-50%); margin: 0; }
+
+@media screen and (max-width: 41.8125em) { .contact_card .button { max-width: none; bottom: -56px; } }
 
 .footer { height: 130px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 300; line-height: 1; text-transform: uppercase; letter-spacing: 3.5px; }
 

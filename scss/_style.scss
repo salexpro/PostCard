@@ -375,7 +375,7 @@ table{
         }
     }
     &_article::after{
-        background: fixed url(../img/bg_article_left.png) left bottom no-repeat, fixed url(../img/bg_article_right.png) right 53px no-repeat;
+        background: url(../img/bg_article_left.png) left bottom no-repeat, url(../img/bg_article_right.png) right 53px no-repeat;
         animation: 300ms 800ms both fadeIn;
     }
     &_contact{
@@ -384,6 +384,9 @@ table{
             background: fixed url(../img/bg_contact.png) center no-repeat;
             animation: 300ms 1s both fadeIn, 
                            1s 2s forwards fadeOutPart;
+            @include breakpoint(small down) {
+                background-attachment: scroll;
+            }
         }
     }
 }
@@ -2925,19 +2928,66 @@ table{
 }
 
 .contact{
+    @include breakpoint(895px down) {
+        flex-direction: column;
+    }
     .header{
         margin-bottom: 20px;
+        @include breakpoint(small down) {
+            margin-bottom: 10px;
+        }
     }
     &_header{
         font-size: 18px;
         line-height: 1.7;
         margin-right: 105px;
         animation-delay: 1.3s;
+        position: relative;
+        z-index: 2;
+        @include breakpoint(large down) {
+            margin-right: 25px;
+        }
+        @include breakpoint(895px down) {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 10px;
+            .header{
+                margin-bottom: 0;
+            }
+        }
+        @include breakpoint(small down) {
+            font-size: 16px;
+            line-height: normal;
+        }
     }
     &_card{
         position: relative;
-        width: 420px;
+        min-width: 420px;
         height: 440px;
+        @include breakpoint(large down) {
+            margin: 40px 0;
+        }
+        @include breakpoint(small down) {
+            max-width: 420px;
+            width: 100%;
+            height: auto;
+            min-width: auto;
+            margin-top: 48px;
+            margin-bottom: 56px;
+            .header{
+                width: 100%;
+                position: absolute;
+                white-space: nowrap;
+                left: 0;
+                bottom: 100%;
+            }
+            textarea{
+                margin: 0;
+                @include breakpoint(small down) {
+                    max-height: 130px;
+                }
+            }
+        }
         &::before{
             content: '';
             position: absolute;
@@ -2948,6 +2998,9 @@ table{
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
             background: $white fixed url(../img/bg_contact.png) center no-repeat;
             animation: 1s 1.3s both fadeIn;
+            @include breakpoint(small down) {
+                display: none;
+            }
         }
         &::after{
             @extend .contact_card::before;
@@ -2967,9 +3020,16 @@ table{
             padding: 20px 35px;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
             animation-delay: 1.5s;
+            @include breakpoint(small down) {
+                text-align: center;
+                padding: 20px;
+            }
         }
         input{
             margin-bottom: 28px;
+            @include breakpoint(small down) {
+                margin-bottom: 20px;
+            }
         }
         .button{
             position: absolute;
@@ -2977,6 +3037,10 @@ table{
             bottom: -15px;
             transform: translateX(-50%);
             margin: 0;
+            @include breakpoint(small down) {
+                max-width: none;
+                bottom: -56px;
+            }
         }
     }
 }
