@@ -369,6 +369,10 @@ table{
     &_blog::after{
         background: fixed url(../img/bg_blog.png) center no-repeat;
         animation: 300ms 800ms both fadeIn;
+        @include breakpoint(small down) {
+            background-attachment: scroll;
+            background-position: top center;
+        }
     }
     &_article::after{
         background: fixed url(../img/bg_article_left.png) left bottom no-repeat, fixed url(../img/bg_article_right.png) right 53px no-repeat;
@@ -2737,12 +2741,30 @@ table{
 
 .blog{
     align-items: flex-start;
+    @include breakpoint(small down) {
+        flex-direction: column-reverse;
+    }
     &_articles{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: -47px;
         animation-delay: 1s;
+        @include breakpoint(small down) {
+            width: 100%;
+            display: block;
+            margin-bottom: -20px;
+            &::before{
+                content: 'Blog';
+                display: block;
+                font-family: 'Playfair Display', serif;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.2;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
     }
     &_article{
         position: relative;
@@ -2753,8 +2775,20 @@ table{
         margin-right: 30px;
         margin-bottom: 47px;
         padding: 9px 28px 20px;
+        @include breakpoint(medium down) {
+            width: calc(100% - 30px);
+        }
+        @include breakpoint(small down) {
+            width: 100%;
+            padding: 10px 20px;
+            margin: auto;
+            margin-bottom: 56px;
+        }
         .header{
             font-size: 30px;
+            @include breakpoint(small down) {
+                font-size: 25px;
+            }
         }
         &_date{
             color: $secondary-color;
@@ -2763,23 +2797,66 @@ table{
         &_brief{
             line-height: 1.58;
             margin: 10px 0;
+            @include breakpoint(small down) {
+                line-height: normal;
+                font-size: 15px;
+                margin-bottom: 0;
+            }
         }
         .button{
             position: absolute;
             left: 50%;
             bottom: -17px;
-            transform: translateX(-50%)
+            transform: translateX(-50%);
+            @include breakpoint(small down) {
+                bottom: -36px;
+                max-width: none;
+            }
         }
     }
     &_sidebar{
         min-width: 295px;
         animation-delay: 1.3s;
+        @include breakpoint(medium down) {
+            min-width: 225px;
+            animation-name: fadeIn;
+        }
+        @include breakpoint(small down) {
+            width: 100%;
+        }
+        &_inner{
+            @include breakpoint(small down) {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+    &_search{
+        @include breakpoint(small down) {
+            order: 2;
+            margin-top: 20px;
+        }
     }
     &_recent{
+        @include breakpoint(small down) {
+            order: 1
+        }
+        .header{
+            @include breakpoint(small down) {
+                text-align: center;
+            }
+        }
         &_publ{
             margin-top: 20px;
+            @include breakpoint(small down) {
+                margin-top: 15px;
+            }
             > a{
                 font-size: 22px;
+                @include breakpoint(small down) {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -2787,11 +2864,21 @@ table{
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         margin-top: 70px;
+        @include breakpoint(small down) {
+            order:3;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
         > a, > b{
             font-weight: 300;
             color: $secondary-color;
             margin: 0 7px;
             padding: 0 5px;
+            @include breakpoint(medium down) {
+                margin: 0 3px;
+                padding: 0 4px;
+            }
             &:first-child{
                 padding-left: 0;
                 margin-left: 0;
