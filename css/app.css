@@ -1921,6 +1921,8 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .article_tags a:hover { text-decoration: underline; }
 
+@media screen and (min-width: 41.875em) and (max-width: 64em) { .article .header { font-size: 45px; } }
+
 .article .blog_article_brief:last-child { margin-bottom: 0; -webkit-animation-delay: 1.8s; animation-delay: 1.8s; }
 
 .contact .header { margin-bottom: 20px; }

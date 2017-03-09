@@ -2911,6 +2911,11 @@ table{
             }
         }
     }
+    .header{
+        @include breakpoint(medium only) {
+            font-size: 45px;
+        }
+    }
     .blog_article_brief{
         &:last-child{
             margin-bottom: 0;
