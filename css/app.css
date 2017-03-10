@@ -952,6 +952,10 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_play::after { background: fixed url(../img/bg_card.png) no-repeat; background-position: right calc(50vw - 615px) bottom calc(50vh - 410px); -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; }
 
+@media screen and (max-width: 74.9375em) { .wrap_play::after { background-position: right calc(50vw - 545px) bottom calc(50vh - 410px); } }
+
+@media screen and (max-width: 41.8125em) { .wrap_play::after { background-position: right 21% top calc(50% - 150px); background-size: calc(174% - 20px); background-attachment: scroll; } }
+
 .wrap_thank { overflow: hidden; }
 
 .wrap_thank::after { background: fixed url(../img/bg_thank.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
@@ -1890,23 +1894,53 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .whom_card_label span { color: #000; text-decoration: underline; float: right; }
 
+@media screen and (max-width: 41.8125em) { .play { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; } }
+
 .play_plan { width: 482px; height: 258px; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); background-color: #fff; margin-right: -70px; position: relative; font-size: 18px; padding: 20px; padding-right: 130px; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
+
+@media screen and (max-width: 74.9375em) { .play_plan { width: 400px; height: 240px; padding: 17px; padding-right: 87px; font-size: 16px; min-width: 345px; } }
+
+@media screen and (max-width: 41.8125em) { .play_plan { width: 100%; min-width: auto; height: auto; padding: 15px; margin: 0; margin-top: 20px; margin-bottom: 56px; -webkit-animation-name: fadeIn; animation-name: fadeIn; } }
 
 .play_plan table { border-spacing: 14px 15px; }
 
-.play_plan td { padding: 11px 10px; }
+@media screen and (max-width: 74.9375em) { .play_plan table { border-spacing: 13px; } }
+
+@media screen and (max-width: 41.8125em) { .play_plan table { display: table; margin: 0; table-layout: auto; font-size: 16px; }
+  .play_plan table tbody, .play_plan table thead { width: 100%; display: table-row-group; }
+  .play_plan table tr { width: 100%; margin: 0; } }
+
+.play_plan td { padding: 11px 5px; }
+
+@media screen and (max-width: 41.8125em) { .play_plan td { display: table-cell; padding: 5px; height: auto; } }
 
 .play_plan td:first-child { width: 60%; }
 
 .play_plan .button { position: absolute; bottom: -18px; left: calc(50% - 55px); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
+@media screen and (max-width: 74.9375em) { .play_plan .button { white-space: nowrap; left: calc(50% - 35px); } }
+
+@media screen and (max-width: 41.8125em) { .play_plan .button { left: 0; width: 100%; bottom: -56px; -webkit-transform: none; transform: none; } }
+
 .play_card { position: relative; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
-.play_card::after { content: ''; position: absolute; left: -40px; bottom: -45px; width: 645px; height: 448px; background-color: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); z-index: 0; }
+@media screen and (max-width: 74.9375em) { .play_card { width: 100%; } }
+
+@media screen and (max-width: 41.8125em) { .play_card { -webkit-animation-name: fadeIn; animation-name: fadeIn; } }
+
+.play_card::after { content: ''; position: absolute; left: -40px; bottom: -45px; width: 100%; height: 100%; background-color: #fff; box-shadow: 0 0 16px rgba(0, 0, 0, 0.17); z-index: 0; }
+
+@media screen and (max-width: 74.9375em) { .play_card::after { display: none; } }
 
 .play_card .button { position: absolute; right: 0; bottom: -60px; z-index: 1; }
 
-.play .actually_card { width: 645px; height: 448px; background-position: right calc(50vw - 615px) bottom calc(50vh - 410px); z-index: 1; }
+@media screen and (max-width: 41.8125em) { .play_card .button { position: static; max-width: none; } }
+
+.play .actually_card { width: 645px; height: 448px; background-position: right calc(50vw - 615px) bottom calc(50vh - 410px); background-size: 832px !important; background-attachment: fixed; margin: 0 !important; z-index: 1; }
+
+@media screen and (max-width: 74.9375em) { .play .actually_card { width: 100%; min-width: 400px; max-width: none; height: 424px; background-position: right calc(50vw - 545px) bottom calc(50vh - 410px); } }
+
+@media screen and (max-width: 41.8125em) { .play .actually_card { min-width: auto; height: 0; margin-bottom: 20px !important; background-size: 140% !important; background-position: center top 45%; background-attachment: scroll; -webkit-animation-name: fadeIn; animation-name: fadeIn; } }
 
 .thank_header { width: 540px; position: relative; z-index: 1; -webkit-animation-delay: 1.3s; animation-delay: 1.3s; }
 
