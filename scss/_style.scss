@@ -377,6 +377,10 @@ table{
             background: fixed url(../img/bg_thank.png) center no-repeat;
             animation: 300ms 1s both fadeIn, 
                        1s 2s forwards fadeOutPart;
+            @include breakpoint(medium down) {
+                background-attachment: scroll;
+                animation: 300ms 800ms both fadeInPart;
+            }
         }
     }
     &_blog::after{
@@ -2957,19 +2961,69 @@ table{
 }
 
 .thank{
+    @include breakpoint(medium down) {
+        flex-direction: column;
+    }
     &_header{
         width: 540px;
         position: relative;
         z-index: 1;
         animation-delay: 1.3s;
+        @include breakpoint(medium down) {
+            width: 100%;
+            text-align: center;
+            animation-name: fadeInDown;
+        }
         .header{
             font-size: 28px;
+            @include breakpoint(medium down) {
+                font-size: 20px;
+                letter-spacing: 8px;
+                font-weight: 900;
+            }
+            @include breakpoint(small down) {
+                letter-spacing: 0;
+                font-size: 16px;
+                font-family: "GTWalsheim", Helvetica, Roboto, Arial, sans-serif;
+                font-weight: normal;
+            }
+            &_large{
+                @include breakpoint(medium down) {
+                    display: table;
+                    margin: auto;
+                    font-size: 50px;
+                    padding: 0 60px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid rgba($black, 0.15);
+                    letter-spacing: 0;
+                    margin-bottom: 5px;
+                    font-weight: 600;
+                }
+                @include breakpoint(small down) {
+                    border: 0;
+                    padding: 0;
+                    font-size: 40px;
+                    font-family: 'Playfair Display', serif;
+                }
+            }
         }
     }
     &_card{
         position: relative;
         width: 504px;
-        height: 293px;  
+        min-width: 465px;
+        height: 293px;
+        @include breakpoint(medium down) {
+            margin-top: 30px;
+            max-width: 504px;
+            width: 100%;
+            min-width: 280px;
+            height: auto;
+            margin-bottom: 80px;
+        }
+        @include breakpoint(small down) {
+            margin-bottom: 0;
+        }
         &_inner{
             position: relative;
             width: 100%;
@@ -2982,10 +3036,29 @@ table{
             font-size: 24px;
             text-align: center;
             animation-delay: 1.5s;
+            @include breakpoint(medium down) {
+                padding: 30px;
+                font-size: 20px;
+                margin: 0;
+            }
+            @include breakpoint(small down) {
+                padding: 18px;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p{
+                margin: 0;
+            }
             .button{
                 width: 100px;
                 margin: 9px;
                 margin-top: 58px;
+                @include breakpoint(medium down) {
+                    margin-top: 45px;
+                }
+                @include breakpoint(small down) {
+                    margin-top: 30px;
+                }
             }
         }
         &::before{
@@ -2993,14 +3066,17 @@ table{
             position: absolute;
             left: -146px;
             bottom: -86px;
-            width: 585px;
+            width: 116%;
             height: 354px;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
             background: $white url(../img/card_thank.svg) center no-repeat;
             background-attachment: fixed;
             background-size: 983px;
             animation: 1s 1.3s both fadeIn;
-        }
+            @include breakpoint(medium down) {
+                display: none;
+            }
+        }   
         &::after{
             @extend .thank_card::before;
             width: 100%;
@@ -3013,6 +3089,15 @@ table{
             right: -46px;
             bottom: -100px;
             animation-delay: 1.3s;
+            @include breakpoint(medium down) {
+                right: calc(50% - 197px);
+                bottom: -80px;
+            }
+            @include breakpoint(small down) {
+                position: static;
+                margin: auto;
+                display: table;
+            }
         }
     }
 }
@@ -3342,4 +3427,9 @@ table{
     &.small{
         height: 100px;
     }
+}
+
+// Remove free hosting shit
+.cbalink{
+    display: none;
 }
