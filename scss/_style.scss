@@ -1701,23 +1701,36 @@ table{
         margin-top: 35px;
         width: 100%;
         animation-delay: 1s;
+        display: flex;
+        flex-direction: column;
     }
     &_img{
         display: table;
         margin: auto;
         border: 1px solid #cfcfcf;
+        @include breakpoint(small down) {
+            order: 1;
+        }
     }
     &_controls{
         width: 80%;
         display: flex;
         justify-content: space-between;
         position: absolute;
-        top: 50%;
+        top: calc(50% - 67px);
         left: 50%;
         transform: translate(-50%,-50%);
+        @include breakpoint(small down) {
+            order: 2;
+            width: 98%;
+        }
         a {
             width: 32px;
             height: 60px;
+            @include breakpoint(small down) {
+                width: 20px;
+                height: 37px;
+            }
             background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNDkuNzYgOTIuOCI+PGRlZnM+PHN0eWxlPi5jbHMtMSB7ZmlsbDogbm9uZTt9LmNscy0yIHtjbGlwLXBhdGg6IHVybCgjY2xpcC1wYXRoKTt9PC9zdHlsZT48Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMC4wOCkiPjxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjQ5LjkyIiBoZWlnaHQ9IjkzLjg0IiAvPjwvY2xpcFBhdGg+PC9kZWZzPjxwYXRoIGQ9Ik00NC4xNiw5MS45MmEzLjI4LDMuMjgsMCwwLDAsNC42NCwwLDMuMjksMy4yOSwwLDAsMCwwLTQuNjRMOCw0Ni40OCw0OC44LDUuNjhBMy4yOCwzLjI4LDAsMCwwLDQ0LjE2LDFMMSw0NC4xNkEzLjI4LDMuMjgsMCwwLDAsMSw0OC44Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTAuMDgpIiAvPgo8L3N2Zz4K);
             background-repeat: no-repeat;
 
@@ -1730,22 +1743,92 @@ table{
         width: 70%;
         display: flex;
         justify-content: space-between;
-        position: absolute;
-        bottom: 1px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: auto;
+        margin-top: -52px;
+        @include breakpoint(small down) {
+            order: 4;
+            margin: auto;
+            max-width: 90px;
+            margin-top: 20px;
+        }
         a {
              width: 52px;
              height: 52px;
              background-color: $black;
              padding: 9px;
              transition: 300ms;
+             img{
+                max-height: 100%;
+             }
+             @include breakpoint(small down) {
+                width: 34px;
+                height: 34px;
+                padding: 6px;
+             }
              &:hover{
                 background-color: $primary-color;
              }
-             &:last-child{
-                padding: 15px;
-             }
+             // &:last-child{
+             //    padding: 15px;
+             //    @include breakpoint(small down) {
+             //        padding: 6px;
+             //    }
+             // }
+        }
+    }
+    &_amount{
+        max-width: 240px;
+        margin: auto;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 18px;
+        @include breakpoint(small down) {
+            order: 3;
+        }
+        &_input{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            button{
+                position: relative;
+                flex: 0 0 34px;
+                width: 34px;
+                height: 34px;
+                background-color: $black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 300ms;
+                &:hover{
+                    background-color: $primary-color;
+                }
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 15px;
+                    height: 1px;
+                    background-color: $white;
+                }
+                &:last-child::after{
+                    content: '';
+                    position: absolute;
+                    top: 9.5px;
+                    left: 17px;
+                    display: block;
+                    width: 1px;
+                    height: 15px;
+                    background-color: $white;
+
+                }
+            }
+            input{
+                margin: 0;
+                width: 90px;
+                height: 34px;
+                text-align: center;
+                box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.18) !important;
+                border: 0 !important;
+            }
         }
     }
 }

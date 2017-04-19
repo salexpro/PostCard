@@ -13,7 +13,7 @@ html(lang="ru")
                         | Christmas/New Year
                 .zoom_container.animated.fadeInUp
                     .zoom_img
-                        img(src="//unsplash.it/555/390", alt="")
+                        img(src="//unsplash.it/507/358", alt="")
                     .zoom_controls
                         a.zoom_controls_prev(href="#")
                         a.zoom_controls_next(href="#")      
@@ -22,4 +22,11 @@ html(lang="ru")
                             img(src="./img/icons/cat.svg", alt="To category")
                         a(href="./video.html")
                             img(src="./img/icons/check.svg", alt="Select")
+                    .zoom_amount
+                        .zoom_amount_label
+                            | Сhoose number of postcards
+                        .zoom_amount_input
+                            button#minus
+                            input(type="text" value="1")
+                            button#plus
             include includes/_footer

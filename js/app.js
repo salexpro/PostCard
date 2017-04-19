@@ -30,3 +30,13 @@ if($('.start_cards').length){
 $('#step2').click(function(){
     $('.whom_header, .whom_card').addClass('step2');
 })
+
+// Amount of postcards
+$('.zoom_amount_input #minus').click(function(){
+    if($('.zoom_amount_input input').val()>1){
+        $('.zoom_amount_input input').val($('.zoom_amount_input input').val() - 1);
+    }
+})
+$('.zoom_amount_input #plus').click(function(){
+    $('.zoom_amount_input input').val(Number($('.zoom_amount_input input').val()) + 1);
+});
