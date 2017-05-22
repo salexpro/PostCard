@@ -3,6 +3,11 @@ $('.head_hamb').click(function(){
     $('.head_hamb, .head_nav').toggleClass('is_active');
 });
 
+
+if($('.whom').length){
+    var whom_cont = $('.whom_card_content')[0].outerHTML;
+}
+
 // Custom select
 $('.select7').select7()
 
@@ -26,7 +31,11 @@ if($('.start_cards').length){
     });
 }
 
-// Whom page mobile form
+// Whom page
+$('.whom_card_inner a.button').click(function(){
+    $('.whom_card_inner').append(whom_cont);
+    $('.whom_card_content:last .select7').select7();
+})
 $('#step2').click(function(){
     $('.whom_header, .whom_card').addClass('step2');
 })

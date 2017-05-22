@@ -10,37 +10,53 @@ html(lang="ru")
                         | Now, who gets this card?
                 .whom_card
                     form.whom_card_inner.animated.fadeInUp(action="")
-                        .whom_card_form
-                            .whom_card_label
-                                | First name*
-                            input(type="text")
-                            .whom_card_label
-                                | Last name*
-                            input(type="text")
-                            .whom_card_label
-                                | Address*
-                            input(type="text" placeholder="Country ...I")
-                            input(type="text" placeholder="Address ...I")
-                            input(type="text" placeholder="ZIP Code ...I")
-                        .whom_card_form
-                            .whom_card_label
-                                | Sign the card
-                                span optional
-                            input(type="text")
-                            .whom_card_label
-                                | Choose ending
-                                span optional
-                            select.select7(placeholder="With love")
-                                option
-                                option With love
-                                option Yours
-                                option Hugs and Kisses
-                                option Best wishes
-                            input(type="text" placeholder="Type your text ...I")
-                            .whom_card_label
-                                span optional
-                            textarea.clean(rows="3" placeholder="Type a few nice words here and they will also appear on your card")
+                        .whom_card_content
+                            .whom_card_form
+                                .whom_card_label
+                                    | First name*
+                                input(type="text")
+                                .whom_card_label
+                                    | Last name*
+                                input(type="text")
+                                .whom_card_label
+                                    | Address*
+                                input(type="text" placeholder="Country ...I")
+                                input(type="text" placeholder="Address ...I")
+                                input(type="text" placeholder="ZIP Code ...I")
+                            .whom_card_form
+                                .whom_card_select
+                                    select.select7(placeholder="Postcards")
+                                        option
+                                        option 1
+                                        option 2
+                                        option 3
+                                        option 4
+                                    select.select7(placeholder="Views")
+                                        option
+                                        option 1
+                                        option 2
+                                        option 3
+                                        option 4
+                                .whom_card_label
+                                    | Sign the card
+                                    span optional
+                                input(type="text")
+                                .whom_card_label
+                                    | Choose ending
+                                    span optional
+                                select.select7(placeholder="With love")
+                                    option
+                                    option With love
+                                    option Yours
+                                    option Hugs and Kisses
+                                    option Best wishes
+                                input(type="text" placeholder="Type your text ...I")
+                                .whom_card_label
+                                    span optional
+                                textarea.clean(rows="2" placeholder="Type a few nice words here and they will also appear on your card")
                         input.button.expanded.max(type="submit" value="save")
+                        a.button
+                            | ADD ANOTHER ADDRESS
                     button#step2.button.expanded.arrow_right.animated.fadeInUp
                         | STEP 2
                     a.button.animated.fadeInUp(href="./play.html")
