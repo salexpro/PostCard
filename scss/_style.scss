@@ -1,14 +1,11 @@
 @font-face {
     font-family: 'GTWalsheim';
     src: url('../fonts/GTWalsheim/GTWalsheim.eot');
-    src: url('../fonts/GTWalsheim/GTWalsheim.eot') format('embedded-opentype'),
-         url('../fonts/GTWalsheim/GTWalsheim.woff2') format('woff2'),
-         url('../fonts/GTWalsheim/GTWalsheim.woff') format('woff'),
-         url('../fonts/GTWalsheim/GTWalsheim.ttf') format('truetype'),
-         url('../fonts/GTWalsheim/GTWalsheim.svg#GTWalsheim') format('svg');
+    src: url('../fonts/GTWalsheim/GTWalsheim.eot') format('embedded-opentype'), url('../fonts/GTWalsheim/GTWalsheim.woff2') format('woff2'), url('../fonts/GTWalsheim/GTWalsheim.woff') format('woff'), url('../fonts/GTWalsheim/GTWalsheim.ttf') format('truetype'), url('../fonts/GTWalsheim/GTWalsheim.svg#GTWalsheim') format('svg');
 }
 
-html, body{
+html,
+body {
     -webkit-overflow-scrolling: touch
 }
 
@@ -16,11 +13,11 @@ html, body{
     width: 5px;
     height: 5px;
 }
- 
+
 ::-webkit-scrollbar-track {
     background: #ccc;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     background: $primary-color;
 }
@@ -38,44 +35,45 @@ html, body{
 [type='tel'],
 [type='time'],
 [type='url'],
-[type='color']{
+[type='color'] {
     outline: none;
     height: 38px;
     padding: 0 18px;
 }
 
 [type="submit"],
-button{
+button {
     outline: none;
 }
 
-textarea{
+textarea {
     resize: none;
     height: auto;
     padding: 10px 18px;
-    &.clean{
+    &.clean {
         border: 0 !important;
-        padding-left: 0;    
+        padding-left: 0;
         line-height: 1.6;
         padding: 0.5rem;
     }
 }
 
-a{
+a {
     color: $black;
     transition: color 300ms;
-    &:hover, &:focus{
-        path{
+    &:hover,
+    &:focus {
+        path {
             fill: $primary-color
         }
     }
 }
 
-select.select7{
+select.select7 {
     visibility: hidden;
 }
 
-table{
+table {
     width: 100%;
     table-layout: fixed;
     border-spacing: 9px 7px;
@@ -85,22 +83,24 @@ table{
         font-size: 14px;
         display: flex;
         margin-bottom: -7px;
-        thead, tbody{
+        thead,
+        tbody {
             width: 75%;
             display: flex;
         }
-        thead{
+        thead {
             width: 25%;
-            tr{
+            tr {
                 width: 100%;
             }
         }
-        tbody tr{
+        tbody tr {
             width: 33.33%;
             margin-left: 7px;
         }
     }
-    th, td{
+    th,
+    td {
         padding: 4px 10px;
         border: 1px solid #e5e5e5;
         text-align: center;
@@ -114,7 +114,7 @@ table{
             padding: 0;
         }
     }
-    th{
+    th {
         background: $black;
         color: $white;
         padding: 10px 15px;
@@ -123,31 +123,32 @@ table{
             padding: 0;
         }
     }
-    td{
+    td {
         @include breakpoint(small down) {
             background-color: $white;
         }
     }
 }
 
-.button{
+.button {
     letter-spacing: 4px;
     text-transform: uppercase;
-    &.min{
+    &.min {
         min-width: 190px;
     }
-    &.max{
+    &.max {
         max-width: 190px;
     }
-    &.higher{
+    &.higher {
         line-height: 1.5;
     }
-    &.arrow{
-        &_right{
-            &::after{
+    &.arrow {
+        &_right {
+            &::after {
                 content: '';
                 display: inline-block;
-                border: 6px solid transparent; border-left: 10px solid $white;
+                border: 6px solid transparent;
+                border-left: 10px solid $white;
                 border-right: 0;
                 margin-left: 6px;
                 margin-right: -16px;
@@ -157,25 +158,25 @@ table{
     }
 }
 
-.progress{
+.progress {
     outline: none;
     border: 1px solid $white;
     box-shadow: inset 0 0 3px $medium-gray, 0 0 3px $medium-gray;
-    &-meter{
+    &-meter {
         border-radius: 5px;
         box-shadow: inset 0 0 3px $medium-gray;
     }
 }
 
-.mCSB_scrollTools{
-    .mCSB_dragger{
-        &:hover .mCSB_dragger_bar{
+.mCSB_scrollTools {
+    .mCSB_dragger {
+        &:hover .mCSB_dragger_bar {
             background-color: darken($primary-color, 5);
         }
-        .mCSB_dragger_bar{
+        .mCSB_dragger_bar {
             width: 1px;
             background-color: $primary-color !important;
-            &::after{
+            &::after {
                 content: '';
                 position: absolute;
                 top: calc(50% - 10.5px);
@@ -188,18 +189,19 @@ table{
             }
         }
     }
-    .mCSB_draggerRail{
+    .mCSB_draggerRail {
         width: 1px;
         background-color: $black;
     }
 }
+
 @include breakpoint(small down) {
-    .mCSB_outside+.mCSB_scrollTools{
+    .mCSB_outside+.mCSB_scrollTools {
         right: -16px;
     }
 }
 
-.wrap{
+.wrap {
     min-height: 100vh;
     padding-top: 48px;
     display: flex;
@@ -208,7 +210,7 @@ table{
     @include breakpoint(small down) {
         padding-top: 5px;
     }
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         left: 0;
@@ -217,17 +219,16 @@ table{
         height: 100%;
         z-index: -1;
     }
-    &_main{
-        &::after{
+    &_main {
+        &::after {
             background: url(../img/bg.png) center no-repeat;
             animation: 1s 1.5s both fadeIn;
         }
     }
-    &_card::after{
+    &_card::after {
         background: url(../img/bg_card.png) no-repeat;
         background-position: center bottom calc(50% - 30px);
-        animation: 300ms 1s both fadeIn, 
-                   1s 2s forwards fadeOutPart;
+        animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
         @include breakpoint(large down) {
             background-position: right calc(50vw - 355px) bottom calc(50% - 85px);
             background-size: 932px;
@@ -236,22 +237,21 @@ table{
             background-position: right 20.2% bottom calc(50% - 69px);
             background-size: calc(172.4% - 20px);
         }
-        @keyframes fadeOutPart{
-            from{
+        @keyframes fadeOutPart {
+            from {
                 opacity: 1;
             }
-            to{
+            to {
                 opacity: 0.2;
             }
         }
     }
-    &_wreath{
+    &_wreath {
         overflow: hidden;
-        &::after{
+        &::after {
             background: url(../img/bg_wreath.png) no-repeat;
             background-position: right calc(50vw - 904px) center;
-            animation: 300ms 1s both fadeIn, 
-                       1s 2s forwards fadeOutPart;
+            animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
             @include breakpoint(large down) {
                 background-position: right calc(50% + 144px) bottom calc(50% - 70px);
             }
@@ -278,86 +278,82 @@ table{
                 background-position: right calc(50% - 6px) bottom calc(50% - 120px);
                 background-size: 228%;
             }
-       }
+        }
     }
-    &_how{
+    &_how {
         overflow: hidden;
-        &::after{
+        &::after {
             background: fixed url(../img/bg_how.png) center no-repeat;
-            animation: 300ms 1s both fadeIn, 
-                       1s 2s forwards fadeOutPart;
+            animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
             @include breakpoint(medium down) {
                 background-attachment: scroll;
                 animation: 300ms 800ms both fadeInPart;
             }
         }
     }
-    &_price::after{
+    &_price::after {
         background: fixed url(../img/bg_price.png) center no-repeat;
-        animation: 300ms 1s both fadeIn, 
-                   1s 2s forwards fadeOutPart;
+        animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
         @include breakpoint(medium down) {
             background-attachment: scroll;
             animation: 300ms 800ms both fadeInPart;
         }
     }
-    &_start{
+    &_start {
         overflow: hidden;
     }
-    &_video{
+    &_video {
         overflow: hidden;
-        &::after{
+        &::after {
             background: url(../img/bg_video.png) center no-repeat;
             animation: 1s 1s both fadeIn;
         }
     }
-    &_add{
+    &_add {
         overflow: hidden;
-        &::after{
+        &::after {
             background: url(../img/bg_add.png) center no-repeat;
             animation: 1s 1s both fadeIn;
         }
     }
-    &_record::after{
+    &_record::after {
         background: url(../img/bg_record.png) center no-repeat;
         animation: 1s 1s both fadeIn;
     }
-    &_register::after{
+    &_register::after {
         background: fixed url(../img/bg_register.png) center no-repeat;
-        animation: 300ms 1s both fadeIn, 
-                   1s 2s forwards fadeOutPart;
+        animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
         @include breakpoint(small down) {
             background-attachment: scroll;
             animation: 300ms 800ms both fadeInPart;
         }
     }
-    &_plan::after{
+    &_plan::after {
         background: fixed url(../img/bg_plan.png) center no-repeat;
         animation: 300ms 800ms both fadeInPart;
-        @keyframes fadeInPart{
-            from{
+        @keyframes fadeInPart {
+            from {
                 opacity: 0;
             }
-            to{
+            to {
                 opacity: 0.2;
             }
         }
     }
-    &_whom{
+    &_whom {
         overflow: hidden;
-        &::after{
+        &::after {
             background: fixed url(../img/bg_whom.png) center no-repeat;
-            animation: 300ms 1s both fadeIn, 
-                       1s 2s forwards fadeOutPart;
+            animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
             @include breakpoint(large down) {
                 background-attachment: scroll;
                 animation: 300ms 800ms both fadeInPart;
             }
         }
     }
-    &_play{
+    &_play {
         overflow: hidden;
-        &::after{
+        &::after {
             background: fixed url(../img/bg_card.png) no-repeat;
             background-position: right calc(50vw - 615px) bottom calc(50vh - 410px);
             animation: 300ms 800ms both fadeInPart;
@@ -371,19 +367,18 @@ table{
             }
         }
     }
-    &_thank{
+    &_thank {
         overflow: hidden;
-        &::after{
+        &::after {
             background: fixed url(../img/bg_thank.png) center no-repeat;
-            animation: 300ms 1s both fadeIn, 
-                       1s 2s forwards fadeOutPart;
+            animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
             @include breakpoint(medium down) {
                 background-attachment: scroll;
                 animation: 300ms 800ms both fadeInPart;
             }
         }
     }
-    &_blog::after{
+    &_blog::after {
         background: fixed url(../img/bg_blog.png) center no-repeat;
         animation: 300ms 800ms both fadeIn;
         @include breakpoint(small down) {
@@ -391,16 +386,15 @@ table{
             background-position: top center;
         }
     }
-    &_article::after{
+    &_article::after {
         background: url(../img/bg_article_left.png) left bottom no-repeat, url(../img/bg_article_right.png) right 53px no-repeat;
         animation: 300ms 800ms both fadeIn;
     }
-    &_contact{
+    &_contact {
         overflow: hidden;
-        &::after{
+        &::after {
             background: fixed url(../img/bg_contact.png) center no-repeat;
-            animation: 300ms 1s both fadeIn, 
-                           1s 2s forwards fadeOutPart;
+            animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart;
             @include breakpoint(small down) {
                 background-attachment: scroll;
             }
@@ -408,34 +402,34 @@ table{
     }
 }
 
-.header{
+.header {
     font-family: 'Playfair Display', serif;
     font-size: 35px;
     font-weight: 700;
     line-height: 1.2;
-    &_small{
+    &_small {
         font-size: 18.5px;
     }
-    &_medium{
+    &_medium {
         font-size: 50px;
         @include breakpoint(small down) {
             font-size: 40px;
         }
     }
-    &_large{
+    &_large {
         font-size: 78px;
     }
-    &_largest{
+    &_largest {
         font-size: 98px;
     }
-    &_accent{
+    &_accent {
         font-size: 152px;
         line-height: 0.3;
         margin-bottom: 38px;
     }
 }
 
-.head{
+.head {
     height: 52px;
     position: relative;
     margin: 0 55px;
@@ -447,20 +441,20 @@ table{
         position: static;
         margin: 0 10px;
     }
-    &.small{
+    &.small {
         margin-bottom: 0;
     }
-    &_inner{
+    &_inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    &_logo{
+    &_logo {
         @include breakpoint(small down) {
             margin: 0 20px;
         }
     }
-    &_hamb{
+    &_hamb {
         // flex: 1 1 52px;
         min-width: 52px;
         height: 52px;
@@ -469,25 +463,29 @@ table{
         transition: 300ms;
         z-index: 4;
         @include breakpoint(xlarge) {
-            &:hover{
-                &::before, &::after, .head_hamb_inner{
+            &:hover {
+                &::before,
+                &::after,
+                .head_hamb_inner {
                     width: 37px;
                 }
             }
         }
-        &.is_active{
+        &.is_active {
             background-color: $black;
             box-shadow: 4px 5px 13px rgba(0, 0, 0, 0.3);
             @include breakpoint(large down) {
                 background: none;
                 box-shadow: none;
             }
-            &::before, &::after, .head_hamb_inner{
+            &::before,
+            &::after,
+            .head_hamb_inner {
                 width: 37px;
                 background-color: $white;
-            } 
+            }
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             top: 15px;
@@ -497,19 +495,19 @@ table{
             background-color: $black;
             transition: 300ms;
         }
-        &::after{
+        &::after {
             @extend .head_hamb::before;
             top: auto;
             bottom: 15px;
             width: 20px;
         }
-        &_inner{
+        &_inner {
             @extend .head_hamb::before;
             width: 30px;
             top: 25px;
         }
     }
-    &_nav{
+    &_nav {
         position: absolute;
         left: 0;
         top: 25%;
@@ -548,7 +546,7 @@ table{
             font-weight: 400;
             padding-left: 70px;
         }
-        &.is_active{
+        &.is_active {
             transform: translateX(45px);
             z-index: 3;
             opacity: 1;
@@ -556,7 +554,7 @@ table{
                 transform: translateX(0);
             }
         }
-        .menu{
+        .menu {
             flex-wrap: wrap;
             @include breakpoint(large down) {
                 flex-direction: column;
@@ -568,20 +566,21 @@ table{
                 align-items: center;
             }
         }
-        li{
+        li {
             margin-left: 20px;
             @include breakpoint(large down) {
                 margin: 0;
             }
-            &:hover, &.active{
-                a{
+            &:hover,
+            &.active {
+                a {
                     box-shadow: 0 1px 0 $black;
                     @include breakpoint(large down) {
                         box-shadow: 0 1px 0 $secondary-color;
                     }
                 }
             }
-            a{
+            a {
                 color: $black;
                 transition: 300ms;
                 padding: 6px 12px;
@@ -597,7 +596,7 @@ table{
             }
         }
     }
-    &_social{
+    &_social {
         position: absolute;
         top: 80px;
         left: 7px;
@@ -611,7 +610,7 @@ table{
             display: flex;
             justify-content: center;
         }
-        a{
+        a {
             display: block;
             width: 22px;
             height: 22px;
@@ -621,22 +620,22 @@ table{
                 height: 33px;
                 margin: 0 4px 20px;
             }
-            &:hover .cls-1{
+            &:hover .cls-1 {
                 fill: $primary-color;
             }
         }
-        .cls-1{
+        .cls-1 {
             fill: $black;
             transition: 300ms;
         }
     }
-    &_lang{
+    &_lang {
         width: auto;
         text-transform: uppercase;
     }
 }
 
-.content{
+.content {
     flex-grow: 1;
     margin: 0 120px;
     display: flex;
@@ -651,25 +650,25 @@ table{
     }
 }
 
-.main{
-    &_inner{
+.main {
+    &_inner {
         @extend .content;
         margin: 0;
         @include breakpoint(large down) {
             flex-direction: column;
         }
     }
-    &_header{
+    &_header {
         z-index: 2;
         width: 254px;
         margin-right: -70px;
-        text-align: right;    
+        text-align: right;
         @include breakpoint(large down) {
             width: auto;
             margin: 0;
             text-align: center;
         }
-        .header{
+        .header {
             margin-bottom: 32px;
             animation-delay: 1.5s;
             @include breakpoint(large down) {
@@ -680,7 +679,7 @@ table{
             @include breakpoint(small down) {
                 font-size: 30px;
             }
-            > div{
+            >div {
                 @include breakpoint(large down) {
                     display: inline-block;
                 }
@@ -688,7 +687,7 @@ table{
                     display: block;
                 }
             }
-            &_accent{
+            &_accent {
                 @include breakpoint(large down) {
                     font-size: 50px;
                     margin: 0;
@@ -700,7 +699,7 @@ table{
                     margin-bottom: 35px;
                 }
             }
-            &_small{
+            &_small {
                 @include breakpoint(large down) {
                     display: table !important;
                     margin: auto;
@@ -711,7 +710,7 @@ table{
                     font-size: 18px;
                     letter-spacing: 0;
                 }
-                &::before{
+                &::before {
                     @include breakpoint(large down) {
                         content: '';
                         display: block;
@@ -727,7 +726,7 @@ table{
                 }
             }
         }
-        .button{
+        .button {
             animation-delay: 1.7s;
             @include breakpoint(large down) {
                 position: absolute;
@@ -740,7 +739,7 @@ table{
             }
         }
     }
-    &_content{
+    &_content {
         position: relative;
         text-align: right;
         @include breakpoint(large down) {
@@ -750,7 +749,7 @@ table{
             margin: 0;
             text-align: center;
         }
-        &_how{
+        &_how {
             font-family: 'Lato', sans-serif;
             font-size: 14px;
             text-transform: uppercase;
@@ -768,22 +767,22 @@ table{
                 position: static;
                 margin-top: 56px;
             }
-            svg{
+            svg {
                 display: inline-block;
                 width: 20px;
                 height: 20px;
                 margin-right: 10px;
                 margin-bottom: -5px;
-                path{
+                path {
                     transition: 300ms;
                 }
             }
         }
     }
-    &_video{
+    &_video {
         display: block;
         width: 100%;
-        &_container{
+        &_container {
             position: relative;
             max-width: 910px;
             height: 0;
@@ -793,63 +792,63 @@ table{
             align-items: center;
             animation-duration: 300ms;
             animation-delay: 800ms;
-            &:hover{
-                .paused{
+            &:hover {
+                .paused {
                     opacity: 0.42;
                     z-index: 2;
                 }
             }
         }
         &_button {
-             $duration: 300ms;
-             $sin: 0.866;
-             $size: 105px;
-             $border: $size/3.95;
-             $msize: 80px;
-             $mborder: $msize/3.95;
-             $ssize: 45px;
-             $sborder: $ssize/3.95;
-             border: $size*0.12 solid $white;
-             border-radius: 50%;
-             padding: $size*0.45;
-             width: $size;
-             height: $size;
-             font-size: 0;
-             white-space: nowrap;
-             text-align: center;
-             cursor: pointer;
-             position: absolute;
-             left: 50%;
-             top: 50%;
-             transform: translate(-50%,-50%);
-             box-sizing: content-box;
-             opacity: 0.42;
-             @include breakpoint(large down) {
+            $duration: 300ms;
+            $sin: 0.866;
+            $size: 104px;
+            $border: $size/4;
+            $msize: 80px;
+            $mborder: $msize/4;
+            $ssize: 45px;
+            $sborder: $ssize/4;
+            border: $size*0.12 solid $white;
+            border-radius: 50%;
+            padding: $size*0.45;
+            width: $size;
+            height: $size;
+            font-size: 0;
+            white-space: nowrap;
+            text-align: center;
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: content-box;
+            opacity: 0.42;
+            @include breakpoint(large down) {
                 border: $msize*0.12 solid $white;
                 padding: $msize*0.45;
                 width: $msize;
                 height: $msize;
-             }
-             @include breakpoint(small down) {
+            }
+            @include breakpoint(small down) {
                 border: $ssize*0.12 solid $white;
                 padding: $ssize*0.45;
                 width: $ssize;
                 height: $ssize;
-             }
-             &:hover{
+            }
+            &:hover {
                 transform: scale(1.1) translate(-45%, -45%);
                 transform-origin: center;
-             }
-             &,
-             &::before,
-             &::after {
+            }
+            &,
+            &::before,
+            &::after {
                 content: '';
                 display: inline-block;
                 vertical-align: middle;
                 transition: all $duration;
                 transition-tiomig-function: cubic-bezier(1, 0, 0, 1);
-             }
-             &::before {
+            }
+            &::before {
                 margin-left: $size/6;
                 border-left: $size*$sin/2 solid $white;
                 border-top: $border solid transparent;
@@ -870,14 +869,14 @@ table{
                     border-bottom: $sborder solid transparent;
                     height: $ssize - 2*$sborder;
                 }
-             }
-             &::after {
+            }
+            &::after {
                 margin: 0;
                 border-left: $size*$sin/2.1 solid $white;
                 border-top: $border solid transparent;
                 border-bottom: $border solid transparent;
                 height: 0px;
-                transform: translateX(-0.3px);
+                transform: translateX(-.5%);
                 @include breakpoint(large down) {
                     border-left: $msize*$sin/2.1 solid $white;
                     border-top: $mborder solid transparent;
@@ -889,8 +888,8 @@ table{
                     border-top: $sborder solid transparent;
                     border-bottom: $sborder solid transparent;
                 }
-             }
-             &.paused {
+            }
+            &.paused {
                 opacity: 0;
                 z-index: -1;
                 &::before,
@@ -918,20 +917,20 @@ table{
                         border-right: $ssize*0.3 solid transparent;
                     }
                 }
-             }
-         }
+            }
+        }
     }
 }
 
-.actually{
-    &_inner{
+.actually {
+    &_inner {
         @extend .content;
         margin: 0;
         @include breakpoint(large down) {
             flex-direction: column;
         }
     }
-    &_content{
+    &_content {
         width: 390px;
         margin-right: -125px;
         z-index: 2;
@@ -941,16 +940,17 @@ table{
             text-align: center;
             margin: 0;
         }
-        .header, .button{
+        .header,
+        .button {
             animation-delay: 1.3s;
         }
-        .header{
+        .header {
             white-space: nowrap;
             @include breakpoint(large down) {
                 animation-name: fadeInDown;
                 white-space: normal;
                 font-size: 50px;
-                br{
+                br {
                     display: none;
                 }
             }
@@ -963,7 +963,7 @@ table{
                 text-align: center;
             }
         }
-        .button{
+        .button {
             @include breakpoint(large down) {
                 position: absolute;
                 left: calc(50% - 95px);
@@ -974,7 +974,7 @@ table{
             }
         }
     }
-    &_descr{
+    &_descr {
         font-size: 20px;
         line-height: 1.3;
         margin-top: 15px;
@@ -997,7 +997,7 @@ table{
             margin-top: 5px;
         }
     }
-    &_card{
+    &_card {
         width: 680px;
         height: 480px;
         box-shadow: 0 0 65px rgba(0, 0, 0, 0.15);
@@ -1028,15 +1028,15 @@ table{
     }
 }
 
-.check{
-    &_inner{
+.check {
+    &_inner {
         @extend .content;
         margin: 0;
         @include breakpoint(large down) {
             flex-direction: column;
         }
     }
-    &_content{
+    &_content {
         position: relative;
         width: 340px;
         min-width: 340px;
@@ -1052,7 +1052,7 @@ table{
             min-width: auto;
             padding-bottom: 10px;
         }
-        .header{
+        .header {
             margin-bottom: 4px;
             @include breakpoint(large down) {
                 font-size: 50px;
@@ -1063,7 +1063,7 @@ table{
             }
         }
     }
-    &_descr{
+    &_descr {
         letter-spacing: -0.8px;
         text-align: justify;
         margin-right: 25px;
@@ -1079,7 +1079,7 @@ table{
             font-size: 16px;
         }
     }
-    &_steps{
+    &_steps {
         counter-reset: ch_step;
         margin-right: 25px;
         @include breakpoint(large down) {
@@ -1102,12 +1102,12 @@ table{
             margin-top: 10px;
         }
     }
-    &_step{
+    &_step {
         counter-increment: ch_step;
         margin-top: 20px;
         @include breakpoint(large down) {
             margin-top: 50px;
-            &:first-child{
+            &:first-child {
                 margin: 0;
             }
         }
@@ -1115,7 +1115,7 @@ table{
             width: 50%;
             margin: 0;
         }
-        span{
+        span {
             @include breakpoint(large down) {
                 display: table;
                 margin: auto;
@@ -1126,7 +1126,7 @@ table{
             @include breakpoint(small down) {
                 display: inline-block;
             }
-            + br{
+            +br {
                 @include breakpoint(large down) {
                     display: none;
                 }
@@ -1135,7 +1135,7 @@ table{
                 }
             }
         }
-        &_title{
+        &_title {
             font-family: 'Playfair Display', serif;
             text-transform: uppercase;
             font-size: 12px;
@@ -1158,7 +1158,7 @@ table{
                 padding-left: 10px;
                 padding-right: 0;
             }
-            &::after{
+            &::after {
                 content: counter(ch_step);
                 font-size: 16px;
                 margin-left: 10px;
@@ -1171,7 +1171,7 @@ table{
                 }
             }
         }
-        &_descr{
+        &_descr {
             text-align: right;
             line-height: 1.5;
             @include breakpoint(large down) {
@@ -1183,11 +1183,11 @@ table{
             }
         }
     }
-    &_card{
+    &_card {
         width: 100%;
         height: 100%;
         position: relative;
-        &_outer{
+        &_outer {
             width: 620px;
             height: 440px;
             position: relative;
@@ -1209,7 +1209,7 @@ table{
                 margin: 0;
                 text-align: center;
             }
-            .button{
+            .button {
                 position: absolute;
                 z-index: 2;
                 bottom: -66px;
@@ -1230,7 +1230,7 @@ table{
                 }
             }
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             top: 48px;
@@ -1244,36 +1244,36 @@ table{
             @include breakpoint(large down) {
                 display: none;
             }
-            @keyframes fadeInBottomLeft{
+            @keyframes fadeInBottomLeft {
                 from {
                     opacity: 0;
                     transform: translate3d(-100%, 100%, 0);
                 }
-                to{
+                to {
                     opacity: 1;
                     transform: none;
                 }
             }
         }
-        &::after{
+        &::after {
             @extend .check_card::before;
             width: 100%;
             height: 430px;
             top: -30px;
             left: 56px;
             animation-name: fadeInUpRight;
-            @keyframes fadeInUpRight{
+            @keyframes fadeInUpRight {
                 from {
                     opacity: 0;
                     transform: translate3d(100%, -100%, 0);
                 }
-                to{
+                to {
                     opacity: 1;
                     transform: none;
                 }
             }
         }
-        &_img{
+        &_img {
             overflow: hidden;
             width: 100%;
             height: 100%;
@@ -1293,11 +1293,11 @@ table{
     }
 }
 
-.how{
+.how {
     @include breakpoint(medium down) {
         flex-direction: column;
     }
-    &_header{
+    &_header {
         width: 330px;
         margin-right: 40px;
         z-index: 2;
@@ -1308,9 +1308,9 @@ table{
             margin: 0;
             width: 100%;
             text-align: center;
-            animation-name: fadeInDown;  
-        }  
-        .header{
+            animation-name: fadeInDown;
+        }
+        .header {
             @include breakpoint(medium down) {
                 font-size: 50px;
             }
@@ -1319,7 +1319,7 @@ table{
             }
         }
     }
-    &_card{
+    &_card {
         position: relative;
         width: 595px;
         height: 425px;
@@ -1333,7 +1333,7 @@ table{
         @include breakpoint(small down) {
             margin-top: 20px;
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             top: -34px;
@@ -1348,7 +1348,7 @@ table{
                 display: none;
             }
         }
-        &_inner{
+        &_inner {
             position: relative;
             width: 100%;
             height: 100%;
@@ -1371,25 +1371,25 @@ table{
             }
         }
     }
-    &_steps{
+    &_steps {
         counter-reset: ch_step;
         margin-right: 25px;
         margin: 0;
     }
-    &_step{
+    &_step {
         counter-increment: ch_step;
         margin-top: 20px;
         position: relative;
-        &:first-child{
+        &:first-child {
             margin: 0;
         }
-        &_top{
+        &_top {
             display: flex;
             @include breakpoint(small down) {
                 flex-direction: column;
             }
         }
-        &_title{
+        &_title {
             font-family: 'Playfair Display', serif;
             text-transform: uppercase;
             font-size: 12px;
@@ -1407,7 +1407,7 @@ table{
                 font-size: 16px;
                 margin-bottom: 2px;
             }
-            &::after{
+            &::after {
                 content: counter(ch_step);
                 font-size: 16px;
                 margin-left: 10px;
@@ -1420,7 +1420,7 @@ table{
                 }
             }
         }
-        &_label{
+        &_label {
             position: relative;
             top: 8px;
             font-family: 'Playfair Display', serif;
@@ -1437,7 +1437,7 @@ table{
                 font-size: 18px;
             }
         }
-        &_descr{
+        &_descr {
             text-align: right;
             line-height: 1.5;
             @include breakpoint(medium down) {
@@ -1452,8 +1452,8 @@ table{
     }
 }
 
-.price{
-    &_card{
+.price {
+    &_card {
         position: relative;
         width: 100%;
         max-width: 875px;
@@ -1467,7 +1467,7 @@ table{
         @include breakpoint(small down) {
             align-items: stretch;
         }
-        &_inner{
+        &_inner {
             position: relative;
             z-index: 2;
             width: 100%;
@@ -1487,7 +1487,7 @@ table{
                 box-shadow: none;
             }
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             top: 45px;
@@ -1502,13 +1502,13 @@ table{
                 display: none;
             }
         }
-        &::after{
+        &::after {
             @extend .price_card::before;
             width: 90%;
             top: -58px;
             left: 120px;
         }
-        .header{
+        .header {
             position: absolute;
             z-index: 2;
             top: -110px;
@@ -1524,7 +1524,7 @@ table{
                 font-size: 40px;
             }
         }
-        .button{
+        .button {
             position: absolute;
             z-index: 2;
             right: -30px;
@@ -1535,7 +1535,7 @@ table{
                 order: 4
             }
         }
-        &_hint{
+        &_hint {
             position: absolute;
             bottom: -65px;
             left: -60px;
@@ -1555,7 +1555,7 @@ table{
     }
 }
 
-.start{
+.start {
     flex-direction: column;
     @include breakpoint(medium down) {
         margin: 0;
@@ -1563,14 +1563,14 @@ table{
     @include breakpoint(small down) {
         margin: 0 20px;
     }
-    &_header{
+    &_header {
         animation-delay: 500ms;
         text-align: center;
         @include breakpoint(large down) {
             max-width: 520px
         }
-        .header{
-            &::after{
+        .header {
+            &::after {
                 content: '';
                 display: block;
                 margin: auto;
@@ -1585,7 +1585,7 @@ table{
                 }
             }
         }
-        &_descr{
+        &_descr {
             font-family: 'Playfair Display', serif;
             font-size: 14px;
             font-weight: 700;
@@ -1594,7 +1594,7 @@ table{
             min-height: 16px;
             @include breakpoint(large down) {
                 font-size: 21px;
-                &::before{
+                &::before {
                     content: '';
                     display: block;
                     margin: auto;
@@ -1613,7 +1613,7 @@ table{
             }
         }
     }
-    &_container{
+    &_container {
         width: 100%;
         max-width: 1130px;
         margin-top: 10px;
@@ -1629,19 +1629,19 @@ table{
             padding-right: 25px;
         }
     }
-    &_cards{
+    &_cards {
         height: 47vh;
         min-height: 370px;
-        .mCSB_container{
+        .mCSB_container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            .start_card{
+            .start_card {
                 opacity: 1;
             }
         }
     }
-    &_card{
+    &_card {
         width: calc(25% - 30px);
         margin: 0 15px;
         margin-bottom: 13px;
@@ -1652,15 +1652,15 @@ table{
             margin: 0 8px;
             margin-bottom: 8px;
         }
-        &:hover{
-            .start_card_img{
+        &:hover {
+            .start_card_img {
                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.31);
             }
-            .start_card_actions{
+            .start_card_actions {
                 opacity: 1;
             }
         }
-        &_img{
+        &_img {
             position: relative;
             border: 1px solid #b3b3b3;
             margin-bottom: 8px;
@@ -1669,14 +1669,14 @@ table{
                 width: 100%;
             }
         }
-        &_actions{
+        &_actions {
             position: absolute;
             right: 0;
             bottom: 0;
             opacity: 0;
             transition: 300ms;
             display: flex;
-            a{
+            a {
                 display: block;
                 width: 40px;
                 height: 40px;
@@ -1684,19 +1684,19 @@ table{
                 padding: 10px;
                 transition: 300ms;
                 margin-left: 2px;
-                &:hover{
+                &:hover {
                     background-color: $primary-color;
                 }
             }
         }
-        &_title{
+        &_title {
             min-height: 19px;
         }
     }
 }
 
-.zoom{
-    &_container{
+.zoom {
+    &_container {
         position: relative;
         margin-top: 35px;
         width: 100%;
@@ -1704,7 +1704,7 @@ table{
         display: flex;
         flex-direction: column;
     }
-    &_img{
+    &_img {
         display: table;
         margin: auto;
         border: 1px solid #cfcfcf;
@@ -1712,14 +1712,14 @@ table{
             order: 1;
         }
     }
-    &_controls{
+    &_controls {
         width: 80%;
         display: flex;
         justify-content: space-between;
         position: absolute;
         top: calc(50% - 67px);
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         @include breakpoint(small down) {
             order: 2;
             width: 98%;
@@ -1733,13 +1733,12 @@ table{
             }
             background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNDkuNzYgOTIuOCI+PGRlZnM+PHN0eWxlPi5jbHMtMSB7ZmlsbDogbm9uZTt9LmNscy0yIHtjbGlwLXBhdGg6IHVybCgjY2xpcC1wYXRoKTt9PC9zdHlsZT48Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMC4wOCkiPjxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjQ5LjkyIiBoZWlnaHQ9IjkzLjg0IiAvPjwvY2xpcFBhdGg+PC9kZWZzPjxwYXRoIGQ9Ik00NC4xNiw5MS45MmEzLjI4LDMuMjgsMCwwLDAsNC42NCwwLDMuMjksMy4yOSwwLDAsMCwwLTQuNjRMOCw0Ni40OCw0OC44LDUuNjhBMy4yOCwzLjI4LDAsMCwwLDQ0LjE2LDFMMSw0NC4xNkEzLjI4LDMuMjgsMCwwLDAsMSw0OC44Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTAuMDgpIiAvPgo8L3N2Zz4K);
             background-repeat: no-repeat;
-
         }
-        &_next{
-            transform: scale(-1,1)
+        &_next {
+            transform: scale(-1, 1)
         }
     }
-    &_actions{
+    &_actions {
         width: 70%;
         display: flex;
         justify-content: space-between;
@@ -1752,31 +1751,30 @@ table{
             margin-top: 20px;
         }
         a {
-             width: 52px;
-             height: 52px;
-             background-color: $black;
-             padding: 9px;
-             transition: 300ms;
-             img{
+            width: 52px;
+            height: 52px;
+            background-color: $black;
+            padding: 9px;
+            transition: 300ms;
+            img {
                 max-height: 100%;
-             }
-             @include breakpoint(small down) {
+            }
+            @include breakpoint(small down) {
                 width: 34px;
                 height: 34px;
                 padding: 6px;
-             }
-             &:hover{
+            }
+            &:hover {
                 background-color: $primary-color;
-             }
-             // &:last-child{
-             //    padding: 15px;
-             //    @include breakpoint(small down) {
-             //        padding: 6px;
-             //    }
-             // }
+            } // &:last-child{
+            //    padding: 15px;
+            //    @include breakpoint(small down) {
+            //        padding: 6px;
+            //    }
+            // }
         }
     }
-    &_amount{
+    &_amount {
         max-width: 240px;
         margin: auto;
         margin-top: 15px;
@@ -1785,11 +1783,11 @@ table{
         @include breakpoint(small down) {
             order: 3;
         }
-        &_input{
+        &_input {
             display: flex;
             justify-content: center;
             margin-top: 10px;
-            button{
+            button {
                 position: relative;
                 flex: 0 0 34px;
                 width: 34px;
@@ -1799,17 +1797,17 @@ table{
                 align-items: center;
                 justify-content: center;
                 transition: 300ms;
-                &:hover{
+                &:hover {
                     background-color: $primary-color;
                 }
-                &::before{
+                &::before {
                     content: '';
                     display: block;
                     width: 15px;
                     height: 1px;
                     background-color: $white;
                 }
-                &:last-child::after{
+                &:last-child::after {
                     content: '';
                     position: absolute;
                     top: 9.5px;
@@ -1818,10 +1816,9 @@ table{
                     width: 1px;
                     height: 15px;
                     background-color: $white;
-
                 }
             }
-            input{
+            input {
                 margin: 0;
                 width: 90px;
                 height: 34px;
@@ -1833,11 +1830,11 @@ table{
     }
 }
 
-.video{
+.video {
     @include breakpoint(large down) {
         flex-direction: column;
     }
-    &_content{
+    &_content {
         width: 460px;
         background-color: $white;
         box-shadow: 0 0 65px rgba(0, 0, 0, 0.15);
@@ -1856,7 +1853,7 @@ table{
             padding: 0;
             animation-name: fadeInDown;
         }
-        .header{
+        .header {
             margin-top: -10px;
             @include breakpoint(large down) {
                 font-size: 50px;
@@ -1866,14 +1863,14 @@ table{
             }
         }
     }
-    &_descr{
+    &_descr {
         font-size: 18px;
         line-height: 1.3;
         @include breakpoint(small down) {
             font-size: 16px;
         }
     }
-    &_variants{
+    &_variants {
         width: 645px;
         min-width: 615px;
         display: flex;
@@ -1881,22 +1878,22 @@ table{
         animation-delay: 500ms;
         @include breakpoint(large down) {
             width: 100%;
-            max-width: 645px;   
+            max-width: 645px;
         }
         @include breakpoint(small down) {
             min-width: auto;
         }
     }
-    &_variant{
+    &_variant {
         width: 295px;
         box-shadow: 0 0 65px rgba(0, 0, 0, 0.15);
         @include breakpoint(small down) {
             width: calc(50% - 10px);
-            &:first-child{
+            &:first-child {
                 margin-right: 20px;
             }
         }
-        &_add{
+        &_add {
             min-width: 295px;
             animation-delay: 500ms;
             @include breakpoint(small down) {
@@ -1904,7 +1901,7 @@ table{
                 max-width: 250px;
                 min-width: auto;
             }
-            .video_variant_img{
+            .video_variant_img {
                 height: 325px;
                 padding-left: 15px;
                 padding-right: 15px;
@@ -1917,7 +1914,7 @@ table{
                     padding: 0;
                 }
             }
-            .video_variant_content{
+            .video_variant_content {
                 height: 165px;
                 display: flex;
                 flex-direction: column;
@@ -1926,14 +1923,14 @@ table{
                 @include breakpoint(small down) {
                     height: auto;
                     padding-top: 20px;
-                    .button{
+                    .button {
                         height: auto;
                         min-height: 40px;
                     }
                 }
             }
         }
-        &_img{
+        &_img {
             height: 350px;
             border: 40px solid $white;
             border-top-width: 30px;
@@ -1958,7 +1955,7 @@ table{
                 justify-content: center;
             }
         }
-        &_progress{
+        &_progress {
             width: 100px;
             height: 100px;
             margin: auto;
@@ -1973,11 +1970,11 @@ table{
                 margin: 0;
                 margin-bottom: 30px;
             }
-            &_bar{
+            &_bar {
                 @include breakpoint(small down) {
                     width: 90%;
                 }
-            }    
+            }
             .uil-spin-css {
                 background: none;
                 position: absolute;
@@ -1988,7 +1985,6 @@ table{
                 transform: scale(.75) translate(-50%, -50%);
                 transform-origin: top left
             }
-
             @keyframes uil-spin-css {
                 0% {
                     opacity: 1;
@@ -2007,16 +2003,14 @@ table{
                     transform: scale(1);
                 }
             }
-
-            .uil-spin-css > div {
+            .uil-spin-css>div {
                 width: 12px;
                 height: 12px;
                 margin-left: 10px;
                 margin-top: 10px;
                 position: absolute;
             }
-
-            .uil-spin-css > div > div {
+            .uil-spin-css>div>div {
                 width: 100%;
                 height: 100%;
                 border-radius: 15px;
@@ -2027,72 +2021,56 @@ table{
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
             }
-
-            .uil-spin-css > div:nth-of-type(1) > div {
+            .uil-spin-css>div:nth-of-type(1)>div {
                 animation-delay: 0s;
             }
-
-            .uil-spin-css > div:nth-of-type(1) {
+            .uil-spin-css>div:nth-of-type(1) {
                 transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
             }
-
-            .uil-spin-css > div:nth-of-type(2) > div {
+            .uil-spin-css>div:nth-of-type(2)>div {
                 animation-delay: 0.12s;
             }
-
-            .uil-spin-css > div:nth-of-type(2) {
+            .uil-spin-css>div:nth-of-type(2) {
                 transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
             }
-
-            .uil-spin-css > div:nth-of-type(3) > div {
+            .uil-spin-css>div:nth-of-type(3)>div {
                 animation-delay: 0.25s;
             }
-
-            .uil-spin-css > div:nth-of-type(3) {
+            .uil-spin-css>div:nth-of-type(3) {
                 transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
             }
-
-            .uil-spin-css > div:nth-of-type(4) > div {
+            .uil-spin-css>div:nth-of-type(4)>div {
                 animation-delay: 0.37s;
             }
-
-            .uil-spin-css > div:nth-of-type(4) {
+            .uil-spin-css>div:nth-of-type(4) {
                 transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
             }
-
-            .uil-spin-css > div:nth-of-type(5) > div {
+            .uil-spin-css>div:nth-of-type(5)>div {
                 animation-delay: 0.5s;
             }
-
-            .uil-spin-css > div:nth-of-type(5) {
+            .uil-spin-css>div:nth-of-type(5) {
                 transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
             }
-
-            .uil-spin-css > div:nth-of-type(6) > div {
+            .uil-spin-css>div:nth-of-type(6)>div {
                 animation-delay: 0.62s;
             }
-
-            .uil-spin-css > div:nth-of-type(6) {
+            .uil-spin-css>div:nth-of-type(6) {
                 transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
             }
-
-            .uil-spin-css > div:nth-of-type(7) > div {
+            .uil-spin-css>div:nth-of-type(7)>div {
                 animation-delay: 0.75s;
             }
-
-            .uil-spin-css > div:nth-of-type(7) {
+            .uil-spin-css>div:nth-of-type(7) {
                 transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
             }
-
-            .uil-spin-css > div:nth-of-type(8) > div {
+            .uil-spin-css>div:nth-of-type(8)>div {
                 animation-delay: 0.87s;
             }
-
-            .uil-spin-css > div:nth-of-type(8) {
+            .uil-spin-css>div:nth-of-type(8) {
                 transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
             }
         }
-        &_content{
+        &_content {
             height: 140px;
             background-color: $white;
             padding: 0 40px;
@@ -2103,7 +2081,7 @@ table{
                 height: auto;
                 padding: 0 20px;
                 padding-bottom: 20px;
-                .button{
+                .button {
                     height: 100%;
                     min-height: 50px;
                     padding: 5px;
@@ -2113,10 +2091,10 @@ table{
                     justify-content: center;
                 }
             }
-            [type="file"]{
+            [type="file"] {
                 display: none;
             }
-            p{
+            p {
                 font-size: 18px;
                 margin: 10px 0 0;
             }
@@ -2124,15 +2102,15 @@ table{
     }
 }
 
-.add{
-    &_inner{
+.add {
+    &_inner {
         @extend .content;
         margin: 0;
         @include breakpoint(large down) {
             flex-direction: column;
         }
     }
-    &_header{
+    &_header {
         margin-right: 60px;
         animation-delay: 1s;
         @include breakpoint(large down) {
@@ -2140,20 +2118,20 @@ table{
             margin: 0;
             margin-bottom: 35px;
             animation-name: fadeInDown;
-            > div {
+            >div {
                 display: inline;
             }
-            br{
+            br {
                 display: none;
             }
         }
         @include breakpoint(small down) {
             margin-bottom: 20px;
         }
-        .header{
+        .header {
             line-height: .9;
             margin-bottom: .2em;
-            &_largest{
+            &_largest {
                 @include breakpoint(large down) {
                     font-size: 50px;
                 }
@@ -2163,7 +2141,7 @@ table{
             }
         }
     }
-    &_next{
+    &_next {
         margin-left: 200px;
         margin-bottom: -373px;
         animation-delay: 1s;
@@ -2171,7 +2149,7 @@ table{
             position: absolute;
             right: 0;
             bottom: 0;
-            margin: 0;   
+            margin: 0;
         }
         @include breakpoint(small down) {
             position: static;
@@ -2181,8 +2159,8 @@ table{
     }
 }
 
-.record{
-    &_inner{
+.record {
+    &_inner {
         @extend .content;
         margin: 0;
         align-items: stretch;
@@ -2199,7 +2177,7 @@ table{
             margin: 0;
         }
     }
-    &_card{
+    &_card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2219,14 +2197,14 @@ table{
             margin-bottom: 46px;
             animation-name: fadeIn;
         }
-        &_video{
+        &_video {
             box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.17);
             margin-bottom: 30px;
             @include breakpoint(small down) {
                 margin-bottom: 20px;
             }
         }
-        &_actions{
+        &_actions {
             width: 135px;
             display: flex;
             justify-content: space-between;
@@ -2236,7 +2214,7 @@ table{
             @include breakpoint(small down) {
                 width: 100px;
             }
-            button{
+            button {
                 display: block;
                 width: 45px;
                 height: 45px;
@@ -2250,12 +2228,12 @@ table{
                     height: 30px;
                 }
             }
-            &_rec{
+            &_rec {
                 border-radius: 50%;
             }
         }
     }
-    &_content{
+    &_content {
         width: 28%;
         display: flex;
         flex-direction: column;
@@ -2276,7 +2254,7 @@ table{
             width: 100%;
             padding-bottom: 20px;
         }
-        &_time{
+        &_time {
             font-size: 47px;
             @include breakpoint(large down) {
                 order: 2;
@@ -2289,7 +2267,7 @@ table{
                 animation-name: fadeInDown;
             }
         }
-        .button{
+        .button {
             @include breakpoint(large down) {
                 position: absolute;
                 bottom: 0;
@@ -2305,7 +2283,7 @@ table{
             }
         }
     }
-    &_header{
+    &_header {
         font-size: 27px;
         @include breakpoint(large down) {
             text-align: center;
@@ -2315,7 +2293,7 @@ table{
         @include breakpoint(small down) {
             animation-name: fadeInDown;
         }
-        .header{
+        .header {
             @include breakpoint(large down) {
                 position: absolute;
                 left: 0;
@@ -2335,11 +2313,11 @@ table{
     }
 }
 
-.register{
+.register {
     @include breakpoint(medium down) {
         flex-direction: column;
     }
-    &_content{
+    &_content {
         width: 325px;
         animation-delay: 1.3s;
         @include breakpoint(medium down) {
@@ -2347,7 +2325,7 @@ table{
             text-align: center;
             animation-name: fadeInDown;
         }
-        .header{
+        .header {
             font-size: 32px;
             @include breakpoint(medium down) {
                 font-size: 20px;
@@ -2357,7 +2335,7 @@ table{
                 letter-spacing: 0;
                 font-size: 18px;
             }
-            &_large{
+            &_large {
                 @include breakpoint(medium down) {
                     display: table;
                     margin: auto;
@@ -2377,7 +2355,7 @@ table{
                 }
             }
         }
-        &_descr{
+        &_descr {
             line-height: 1.4;
             text-align: justify;
             margin-right: 20px;
@@ -2395,7 +2373,7 @@ table{
             }
         }
     }
-    &_card{
+    &_card {
         position: relative;
         width: 100%;
         max-width: 423px;
@@ -2409,7 +2387,7 @@ table{
             margin-bottom: 50px;
             height: 230px;
         }
-        &_inner{
+        &_inner {
             width: 100%;
             height: 100%;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
@@ -2418,7 +2396,7 @@ table{
             z-index: 1;
             animation-delay: 1.5s;
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             left: -75px;
@@ -2438,7 +2416,7 @@ table{
                 display: none;
             }
         }
-        &::after{
+        &::after {
             @extend .register_card::before;
             left: 70px;
             bottom: 80px;
@@ -2448,10 +2426,10 @@ table{
                 right: -17vw;
             }
         }
-        .tabs{
+        .tabs {
             display: flex;
             box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.17);
-            &-title{
+            &-title {
                 width: 50%;
                 text-align: center;
                 position: relative;
@@ -2465,44 +2443,44 @@ table{
                 @include breakpoint(small down) {
                     padding: 0 !important;
                 }
-                &:first-child{
+                &:first-child {
                     padding-right: 20px;
                     background-position: 220px 0;
                 }
-                &:last-child{
+                &:last-child {
                     padding-left: 20px;
                     background-position: -220px 0;
-                    &::after{
+                    &::after {
                         display: none;
                     }
                 }
-                &::after{
+                &::after {
                     content: '';
                     position: absolute;
                     top: 0;
                     right: -20px;
                     display: block;
-                    border: 20px solid transparent; 
-                    border-right: 20px solid $white; 
+                    border: 20px solid transparent;
+                    border-right: 20px solid $white;
                     border-bottom: 20px solid $white;
                     transition: 300ms;
                     @include breakpoint(small down) {
                         display: none;
                     }
                 }
-                &.is-active{
+                &.is-active {
                     box-shadow: none;
                     background-position: 0;
-                    &::after{
-                        border: 20px solid transparent; 
-                        border-bottom: 20px solid $white; 
+                    &::after {
+                        border: 20px solid transparent;
+                        border-bottom: 20px solid $white;
                         border-left: 20px solid $white;
                     }
-                    > a{
+                    >a {
                         color: $black;
                     }
                 }
-                > a{
+                >a {
                     color: #9c9c9c;
                     @include breakpoint(small down) {
                         padding-left: 0;
@@ -2511,10 +2489,10 @@ table{
                     }
                 }
             }
-            &-content{
+            &-content {
                 height: calc(100% - 40px);
             }
-            &-panel{
+            &-panel {
                 height: 100%;
                 @include breakpoint(small down) {
                     padding: 20px;
@@ -2522,15 +2500,15 @@ table{
             }
         }
     }
-    &_form{
+    &_form {
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        input{
+        input {
             margin: 0;
-            &[type="submit"]{
+            &[type="submit"] {
                 position: absolute;
                 left: calc(50% - 92px);
                 top: calc(100% + 10px);
@@ -2541,29 +2519,29 @@ table{
                 }
             }
         }
-        &_forgot{
+        &_forgot {
             margin-bottom: 20px;
         }
     }
 }
 
-.plan{
-    &_inner{
+.plan {
+    &_inner {
         @extend .content;
         margin: 0;
         @include breakpoint(large down) {
             flex-direction: column;
         }
     }
-    &_content{
+    &_content {
         width: 290px;
         animation-delay: 1.3s;
         @include breakpoint(large down) {
             width: 100%;
             text-align: center;
-            animation-delay: 800ms;        
+            animation-delay: 800ms;
         }
-        .header{
+        .header {
             font-size: 30px;
             @include breakpoint(large down) {
                 font-size: 20px;
@@ -2576,7 +2554,7 @@ table{
                 letter-spacing: 0;
                 font-weight: 600;
             }
-            &_large{
+            &_large {
                 @include breakpoint(large down) {
                     font-size: 50px;
                     letter-spacing: 0;
@@ -2596,7 +2574,7 @@ table{
                 }
             }
         }
-        &_descr{
+        &_descr {
             font-size: 18px;
             line-height: 1.4;
             text-align: justify;
@@ -2609,7 +2587,7 @@ table{
                 font-size: 16px;
             }
         }
-        .main_content_how{
+        .main_content_how {
             animation-delay: 2s;
             @include breakpoint(large down) {
                 bottom: 10px;
@@ -2623,7 +2601,7 @@ table{
             }
         }
     }
-    &_items{
+    &_items {
         display: flex;
         margin-left: 55px;
         position: relative;
@@ -2638,15 +2616,15 @@ table{
             max-width: 285px;
             justify-content: space-between;
         }
-        [type="radio"]{
+        [type="radio"] {
             display: none;
-            &:checked + label .plan_item_bg{
+            &:checked+label .plan_item_bg {
                 box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
                 opacity: 1;
                 border-color: #989696;
             }
         }
-        .button{
+        .button {
             position: absolute;
             right: 0;
             bottom: -90px;
@@ -2660,7 +2638,7 @@ table{
             }
         }
     }
-    &_item{
+    &_item {
         width: 146px;
         height: 258px;
         margin: 0 45px 0 0 !important;
@@ -2676,26 +2654,26 @@ table{
             margin: 0 0 20px 0 !important;
             animation-name: fadeIn;
         }
-        &:hover{
-            .plan_item_bg{
+        &:hover {
+            .plan_item_bg {
                 opacity: 1;
                 transform: scale(1.1);
             }
         }
-        &:first-of-type{
+        &:first-of-type {
             animation-delay: 1s;
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
             animation-delay: 1.2s;
         }
-        &:nth-of-type(3){
+        &:nth-of-type(3) {
             animation-delay: 1.4s;
         }
-        &:last-of-type{
+        &:last-of-type {
             margin: 0 !important;
             animation-delay: 1.6s;
         }
-        &_bg{
+        &_bg {
             position: absolute;
             top: 0;
             left: 0;
@@ -2708,7 +2686,7 @@ table{
             border: 1px solid transparent;
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
         }
-        &_label{
+        &_label {
             height: 40px;
             border: 1px solid #bebebe;
             background-color: $white;
@@ -2720,7 +2698,7 @@ table{
     }
 }
 
-.whom{
+.whom {
     @include breakpoint(xlarge) {
         margin-top: 30px;
         margin-bottom: 50px;
@@ -2731,7 +2709,7 @@ table{
     @include breakpoint(small down) {
         align-items: flex-start;
     }
-    &_header{
+    &_header {
         width: 350px;
         position: relative;
         z-index: 2;
@@ -2748,16 +2726,16 @@ table{
             animation-name: fadeInDown;
         }
         @include breakpoint(small down) {
-            &::after{
+            &::after {
                 content: 'Step 1/2';
                 display: block;
                 margin-top: 10px;
             }
-            &.step2::after{
+            &.step2::after {
                 content: 'Step 2/2';
             }
         }
-        .header{
+        .header {
             @include breakpoint(large down) {
                 font-size: 50px;
             }
@@ -2766,7 +2744,7 @@ table{
             }
         }
     }
-    &_card{
+    &_card {
         position: relative;
         width: 100%;
         max-width: 730px;
@@ -2783,11 +2761,11 @@ table{
             min-width: auto;
             margin-top: 20px;
             transition: transform 500ms;
-            &.step2{
+            &.step2 {
                 transform: translateX(calc(-50% - 20px));
             }
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             left: -64px;
@@ -2802,14 +2780,14 @@ table{
                 display: none;
             }
         }
-        &::after{
+        &::after {
             @extend .whom_card::before;
             width: 89%;
             height: 362px;
             left: 120px;
             top: 20px;
         }
-        > a.button{
+        >a.button {
             position: absolute;
             right: 0;
             bottom: -125px;
@@ -2827,7 +2805,7 @@ table{
                 float: right;
             }
         }
-        > button.button{
+        >button.button {
             display: none;
             animation-delay: 1.3s;
             @include breakpoint(small down) {
@@ -2836,10 +2814,10 @@ table{
                 width: calc(50% - 20px);
             }
         }
-        &_inner{
+        &_inner {
             position: relative;
             z-index: 2;
-            [type="submit"]{
+            [type="submit"] {
                 position: absolute;
                 bottom: -18px;
                 left: 50%;
@@ -2849,7 +2827,7 @@ table{
                     display: none;
                 }
             }
-            a.button{
+            a.button {
                 position: absolute;
                 bottom: -18px;
                 right: 0;
@@ -2861,7 +2839,7 @@ table{
                 }
             }
         }
-        &_content{
+        &_content {
             position: relative;
             z-index: 2;
             display: flex;
@@ -2878,14 +2856,14 @@ table{
                 margin-bottom: 20px;
             }
         }
-        &_form{
+        &_form {
             width: 50%;
-            &:first-child{
+            &:first-child {
                 padding-right: 60px;
                 @include breakpoint(small down) {
                     padding-right: 20px;
                 }
-                &::before{
+                &::before {
                     content: '';
                     position: absolute;
                     left: 50%;
@@ -2898,46 +2876,46 @@ table{
                     }
                 }
             }
-            &:last-of-type{
+            &:last-of-type {
                 padding-left: 60px;
                 @include breakpoint(small down) {
                     padding-left: 20px;
                 }
             }
-            [type="text"]{
+            [type="text"] {
                 margin-bottom: 8px;
-                &:last-child{
+                &:last-child {
                     margin: 0;
                 }
             }
-            textarea{
+            textarea {
                 margin: 0;
             }
         }
-        &_label{
+        &_label {
             color: #9d9d9d;
             margin-bottom: 1px;
-            span{
+            span {
                 color: $black;
                 text-decoration: underline;
                 float: right;
             }
         }
-        &_select{
+        &_select {
             display: flex;
             justify-content: space-between;
-            .select7{
+            .select7 {
                 width: 48.5%;
             }
         }
     }
 }
 
-.play{
+.play {
     @include breakpoint(small down) {
         flex-direction: column-reverse;
     }
-    &_plan{
+    &_plan {
         width: 482px;
         height: 258px;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.17);
@@ -2966,7 +2944,7 @@ table{
             margin-bottom: 56px;
             animation-name: fadeIn;
         }
-        table{
+        table {
             border-spacing: 14px 15px;
             @include breakpoint(large down) {
                 border-spacing: 13px;
@@ -2976,31 +2954,30 @@ table{
                 margin: 0;
                 table-layout: auto;
                 font-size: 16px;
-                tbody, thead{
+                tbody,
+                thead {
                     width: 100%;
                     display: table-row-group;
                 }
-                tr{
+                tr {
                     width: 100%;
                     margin: 0;
                 }
             }
         }
-        tr{
-
-        }
-        td{
+        tr {}
+        td {
             padding: 11px 5px;
             @include breakpoint(small down) {
                 display: table-cell;
                 padding: 5px;
                 height: auto;
             }
-            &:first-child{
+            &:first-child {
                 width: 60%;
             }
         }
-        .button{
+        .button {
             position: absolute;
             bottom: -18px;
             left: calc(50% - 55px);
@@ -3017,7 +2994,7 @@ table{
             }
         }
     }
-    &_card{
+    &_card {
         position: relative;
         animation-delay: 1.3s;
         @include breakpoint(large down) {
@@ -3026,7 +3003,7 @@ table{
         @include breakpoint(small down) {
             animation-name: fadeIn;
         }
-        &::after{
+        &::after {
             content: '';
             position: absolute;
             left: -40px;
@@ -3040,7 +3017,7 @@ table{
                 display: none;
             }
         }
-        .button{
+        .button {
             position: absolute;
             right: 0;
             bottom: -60px;
@@ -3051,7 +3028,7 @@ table{
             }
         }
     }
-    .actually_card{
+    .actually_card {
         width: 645px;
         height: 448px;
         background-position: right calc(50vw - 615px) bottom calc(50vh - 410px);
@@ -3078,11 +3055,11 @@ table{
     }
 }
 
-.thank{
+.thank {
     @include breakpoint(medium down) {
         flex-direction: column;
     }
-    &_header{
+    &_header {
         width: 540px;
         position: relative;
         z-index: 1;
@@ -3092,7 +3069,7 @@ table{
             text-align: center;
             animation-name: fadeInDown;
         }
-        .header{
+        .header {
             font-size: 28px;
             @include breakpoint(medium down) {
                 font-size: 20px;
@@ -3105,7 +3082,7 @@ table{
                 font-family: "GTWalsheim", Helvetica, Roboto, Arial, sans-serif;
                 font-weight: normal;
             }
-            &_large{
+            &_large {
                 @include breakpoint(medium down) {
                     display: table;
                     margin: auto;
@@ -3126,7 +3103,7 @@ table{
             }
         }
     }
-    &_card{
+    &_card {
         position: relative;
         width: 504px;
         min-width: 465px;
@@ -3142,7 +3119,7 @@ table{
         @include breakpoint(small down) {
             margin-bottom: 0;
         }
-        &_inner{
+        &_inner {
             position: relative;
             width: 100%;
             height: 100%;
@@ -3164,10 +3141,10 @@ table{
                 font-size: 18px;
                 margin-bottom: 20px;
             }
-            p{
+            p {
                 margin: 0;
             }
-            .button{
+            .button {
                 width: 100px;
                 margin: 9px;
                 margin-top: 58px;
@@ -3179,7 +3156,7 @@ table{
                 }
             }
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             left: -146px;
@@ -3194,15 +3171,15 @@ table{
             @include breakpoint(medium down) {
                 display: none;
             }
-        }   
-        &::after{
+        }
+        &::after {
             @extend .thank_card::before;
             width: 100%;
             height: 100%;
             left: 45px;
             bottom: 28px;
         }
-        > .button{
+        >.button {
             position: absolute;
             right: -46px;
             bottom: -100px;
@@ -3220,12 +3197,12 @@ table{
     }
 }
 
-.blog{
+.blog {
     align-items: flex-start;
     @include breakpoint(small down) {
         flex-direction: column-reverse;
     }
-    &_articles{
+    &_articles {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -3235,7 +3212,7 @@ table{
             width: 100%;
             display: block;
             margin-bottom: -20px;
-            &::before{
+            &::before {
                 content: 'Blog';
                 display: block;
                 font-family: 'Playfair Display', serif;
@@ -3247,7 +3224,7 @@ table{
             }
         }
     }
-    &_article{
+    &_article {
         position: relative;
         max-width: 380px;
         width: calc(50% - 30px);
@@ -3265,17 +3242,17 @@ table{
             margin: auto;
             margin-bottom: 56px;
         }
-        .header{
+        .header {
             font-size: 30px;
             @include breakpoint(small down) {
                 font-size: 25px;
             }
         }
-        &_date{
+        &_date {
             color: $secondary-color;
             font-size: 14px;
         }
-        &_brief{
+        &_brief {
             line-height: 1.58;
             margin: 10px 0;
             @include breakpoint(small down) {
@@ -3284,7 +3261,7 @@ table{
                 margin-bottom: 0;
             }
         }
-        .button{
+        .button {
             position: absolute;
             left: 50%;
             bottom: -17px;
@@ -3295,7 +3272,7 @@ table{
             }
         }
     }
-    &_sidebar{
+    &_sidebar {
         min-width: 295px;
         animation-delay: 1.3s;
         @include breakpoint(medium down) {
@@ -3305,7 +3282,7 @@ table{
         @include breakpoint(small down) {
             width: 100%;
         }
-        &_inner{
+        &_inner {
             @include breakpoint(small down) {
                 display: flex;
                 flex-direction: column;
@@ -3313,27 +3290,27 @@ table{
             }
         }
     }
-    &_search{
+    &_search {
         @include breakpoint(small down) {
             order: 2;
             margin-top: 20px;
         }
     }
-    &_recent{
+    &_recent {
         @include breakpoint(small down) {
             order: 1
         }
-        .header{
+        .header {
             @include breakpoint(small down) {
                 text-align: center;
             }
         }
-        &_publ{
+        &_publ {
             margin-top: 20px;
             @include breakpoint(small down) {
                 margin-top: 15px;
             }
-            > a{
+            >a {
                 font-size: 22px;
                 @include breakpoint(small down) {
                     font-size: 18px;
@@ -3341,17 +3318,18 @@ table{
             }
         }
     }
-    &_pager{
+    &_pager {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         margin-top: 70px;
         @include breakpoint(small down) {
-            order:3;
+            order: 3;
             margin-top: 0;
             margin-bottom: 10px;
             text-align: center;
         }
-        > a, > b{
+        >a,
+        >b {
             font-weight: 300;
             color: $secondary-color;
             margin: 0 7px;
@@ -3360,62 +3338,62 @@ table{
                 margin: 0 3px;
                 padding: 0 4px;
             }
-            &:first-child{
+            &:first-child {
                 padding-left: 0;
                 margin-left: 0;
             }
-            &:last-child{
+            &:last-child {
                 padding-right: 0;
                 margin-right: 0;
             }
-            &.current{
+            &.current {
                 border-bottom: 1px solid;
             }
-            img{
+            img {
                 margin-top: -3px;
             }
         }
     }
 }
 
-.article{
+.article {
     flex-direction: column;
     align-items: flex-start;
-    &_tags{
+    &_tags {
         margin-bottom: 7px;
         animation-delay: 1s;
-        a{
+        a {
             color: $secondary-color;
             margin-right: 30px;
-            &:hover{
+            &:hover {
                 text-decoration: underline;
             }
         }
     }
-    .header{
+    .header {
         @include breakpoint(medium only) {
             font-size: 45px;
         }
     }
-    .blog_article_brief{
-        &:last-child{
+    .blog_article_brief {
+        &:last-child {
             margin-bottom: 0;
             animation-delay: 1.8s;
         }
     }
 }
 
-.contact{
+.contact {
     @include breakpoint(895px down) {
         flex-direction: column;
     }
-    .header{
+    .header {
         margin-bottom: 20px;
         @include breakpoint(small down) {
             margin-bottom: 10px;
         }
     }
-    &_header{
+    &_header {
         font-size: 18px;
         line-height: 1.7;
         margin-right: 105px;
@@ -3430,7 +3408,7 @@ table{
             margin: 0;
             margin-bottom: 10px;
             animation-name: fadeInDown;
-            .header{
+            .header {
                 margin-bottom: 0;
             }
         }
@@ -3439,7 +3417,7 @@ table{
             line-height: normal;
         }
     }
-    &_card{
+    &_card {
         position: relative;
         min-width: 420px;
         height: 440px;
@@ -3453,19 +3431,19 @@ table{
             min-width: auto;
             margin-top: 48px;
             margin-bottom: 56px;
-            .header{
+            .header {
                 width: 100%;
                 position: absolute;
                 white-space: nowrap;
                 left: 0;
                 bottom: 100%;
             }
-            textarea{
+            textarea {
                 margin: 0;
                 max-height: 130px;
             }
         }
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             left: -75px;
@@ -3479,7 +3457,7 @@ table{
                 display: none;
             }
         }
-        &::after{
+        &::after {
             @extend .contact_card::before;
             left: auto;
             bottom: auto;
@@ -3488,7 +3466,7 @@ table{
             width: 297px;
             height: 382px;
         }
-        &_inner{
+        &_inner {
             position: relative;
             z-index: 1;
             width: 100%;
@@ -3502,13 +3480,13 @@ table{
                 padding: 20px;
             }
         }
-        input{
+        input {
             margin-bottom: 28px;
             @include breakpoint(small down) {
                 margin-bottom: 20px;
             }
         }
-        .button{
+        .button {
             position: absolute;
             left: 50%;
             bottom: -15px;
@@ -3522,7 +3500,7 @@ table{
     }
 }
 
-.footer{
+.footer {
     height: 130px;
     display: flex;
     align-items: center;
@@ -3542,12 +3520,12 @@ table{
         padding-top: 15px;
         align-items: flex-start;
     }
-    &.small{
+    &.small {
         height: 100px;
     }
 }
 
 // Remove free hosting shit
-.cbalink{
+.cbalink {
     display: none;
 }

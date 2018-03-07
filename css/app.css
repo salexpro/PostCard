@@ -878,7 +878,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_main::after { background: url(../img/bg.png) center no-repeat; -webkit-animation: 1s 1.5s both fadeIn; animation: 1s 1.5s both fadeIn; }
 
-.wrap_card::after { background: url(../img/bg_card.png) no-repeat; background-position: center bottom calc(50% - 30px); -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_card::after { background: url(../img/bg_card.png) no-repeat; background-position: center bottom calc(50% - 30px); -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 74.9375em) { .wrap_card::after { background-position: right calc(50vw - 355px) bottom calc(50% - 85px); background-size: 932px; } }
 
@@ -892,7 +892,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_wreath { overflow: hidden; }
 
-.wrap_wreath::after { background: url(../img/bg_wreath.png) no-repeat; background-position: right calc(50vw - 904px) center; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_wreath::after { background: url(../img/bg_wreath.png) no-repeat; background-position: right calc(50vw - 904px) center; -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 74.9375em) { .wrap_wreath::after { background-position: right calc(50% + 144px) bottom calc(50% - 70px); } }
 
@@ -910,11 +910,11 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_how { overflow: hidden; }
 
-.wrap_how::after { background: fixed url(../img/bg_how.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_how::after { background: fixed url(../img/bg_how.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 64em) { .wrap_how::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
-.wrap_price::after { background: fixed url(../img/bg_price.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_price::after { background: fixed url(../img/bg_price.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 64em) { .wrap_price::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
@@ -930,7 +930,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_record::after { background: url(../img/bg_record.png) center no-repeat; -webkit-animation: 1s 1s both fadeIn; animation: 1s 1s both fadeIn; }
 
-.wrap_register::after { background: fixed url(../img/bg_register.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_register::after { background: fixed url(../img/bg_register.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 41.8125em) { .wrap_register::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
@@ -944,7 +944,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_whom { overflow: hidden; }
 
-.wrap_whom::after { background: fixed url(../img/bg_whom.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_whom::after { background: fixed url(../img/bg_whom.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 74.9375em) { .wrap_whom::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
@@ -958,7 +958,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_thank { overflow: hidden; }
 
-.wrap_thank::after { background: fixed url(../img/bg_thank.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_thank::after { background: fixed url(../img/bg_thank.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 64em) { .wrap_thank::after { background-attachment: scroll; -webkit-animation: 300ms 800ms both fadeInPart; animation: 300ms 800ms both fadeInPart; } }
 
@@ -970,7 +970,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .wrap_contact { overflow: hidden; }
 
-.wrap_contact::after { background: fixed url(../img/bg_contact.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn,  1s 2s forwards fadeOutPart; }
+.wrap_contact::after { background: fixed url(../img/bg_contact.png) center no-repeat; -webkit-animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; animation: 300ms 1s both fadeIn, 1s 2s forwards fadeOutPart; }
 
 @media screen and (max-width: 41.8125em) { .wrap_contact::after { background-attachment: scroll; } }
 
@@ -1124,7 +1124,7 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .main_video_container:hover .paused { opacity: 0.42; z-index: 2; }
 
-.main_video_button { border: 12.6px solid #fff; border-radius: 50%; padding: 47.25px; width: 105px; height: 105px; font-size: 0; white-space: nowrap; text-align: center; cursor: pointer; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-box-sizing: content-box; box-sizing: content-box; opacity: 0.42; }
+.main_video_button { border: 12.48px solid #fff; border-radius: 50%; padding: 46.8px; width: 104px; height: 104px; font-size: 0; white-space: nowrap; text-align: center; cursor: pointer; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-box-sizing: content-box; box-sizing: content-box; opacity: 0.42; }
 
 @media screen and (max-width: 74.9375em) { .main_video_button { border: 9.6px solid #fff; padding: 36px; width: 80px; height: 80px; } }
 
@@ -1134,27 +1134,27 @@ table th { background: #000; color: #fff; padding: 10px 15px; font-weight: 400; 
 
 .main_video_button, .main_video_button::before, .main_video_button::after { content: ''; display: inline-block; vertical-align: middle; -webkit-transition: all 300ms; transition: all 300ms; transition-tiomig-function: cubic-bezier(1, 0, 0, 1); }
 
-.main_video_button::before { margin-left: 17.5px; border-left: 45.465px solid #fff; border-top: 26.582278481px solid transparent; border-bottom: 26.582278481px solid transparent; border-right: 0px solid transparent; height: 51.835443038px; }
+.main_video_button::before { margin-left: 17.3333333333px; border-left: 45.032px solid #fff; border-top: 26px solid transparent; border-bottom: 26px solid transparent; border-right: 0px solid transparent; height: 52px; }
 
-@media screen and (max-width: 74.9375em) { .main_video_button::before { margin-left: 13.3333333333px; border-left: 34.64px solid #fff; border-top: 20.253164557px solid transparent; border-bottom: 20.253164557px solid transparent; height: 39.4936708861px; } }
+@media screen and (max-width: 74.9375em) { .main_video_button::before { margin-left: 13.3333333333px; border-left: 34.64px solid #fff; border-top: 20px solid transparent; border-bottom: 20px solid transparent; height: 40px; } }
 
-@media screen and (max-width: 41.8125em) { .main_video_button::before { margin-left: 7.5px; border-left: 19.485px solid #fff; border-top: 11.3924050633px solid transparent; border-bottom: 11.3924050633px solid transparent; height: 22.2151898734px; } }
+@media screen and (max-width: 41.8125em) { .main_video_button::before { margin-left: 7.5px; border-left: 19.485px solid #fff; border-top: 11.25px solid transparent; border-bottom: 11.25px solid transparent; height: 22.5px; } }
 
-.main_video_button::after { margin: 0; border-left: 43.3px solid #fff; border-top: 26.582278481px solid transparent; border-bottom: 26.582278481px solid transparent; height: 0px; -webkit-transform: translateX(-0.3px); transform: translateX(-0.3px); }
+.main_video_button::after { margin: 0; border-left: 42.8876190476px solid #fff; border-top: 26px solid transparent; border-bottom: 26px solid transparent; height: 0px; -webkit-transform: translateX(-0.5%); transform: translateX(-0.5%); }
 
-@media screen and (max-width: 74.9375em) { .main_video_button::after { border-left: 32.9904761905px solid #fff; border-top: 20.253164557px solid transparent; border-bottom: 20.253164557px solid transparent; -webkit-transform: none; transform: none; } }
+@media screen and (max-width: 74.9375em) { .main_video_button::after { border-left: 32.9904761905px solid #fff; border-top: 20px solid transparent; border-bottom: 20px solid transparent; -webkit-transform: none; transform: none; } }
 
-@media screen and (max-width: 41.8125em) { .main_video_button::after { border-left: 18.5571428571px solid #fff; border-top: 11.3924050633px solid transparent; border-bottom: 11.3924050633px solid transparent; } }
+@media screen and (max-width: 41.8125em) { .main_video_button::after { border-left: 18.5571428571px solid #fff; border-top: 11.25px solid transparent; border-bottom: 11.25px solid transparent; } }
 
 .main_video_button.paused { opacity: 0; z-index: -1; }
 
-.main_video_button.paused::before, .main_video_button.paused::after { margin: 0; border-left: 26.25px solid #fff; border-top: 0 solid transparent; border-bottom: 0 solid transparent; height: 105px; }
+.main_video_button.paused::before, .main_video_button.paused::after { margin: 0; border-left: 26px solid #fff; border-top: 0 solid transparent; border-bottom: 0 solid transparent; height: 104px; }
 
 @media screen and (max-width: 74.9375em) { .main_video_button.paused::before, .main_video_button.paused::after { border-left: 20px solid #fff; height: 80px; } }
 
 @media screen and (max-width: 41.8125em) { .main_video_button.paused::before, .main_video_button.paused::after { border-left: 11.25px solid #fff; height: 45px; } }
 
-.main_video_button.paused::before { border-right: 31.5px solid transparent; }
+.main_video_button.paused::before { border-right: 31.2px solid transparent; }
 
 @media screen and (max-width: 74.9375em) { .main_video_button.paused::before { border-right: 24px solid transparent; } }
 
